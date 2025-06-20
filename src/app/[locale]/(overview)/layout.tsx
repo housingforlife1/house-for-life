@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
 import { inter } from '@/app/fonts/fonts';
-import "../globals.css";
-import { routing } from "@/i18n/routing";
-import { Language } from "@/types";
-import { notFound } from "next/navigation";
-import { getMessages } from "next-intl/server";
-import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { Toaster } from "@/components/ui/sonner";
+import { routing } from "@/i18n/routing";
+import type { Metadata } from "next";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { notFound } from "next/navigation";
+import "../globals.css";
 
 
 export const metadata: Metadata = {

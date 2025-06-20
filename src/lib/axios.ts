@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 // Create axios instance with custom config
-let api = axios.create({
+const api = axios.create({
     baseURL: process.env.NEXT_PUBLIC_API_URL || '',
     headers: {
         'Content-Type': 'application/json',
@@ -14,7 +14,7 @@ let api = axios.create({
 });
 
 // Request interceptor
-api.interceptors.request.use(async (config: any) => {
+api.interceptors.request.use(async (config) => {
     // const currentUser = Cookies.get('user');
     // const userJson: User | null = currentUser ? JSON.parse(currentUser!) : null
     
@@ -32,8 +32,8 @@ api.interceptors.request.use(async (config: any) => {
 
 // Response interceptor
 api.interceptors.response.use(
-    (response: any) => response,
-    async (error: any) => {
+    (response) => response,
+    async (error) => {
         // Handle specific error cases
         if (error.response?.status === 403) {
             console.error('CSRF token validation failed');
@@ -45,16 +45,16 @@ api.interceptors.response.use(
 // API methods
 export const apiClient = {
     get: <T>(url: string, headers?: Record<string, string>) =>
-        api.get<T>(url, { headers }).then((res: any) => res.data),
+        api.get<T>(url, { headers }).then((res) => res.data),
 
-    post: <T>(url: string, data: any, headers?: Record<string, string>) =>
-        api.post<T>(url, data, { headers }).then((res: any) => res.data),
+    post: <T>(url: string, data: Record<string, string>, headers?: Record<string, string>) =>
+        api.post<T>(url, data, { headers }).then((res) => res.data),
 
-    put: <T>(url: string, data: any, headers?: Record<string, string>) =>
-        api.put<T>(url, data, { headers }).then((res: any) => res.data),
+    put: <T>(url: string, data: Record<string, string>, headers?: Record<string, string>) =>
+        api.put<T>(url, data, { headers }).then((res) => res.data),
 
     delete: <T>(url: string, headers?: Record<string, string>) =>
-        api.delete<T>(url, { headers }).then((res: any) => res.data),
+        api.delete<T>(url, { headers }).then((res) => res.data),
 };
 
 export default api;
