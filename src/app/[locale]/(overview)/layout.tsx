@@ -1,4 +1,5 @@
 import { inter } from '@/app/fonts/fonts';
+import { NavigationSection } from '@/components/sections/NavigationSection/NavigationSection';
 import { Toaster } from "@/components/ui/sonner";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
@@ -33,7 +34,7 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <main className='overflow-x-hidden'>
               {/* Header */}
-              {/** <Header /> */}
+              <NavigationSection />
 
               {children}
 

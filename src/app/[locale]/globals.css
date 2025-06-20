@@ -1,26 +1,211 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --black: rgba(40, 40, 36, 1);
+  --dark: rgba(20, 27, 52, 1);
+  --gray: rgba(81, 79, 72, 1);
+  --green: rgba(4, 150, 77, 1);
+  --heading-2-font-family: "Instrument Sans", Helvetica;
+  --heading-2-font-size: 28px;
+  --heading-2-font-style: normal;
+  --heading-2-font-weight: 700;
+  --heading-2-letter-spacing: 0px;
+  --heading-2-line-height: 140%;
+  --heading-3-font-family: "Instrument Sans", Helvetica;
+  --heading-3-font-size: 24px;
+  --heading-3-font-style: normal;
+  --heading-3-font-weight: 700;
+  --heading-3-letter-spacing: 0px;
+  --heading-3-line-height: normal;
+  --heading-4-font-family: "Instrument Sans", Helvetica;
+  --heading-4-font-size: 18px;
+  --heading-4-font-style: normal;
+  --heading-4-font-weight: 700;
+  --heading-4-letter-spacing: 0px;
+  --heading-4-line-height: normal;
+  --neutral-100: rgba(255, 255, 255, 1);
+  --neutral-colors-100: rgba(255, 255, 255, 1);
+  --paragraph-1-font-family: "Manrope", Helvetica;
+  --paragraph-1-font-size: 16px;
+  --paragraph-1-font-style: normal;
+  --paragraph-1-font-weight: 400;
+  --paragraph-1-letter-spacing: 0px;
+  --paragraph-1-line-height: 160%;
+  --paragraph-2-font-family: "Manrope", Helvetica;
+  --paragraph-2-font-size: 14px;
+  --paragraph-2-font-style: normal;
+  --paragraph-2-font-weight: 400;
+  --paragraph-2-letter-spacing: 0px;
+  --paragraph-2-line-height: 160%;
+  --paragraph-bold-font-family: "Instrument Sans", Helvetica;
+  --paragraph-bold-font-size: 16px;
+  --paragraph-bold-font-style: normal;
+  --paragraph-bold-font-weight: 700;
+  --paragraph-bold-letter-spacing: 0px;
+  --paragraph-bold-line-height: normal;
+  --white: rgba(252, 252, 248, 1);
+  --yello: rgba(250, 233, 21, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    /* @apply border-border; */
+    font-family: 'Inter';
+  }
+  div, p, li, span, input, select{
+    color: #1D0104;
+  }
+  label {
+    @apply text-gray;
+  }
+
+  body {
+    font-family: 'Inter';
+    /* @apply bg-background text-foreground; */
+  }
+
+  .container {
+    @apply max-w-screen-2xl mx-auto px-4 py-10;
+  }
+
+  .max-margin {
+    @apply px-10 xl:px-10 max-2xl:px-4;
+  }
+
+  .text-gray {
+    @apply text-[#575757]
+  }
+
+
+  .heading-1 {
+    @apply font-bold text-4xl xl:text-5xl text-[#1D0104] lg:leading-[39.6px] xl:leading-[52.8px];
+  }
+
+  .heading-2 {
+    @apply font-bold text-3xl xl:text-4xl text-[#1D0104] lg:leading-[30px] xl:leading-[39.6px];
+  }
+
+  .heading-3 {
+    @apply font-bold text-2xl xl:text-3xl text-[#1D0104] lg:leading-[28.8px] xl:leading-[30px];
+  }
+
+  .heading-4 {
+    @apply font-bold text-2xl text-[#1D0104] lg:leading-[26px] xl:leading-[28.8px];
+  }
+
+  .heading-5 {
+    @apply font-bold text-[22px] text-[#1D0104] lg:leading-[26px] xl:leading-[28.6px];
+  }
+
+  .body-1 {
+    @apply text-lg lg:leading-[28px];
+  }
+
+  .body-2 {
+    @apply lg:leading-[25px];
+  }
+
+  .body-3 {
+    @apply text-sm leading-[19.6px];
+  }
+
+
+
+  .legend {
+    @apply text-[10px] md:text-xs;
+  }
+
+  .vertical-margin {
+    @apply py-6 md:py-20 xl:py-24;
+  }
+}
+
+.h-scroll {
+  /* 
+  @apply [&::-webkit-scrollbar]:h-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-green-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500
+  */
+}
+
+.v-scroll {
+  @apply [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-transparent dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500
 }
