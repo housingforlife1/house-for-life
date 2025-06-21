@@ -15,7 +15,7 @@ export default function FooterSection() {
   ];
   return (
     <div>
-        <footer className="max-width flex flex-col">
+        <footer className="max-width flex flex-col pt-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {/* Left footer card */}
                 <Card
