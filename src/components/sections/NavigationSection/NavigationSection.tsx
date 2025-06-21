@@ -6,23 +6,27 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import { ArrowRightIcon, ChevronDownIcon } from "lucide-react";
+import { useLocale } from "next-intl";
 
 export const NavigationSection = () => {
+
+
+  const localActive = useLocale()
   
   // Navigation menu items data
   const navItems = [
-    { label: "Accueil", active: false },
-    { label: "Nos programmes", active: false },
-    { label: "Actualités", active: false },
-    { label: "Contact", active: false },
-    { label: "À propos", active: true },
+    { label: "Accueil", link: "/", active: false },
+    { label: "Nos programmes", link: "#", active: false },
+    { label: "Actualités",link: "#", active: false },
+    { label: "Contact",link: "#", active: false },
+    { label: "À propos",link: `${localActive}/about`, active: true },
   ];
 
   return (
-    <header className="flex justify-center w-full fixed top-[82px] left-0 z-30">
-      <div className="flex items-center justify-between w-full max-w-[1240px] px-5 py-[15px] bg-white rounded-[54px] border border-solid border-neutral-200">
+    <header className="flex justify-center w-full fixed top-[40px] left-0 z-30">
+      <div className="flex items-center justify-between w-full max-w-[90%] px-5 py-[15px] bg-white rounded-[54px] border border-solid border-neutral-200">
         {/* Logo */}
-        <img className="w-[77px] h-14 object-cover" alt="Z" src="/assets/img/logo-hfl.png" />
+        <img className="w-[77px] h-14 object-cover" alt="logo house for life" src="/assets/img/logo-hfl.png" />
 
         {/* Navigation Menu */}
         <NavigationMenu>
@@ -31,7 +35,7 @@ export const NavigationSection = () => {
               <NavigationMenuItem key={index}>
                 <NavigationMenuLink
                   className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}
-                  href="#">
+                  href={item.link}>
                   {item.label}
                 </NavigationMenuLink>
               </NavigationMenuItem>
