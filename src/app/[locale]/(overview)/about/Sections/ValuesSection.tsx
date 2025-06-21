@@ -40,10 +40,10 @@ export default function ValuesSection() {
             <div key={index} className="flex flex-col items-start gap-4 flex-1">
                 <div className='relative w-[34px] h-[34px]'>
                     <Image
-                        className="object-contain"
-                        alt={value.title}
-                        src={value.icon}
-                        fill
+                      className="object-contain"
+                      alt={value.title}
+                      src={value.icon}
+                      fill
                     />
                 </div>
               <div className="flex flex-col items-start gap-1 w-full">
