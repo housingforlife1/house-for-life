@@ -3,6 +3,9 @@ import React from 'react'
 
 export default function AboutPage() {
   return (
-    <HeaderSection />
+    <div>
+      <HeaderSection />
+      <div className='h-[800px] w-full'></div>
+    </div>
   )
 }

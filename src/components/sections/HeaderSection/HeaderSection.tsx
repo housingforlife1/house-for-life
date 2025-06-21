@@ -7,11 +7,11 @@ export default function HeaderSection() {
         <div className='absolute z-[4] inset-0 bg-green opacity-10' />
         <div className="flex flex-col w-[550px] items-start gap-11 pt-48 pl-[90px] z-10">
             <div className="flex flex-col items-start gap-10 w-full">
-                <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white text-[32px] flex flex-col gap-6 leading-8">
-                    <span className="[font-family:'Instrument_Sans',Helvetica] font-normal text-[#fbfbf8] text-[32px]">
+                <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white text-[32px] flex flex-col gap-4 leading-8">
+                    <span className="[font-family:'Instrument_Sans',Helvetica] text-[#fbfbf8] text-3xl">
                         Un logement, une opportunité : <br />
                     </span>
-                    <span className="font-bold text-[#FCFCF8] text-4xl">
+                    <span className="font-extrabold text-[#FCFCF8] text-4xl">
                         Ensemble, construisons un avenir meilleu
                     </span>
                 </div>

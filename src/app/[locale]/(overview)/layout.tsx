@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import FooterSection from '@/components/sections/FooterSection/FooterSection';
 
 
 export const metadata: Metadata = {
@@ -30,16 +31,16 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${inter.className} antialiased select-none`}>
+        className={`${inter.className} antialiased select-none overflow-x-hidden`}>
           <NextIntlClientProvider>
-            <main className='overflow-x-hidden'>
+            <main>
               {/* Header */}
               <NavigationSection />
 
               {children}
 
               {/* Footer */}
-              {/** <Footer /> */}
+              <FooterSection />
             </main>
             <Toaster />
           </NextIntlClientProvider>
