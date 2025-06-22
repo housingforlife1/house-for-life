@@ -1,26 +1,17 @@
 import { Button } from "@/components/ui/button";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "@/components/ui/navigation-menu";
+import { Link } from "@/i18n/routing";
 import { ArrowRightIcon, ChevronDownIcon } from "lucide-react";
-import { useLocale } from "next-intl";
 import Image from "next/image";
 
 export const NavigationSection = () => {
-
-
-  const localActive = useLocale()
   
   // Navigation menu items data
   const navItems = [
     { label: "Accueil", link: "/", active: false },
-    { label: "Nos programmes", link: "#", active: false },
-    { label: "Actualités",link: `${localActive}/news`, active: false },
-    { label: "Contact",link: "#", active: false },
-    { label: "À propos",link: `${localActive}/about`, active: true },
+    { label: "Nos programmes", link: `/programs`, active: false },
+    { label: "Actualités",link: `/news`, active: false },
+    { label: "Contact", link: "#", active: false },
+    { label: "À propos",link: `/about`, active: true },
   ];
 
   return (
@@ -32,19 +23,14 @@ export const NavigationSection = () => {
         </div>
 
         {/* Navigation Menu */}
-        <NavigationMenu>
-          <NavigationMenuList className="flex items-center gap-6">
-            {navItems.map((item, index) => (
-              <NavigationMenuItem key={index}>
-                <NavigationMenuLink
-                  className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}
-                  href={item.link}>
-                  {item.label}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+
+         <div className="flex items-center gap-6">
+          {navItems.map((item, index) => (
+            <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}>
+               {item.label}
+            </Link>
             ))}
-          </NavigationMenuList>
-        </NavigationMenu>
+         </div>
 
         {/* Right side controls */}
         <div className="flex items-center gap-2">

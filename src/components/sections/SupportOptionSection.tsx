@@ -58,7 +58,7 @@ export default function SupportOptionSection() {
                     <CardContent className="flex flex-col items-start justify-between h-[340px] p-5">
                         <div className="flex flex-col items-start gap-6 w-full">
                             <div
-                                className="relative w-[60px] h-[60px] rounded-[40px] flex items-center justify-center"
+                                className="relative w-[35px] h-[35px] flex items-center justify-center"
                                 style={{ backgroundColor: option.background }}>
                                 <Image
                                     className="object-contain"
