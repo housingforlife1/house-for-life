@@ -23,13 +23,15 @@ export const NavigationSection = () => {
         </div>
 
         {/* Navigation Menu */}
-         <div className="flex items-center gap-6">
-          {navItems.map((item, index) => (
-            <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}>
-               {item.label}
-            </Link>
-            ))}
-         </div>
+        <div className="flex items-center gap-6">
+          { 
+            navItems.map((item, index) => (
+              <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}>
+                {item.label}
+              </Link>
+            ))
+          }
+        </div>
 
         {/* Right side controls */}
         <div className="flex items-center gap-2">

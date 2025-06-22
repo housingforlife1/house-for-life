@@ -1,18 +1,21 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from '@/i18n/routing';
 import { FacebookIcon } from 'lucide-react';
 import React from 'react'
 
 export default function FooterSection() {
 
-     // Footer navigation links
-  const footerLinks = [
-    "Accueil",
-    "Nos programmes",
-    "Actualités",
-    "Contact",
-    "À propos",
+   
+  // Navigation menu items data
+  const navItems = [
+    { label: "Accueil", link: "/", active: false },
+    { label: "Nos programmes", link: `/programs`, active: false },
+    { label: "Actualités",link: `/news`, active: false },
+    { label: "Contact", link: "#", active: false },
+    { label: "À propos",link: `/about`, active: true },
   ];
+
   return (
     <div>
         <footer className="max-width flex flex-col pt-20">
@@ -89,24 +92,20 @@ export default function FooterSection() {
                             Habitation pour la vie {(new Date()).getFullYear()} | Tous droits reservés
                         </p>
                     </div>
-
+                    {/* Navigation Menu */}
                     <div className="flex items-center justify-center gap-10 my-4 md:my-0">
-                    {
-                        footerLinks.map((link, index) => (
-                        <a
-                            key={index}
-                            href="#"
-                            className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] text-center tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] whitespace-nowrap [font-style:var(--paragraph-2-font-style)]"
-                            >
-                            {link}
-                        </a>
-                    ))}
+                        { 
+                        navItems.map((item, index) => (
+                            <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}>
+                            {item.label}
+                            </Link>
+                        ))
+                        }
                     </div>
-
                     <div className="flex items-center justify-end">
-                    <a href='#' target='_blank' className="w-9 h-9 flex items-center justify-center cursor-pointer">
-                        <FacebookIcon className='w-6 h-6'/>
-                    </a>
+                        <a href='#' target='_blank' className="w-9 h-9 flex items-center justify-center cursor-pointer">
+                            <FacebookIcon className='w-6 h-6'/>
+                        </a>
                     </div>
                 </div>
             </div>
