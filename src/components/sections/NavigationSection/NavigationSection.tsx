@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ArrowRightIcon, ChevronDownIcon } from "lucide-react";
 import { useLocale } from "next-intl";
+import Image from "next/image";
 
 export const NavigationSection = () => {
 
@@ -26,7 +27,9 @@ export const NavigationSection = () => {
     <header className="flex justify-center w-full fixed top-[40px] left-0 z-30">
       <div className="flex items-center justify-between w-full max-w-[90%] px-5 py-[15px] bg-white rounded-[54px] border border-solid border-neutral-200">
         {/* Logo */}
-        <img className="w-[77px] h-14 object-cover" alt="logo house for life" src="/assets/img/logo-hfl.png" />
+        <div className="relative w-[77px] h-14 overflow-hidden">
+          <Image className="object-cover" alt="logo house for life" src="/assets/img/logo-hfl.png" fill priority />
+        </div>
 
         {/* Navigation Menu */}
         <NavigationMenu>

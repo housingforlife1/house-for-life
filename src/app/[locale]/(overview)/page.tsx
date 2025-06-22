@@ -1,10 +1,11 @@
 import HomeHeaderSection from "@/components/sections/HeaderSections/HomeHeaderSection";
-import MajorProblemsSection from "./sections/MajorProblemsSection";
-import OurImpactSection from "./sections/OurImpactSection";
-import PartnersSection from "./sections/PartnersSection";
+import { ContentWrapperSection } from "./sections/ContentWrapperSection";
 import HousingProgramsSection from "./sections/HousingProgramsSection";
+import MajorProblemsSection from "./sections/MajorProblemsSection";
 import MissionSection from "./sections/MissionSection";
 import NewsSection from "./sections/NewsSection";
+import OurImpactSection from "./sections/OurImpactSection";
+import PartnersSection from "./sections/PartnersSection";
 
 export default function Home() {
   return (
@@ -28,6 +29,10 @@ export default function Home() {
 
       {/* News Section */}
       <NewsSection />
+
+      {/* Content Wrapper section*/}
+      <ContentWrapperSection />
+      
     </>
   );
 }
