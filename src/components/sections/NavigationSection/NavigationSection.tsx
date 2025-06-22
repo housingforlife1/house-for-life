@@ -18,7 +18,7 @@ export const NavigationSection = () => {
   const navItems = [
     { label: "Accueil", link: "/", active: false },
     { label: "Nos programmes", link: "#", active: false },
-    { label: "Actualités",link: "#", active: false },
+    { label: "Actualités",link: `${localActive}/news`, active: false },
     { label: "Contact",link: "#", active: false },
     { label: "À propos",link: `${localActive}/about`, active: true },
   ];
