@@ -38,11 +38,13 @@ export default function FooterSection() {
                         </p>
                         </div>
                         <div className="flex items-center gap-2">
-                        <Button className="h-[50px] px-5 py-3.5 bg-green rounded-[54px] text-white">
-                            <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-inherit text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                Faire un don maintenant
-                            </span>
-                        </Button>
+                        <Link href={`/donation`}>
+                            <Button className="h-[50px] px-5 py-3.5 bg-green rounded-[54px] text-white">
+                                <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-inherit text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                    Faire un don maintenant
+                                </span>
+                            </Button>
+                        </Link>
                         <Button
                             variant="outline"
                             className="h-[50px] px-5 py-3.5 bg-[#f8f8e9] rounded-[54px] border-[#282724]"

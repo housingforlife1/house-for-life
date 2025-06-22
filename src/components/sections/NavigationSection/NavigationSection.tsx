@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
-import { ArrowRightIcon, ChevronDownIcon } from "lucide-react";
+import { ChevronDownIcon, HeartIcon } from "lucide-react";
 import Image from "next/image";
 
 export const NavigationSection = () => {
@@ -18,9 +18,9 @@ export const NavigationSection = () => {
     <header className="flex justify-center w-full fixed top-[40px] left-0 z-30">
       <div className="flex items-center justify-between w-full max-w-[90%] px-5 py-[15px] bg-white rounded-[54px] border border-solid border-neutral-200">
         {/* Logo */}
-        <div className="relative w-[77px] h-14 overflow-hidden">
+        <Link href='/' className="relative w-[77px] h-14 overflow-hidden">
           <Image className="object-cover" alt="logo house for life" src="/assets/img/logo-hfl.png" fill priority />
-        </div>
+        </Link>
 
         {/* Navigation Menu */}
         <div className="flex items-center gap-6">
@@ -46,17 +46,19 @@ export const NavigationSection = () => {
           </div>
 
           {/* Donation button */}
-          <Button className="h-[50px] px-5 py-[15px] bg-green rounded-[54px] relative">
-            <span className="font-['Instrument_Sans',Helvetica] font-bold text-[#fffef5] text-sm leading-[22.4px]">
-              Faire un don
-            </span>
-            <ArrowRightIcon className="w-6 h-6 ml-1.5" />
+          <Link href={`/donation`}>
+              <Button className="h-[50px] px-5 py-[15px] bg-green rounded-[54px] relative">
+                <span className="font-['Instrument_Sans',Helvetica] font-bold text-[#fffef5] text-sm leading-[22.4px]">
+                  Faire un don
+                </span>
+                <HeartIcon className="w-6 h-6 ml-1.5" />
 
-            {/* Yellow indicator dot */}
-            <div className="absolute w-[23px] h-[23px] -top-1.5 left-px bg-white rounded-[50px] flex items-center justify-center">
-              <div className="w-[11px] h-[11px] bg-yello rounded-[50px]" />
-            </div>
-          </Button>
+                {/* Yellow indicator dot */}
+                <div className="absolute w-[23px] h-[23px] -top-1.5 left-px bg-white rounded-[50px] flex items-center justify-center">
+                  <div className="w-[11px] h-[11px] bg-yello rounded-[50px]" />
+                </div>
+              </Button>
+          </Link>
         </div>
       </div>
     </header>
