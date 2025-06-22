@@ -32,7 +32,7 @@ export default function HousingProgramsSection() {
                 Nos programmes de logement
                 </h2>
                 <p className="font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                L'attribution des logements est réservée aux personnes en
+                L&apos;attribution des logements est réservée aux personnes en
                 situation de grande précarité.
                 </p>
             </div>

@@ -65,7 +65,7 @@ export default function MissionSection() {
                             </h2>
                         </div>
                         <p className="font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                            Habitation pour la vie s'engage à offrir des logements
+                            Habitation pour la vie s&apos;engage à offrir des logements
                             abordables et un soutien communautaire aux femmes et mères
                             monoparentales en situation de précarité.
                         </p>
@@ -107,7 +107,7 @@ export default function MissionSection() {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                             <div className="flex flex-col items-start gap-4">
                                 <p className="font-paragraph-1 text-gray text-base leading-[25.6px]">
-                                Notre organisme compte sur les subventions de l'État, celles
+                                Notre organisme compte sur les subventions de l&apos;État, celles
                                 de la province du Nouveau-Brunswick et celles de la ville de
                                 Moncton.
                                 </p>
@@ -121,7 +121,7 @@ export default function MissionSection() {
                             <div className="flex flex-col items-start gap-4">
                                 <p className="font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
                                 Vous aimeriez vous joindre à la cause ? Contactez-nous en
-                                choisissant l'une des options ci-dessous.
+                                choisissant l&apos;une des options ci-dessous.
                                 </p>
                             </div>
                         </div>

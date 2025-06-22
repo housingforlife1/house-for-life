@@ -36,7 +36,7 @@ export default function NewsSection() {
                 </h2>
             </div>
             <span className="font-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
-                Voir toute l'actualité
+                Voir toute l&apos;actualité
             </span>
             </div>
 
