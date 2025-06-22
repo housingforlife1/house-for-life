@@ -10,7 +10,7 @@ export const NavigationSection = () => {
     { label: "Accueil", link: "/", active: false },
     { label: "Nos programmes", link: `/programs`, active: false },
     { label: "Actualités",link: `/news`, active: false },
-    { label: "Contact", link: "#", active: false },
+    { label: "Contact", link: "/contact", active: false },
     { label: "À propos",link: `/about`, active: true },
   ];
 
