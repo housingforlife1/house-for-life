@@ -91,7 +91,7 @@ export default function PartnersSection() {
                     Ils nous font confiance
                 </h2>
                 <p className="w-[390px] font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                    Un ensemble diversifié d'organisations qui travaillent à nos côtés
+                    Un ensemble diversifié d&apos;organisations qui travaillent à nos côtés
                     pour créer un changement positif.
                 </p>
             </div>
