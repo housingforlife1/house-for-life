@@ -28,7 +28,7 @@ export default function DonationSection() {
     },
     ];
     return (
-        <div className='max-width grid grid-cols-1 md:grid-cols-8 gap-32 my-32'>
+        <div className='max-width grid grid-cols-1 md:grid-cols-8 gap-20 my-32'>
             {/* Donation Form Card */}
             <Card className="col-span-full md:col-span-3 rounded-2xl border border-neutral-200">
                 <CardContent className="p-6">
@@ -112,8 +112,7 @@ export default function DonationSection() {
                 </CardContent>
             </Card>
             {/* Alternative Donation Methods */}
-            <div className='col-span-full md:col-span-5'>
-                <div className="flex flex-col w-full md:w-[500px] gap-6">
+                <div className="flex flex-col col-span-full md:col-span-3 gap-6">
                     <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
                         Ou donnez à votre manière.
                     </h3>
@@ -158,7 +157,6 @@ export default function DonationSection() {
                             </p>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }
