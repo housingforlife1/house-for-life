@@ -6,5 +6,9 @@
         "contact": "Contact",
         "actualites": "Actualités",
         "faire_un_don": "Faire un don"
+    },
+    "footer": {
+        "habilitation_vie": "Habitation pour la vie",
+        "copy_right": "Tous droits reservés"
     }
 }
