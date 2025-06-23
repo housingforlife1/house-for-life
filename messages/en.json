@@ -1,5 +1,10 @@
 {
-    "app": {
-        "hello": "Hello"
+    "navigation": {
+        "accueil": "Home",
+        "a_propos": "About",
+        "nos_programmes": "Our programs",
+        "contact": "Contact",
+        "actualites": "News",
+        "faire_un_don": "Make a donation"
     }
 }
