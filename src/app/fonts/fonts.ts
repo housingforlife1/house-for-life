@@ -1,7 +1,7 @@
-import { Inter } from 'next/font/google';
+import { Instrument_Sans } from 'next/font/google';
  
-export const inter = Inter({ 
+export const instrument = Instrument_Sans({ 
   subsets: ['latin'],
-  variable: '--font-inter',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  variable: '--instrument-sans',
+  weight: ['400', '500', '600', '700']
 });
