@@ -9,6 +9,17 @@
     },
     "footer": {
         "habilitation_vie": "Habitation pour la vie",
-        "copy_right": "Tous droits reservés"
+        "copy_right": "Tous droits reservés",
+        "concu_par": "Ce site a été conçu par",
+        "telephone": "Téléphone",
+        "no_enregistrement": "No d'enregistrement",
+        "pour_un_don": "Pour faire un don",
+        "devenir_partenaire": "Devenir partenaire",
+        "faire_don_maintenant": "Faire un don maintenant",
+        "card_1_titre": "Ensemble, construisons un avenir meilleur",
+        "card_1_description": "Votre don, quel qu'en soit le montant, contribue directement à offrir un toit et un espoir à des femmes etdes enfants qui en ont besoin. Chaque contribution nous rapproche de notre objectif.",
+        "devenir_benevole": "Devenir bénévole",
+        "card_2_titre": "Participez autrement",
+        "card_2_description": "Vous préférez donner de votre temps ? Découvrez comment devenir bénévole."
     }
 }

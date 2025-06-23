@@ -31,20 +31,17 @@ export default function FooterSection() {
                         <div className="flex flex-col items-start gap-11 p-16 h-full">
                             <div className="flex flex-col items-start gap-2 w-full">
                             <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
-                                Ensemble, construisons un avenir meilleur
+                                {tf('faire_don_maintenant')}
                             </h3>
                             <p className="w-full max-w-[600px] font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                                Votre don, quel qu&apos;en soit le montant, contribue
-                                directement à offrir un toit et un espoir à des femmes et
-                                des enfants qui en ont besoin. Chaque contribution nous
-                                rapproche de notre objectif.
+                                {tf('card_1_description')}
                             </p>
                             </div>
                             <div className="flex items-center gap-2">
                             <Link href={`/donation`}>
                                 <Button className="h-[50px] px-5 py-3.5 bg-green rounded-[54px] text-white">
                                     <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-inherit text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                        Faire un don maintenant
+                                    {tf('faire_don_maintenant')}
                                     </span>
                                 </Button>
                             </Link>
@@ -53,7 +50,7 @@ export default function FooterSection() {
                                 className="h-[50px] px-5 py-3.5 bg-[#f8f8e9] rounded-[54px] border-[#282724]"
                             >
                                 <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                Devenir partenaire
+                                    {tf('devenir_partenaire')}
                                 </span>
                             </Button>
                             </div>
@@ -69,11 +66,10 @@ export default function FooterSection() {
                         <div className="flex flex-col items-start justify-between p-11 h-full">
                             <div className="flex flex-col items-start gap-2 w-full max-w-[424px]">
                             <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
-                                Participez autrement
+                                {tf('card_2_titre')}
                             </h3>
                             <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-black text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                                Vous préférez donner de votre temps ? Découvrez comment
-                                devenir bénévole.
+                                {tf('card_2_description')}
                             </p>
                             </div>
                             <Button
@@ -81,7 +77,7 @@ export default function FooterSection() {
                             className="h-[50px] px-5 py-3.5 bg-[#eff8e9] rounded-[54px] border-[#282724]"
                             >
                             <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                Devenir bénévole
+                                {tf('devenir_benevole')}
                             </span>
                             </Button>
                         </div>
@@ -108,7 +104,7 @@ export default function FooterSection() {
                             }
                         </div>
                         <div className="flex items-center justify-end">
-                            <a href='#' target='_blank' className="w-9 h-9 flex items-center justify-center cursor-pointer">
+                            <a href="https://www.facebook.com" target='_blank' className="w-9 h-9 flex items-center justify-center cursor-pointer">
                                 <FacebookIcon className='w-6 h-6'/>
                             </a>
                         </div>
@@ -119,23 +115,23 @@ export default function FooterSection() {
                 <div className="h-[50px] bg-[#fcfcf8] rounded-xl border-t border-neutral-200">
                     <div className="flex flex-wrap md:flex-row items-center justify-between p-5 bg-[#fcfcf8]">
                         <div className="text-xs">
-                        <span className="text-[#282724]">No d&apos;enregistrement </span>
-                        <span className="font-bold">75272 2818 RR0001</span>
+                            <span className="text-[#282724]">{tf('no_enregistrement')} </span>
+                            <span className="font-bold">75272 2818 RR0001</span>
                         </div>
 
                         <div className="text-xs">
-                        <span className="text-[#282724]">Pour faire un don : </span>
-                        <span className="font-bold">donation@hforlife-hpourlavie.ca</span>
+                            <span className="text-[#282724]">{tf('pour_un_don')} : </span>
+                            <span className="font-bold">donation@hforlife-hpourlavie.ca</span>
                         </div>
 
                         <div className="text-xs">
-                        <span className="text-[#282724]">Téléphone : </span>
-                        <span className="font-bold">5068540675 </span>
-                        <span className="text-[#282724]">(Canada)</span>
+                            <span className="text-[#282724]">{tf('telephone')} : </span>
+                            <span className="font-bold">5068540675 </span>
+                            <span className="text-[#282724]">(Canada)</span>
                         </div>
 
                         <div className="text-xs">
-                        <span className="text-[#282724]">Ce site a été conçu par </span>
+                        <span className="text-[#282724]">{tf('concu_par')} </span>
                         <span className="font-bold">Acadie Intelligent Inc.</span>
                         </div>
                     </div>

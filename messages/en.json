@@ -9,6 +9,17 @@
     },
     "footer": {
         "habilitation_vie": "Housing for life",
-        "copy_right": "All rights reserved"
+        "copy_right": "All rights reserved",
+        "concu_par": "This site was designed by",
+        "telephone": "Phone",
+        "no_enregistrement": "Registration No.",
+        "pour_un_don": "To make a donation",
+        "devenir_partenaire": "Become a partner",
+        "faire_don_maintenant": "Make a donation now",
+        "card_1_titre": "Building a better future together",
+        "card_1_description": "Your donation, whatever the amount, contributes directly to providing shelter and hope to women and children in need. Every contribution brings us closer to our goal.",
+        "devenir_benevole": "Become a volunteer",
+        "card_2_titre": "Participate differently",
+        "card_2_description": "Would you like to give some of your time? Find out how to become a volunteer."
     }
 }
