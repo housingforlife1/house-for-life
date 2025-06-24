@@ -21,66 +21,65 @@ export default function FooterSection() {
 
     return (
         <div>
-            <footer className="max-width flex flex-col pt-20">
+            <footer className="max-width flex flex-col pt-10 md:pt-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Left footer card */}
                     <Card
-                        className="w-full h-[340px] border-none shadow-none rounded-3xl"
+                        className="w-full lg:h-[340px] border-none shadow-none lg:rounded-3xl"
                         style={{ backgroundColor: "#f8f8e9" }}>
                         <CardContent className="p-0 h-full">
-                        <div className="flex flex-col items-start gap-11 p-16 h-full">
-                            <div className="flex flex-col items-start gap-2 w-full">
-                            <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
-                                {tf('faire_don_maintenant')}
-                            </h3>
-                            <p className="w-full max-w-[600px] font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                                {tf('card_1_description')}
-                            </p>
+                            <div className="flex flex-col items-start justify-between gap-11 p-6 md:p-16 h-full">
+                                <div className="flex flex-col items-start gap-2 w-full">
+                                    <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
+                                        {tf('faire_don_maintenant')}
+                                    </h3>
+                                    <p className="w-full font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                                        {tf('card_1_description')}
+                                    </p>
+                                </div>
+                                <div className="flex flex-col lg:flex-row lg:items-center gap-2 w-full lg:w-min">
+                                    <Link href={`/donation`}>
+                                        <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] text-white">
+                                            <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-inherit text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                                {tf('faire_don_maintenant')}
+                                            </span>
+                                        </Button>
+                                    </Link>
+                                    <Button
+                                        variant="outline"
+                                        className="h-[50px] px-5 py-3.5 bg-[#f8f8e9] rounded-[54px] border-[#282724]"
+                                    >
+                                        <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                            {tf('devenir_partenaire')}
+                                        </span>
+                                    </Button>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-2">
-                            <Link href={`/donation`}>
-                                <Button className="h-[50px] px-5 py-3.5 bg-green rounded-[54px] text-white">
-                                    <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-inherit text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                    {tf('faire_don_maintenant')}
-                                    </span>
-                                </Button>
-                            </Link>
-                            <Button
-                                variant="outline"
-                                className="h-[50px] px-5 py-3.5 bg-[#f8f8e9] rounded-[54px] border-[#282724]"
-                            >
-                                <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                    {tf('devenir_partenaire')}
-                                </span>
-                            </Button>
-                            </div>
-                        </div>
                         </CardContent>
                     </Card>
 
                     {/* Right footer card */}
                     <Card
-                        className="w-full h-[340px] border-none shadow-none rounded-3xl"
+                        className="w-full lg:h-[340px] border-none shadow-none lg:rounded-3xl"
                         style={{ backgroundColor: "#eff8e9" }}>
                         <CardContent className="p-0 h-full">
-                        <div className="flex flex-col items-start justify-between p-11 h-full">
-                            <div className="flex flex-col items-start gap-2 w-full max-w-[424px]">
-                            <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
-                                {tf('card_2_titre')}
-                            </h3>
-                            <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-black text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                                {tf('card_2_description')}
-                            </p>
+                            <div className="flex flex-col items-start justify-between p-6 md:p-11 h-full">
+                                <div className="flex flex-col items-start gap-2 w-full ">
+                                    <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
+                                        {tf('card_2_titre')}
+                                    </h3>
+                                    <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-black text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                                        {tf('card_2_description')}
+                                    </p>
+                                </div>
+                                <Button
+                                    variant="outline"
+                                    className="h-[50px] w-full md:w-min px-5 mt-8 md:mt-2 py-3.5 bg-[#eff8e9] rounded-[54px] border-[#282724]">
+                                    <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                        {tf('devenir_benevole')}
+                                    </span>
+                                </Button>
                             </div>
-                            <Button
-                            variant="outline"
-                            className="h-[50px] px-5 py-3.5 bg-[#eff8e9] rounded-[54px] border-[#282724]"
-                            >
-                            <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                {tf('devenir_benevole')}
-                            </span>
-                            </Button>
-                        </div>
                         </CardContent>
                     </Card>
                 </div>
@@ -89,18 +88,16 @@ export default function FooterSection() {
                 <div className="mt-4 bg-[#fcfcf8] rounded-xl">
                     <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-[#fcfcf8]">
                         <div className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
-                            <p>
-                                {tf('habilitation_vie')} {(new Date()).getFullYear()} | {tf('copy_right')}
-                            </p>
+                            <p>{tf('habilitation_vie')} {(new Date()).getFullYear()} | {tf('copy_right')}</p>
                         </div>
                         {/* Navigation Menu */}
-                        <div className="flex items-center justify-center gap-10 my-4 md:my-0">
+                        <div className="flex flex-wrap items-center justify-center gap-10 my-4 md:my-0">
                             { 
-                            navItems.map((item, index) => (
-                                <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm whitespace-nowrap text-black ${item.active ? "font-bold" : "font-normal"}`}>
-                                {item.label}
-                                </Link>
-                            ))
+                                navItems.map((item, index) => (
+                                    <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm whitespace-nowrap text-black ${item.active ? "font-bold" : "font-normal"}`}>
+                                        {item.label}
+                                    </Link>
+                                ))
                             }
                         </div>
                         <div className="flex items-center justify-end">
@@ -113,9 +110,9 @@ export default function FooterSection() {
 
                 {/* Footer info bar */}
                 <div className="h-[50px] bg-[#fcfcf8] rounded-xl border-t border-neutral-200">
-                    <div className="flex flex-wrap md:flex-row items-center justify-between p-5 bg-[#fcfcf8]">
+                    <div className="flex flex-wrap md:flex-row items-center justify-between p-5 bg-[#fcfcf8] gap-4 md:gap-0">
                         <div className="text-xs">
-                            <span className="text-[#282724]">{tf('no_enregistrement')} </span>
+                            <span className="text-[#282724]">{tf('no_enregistrement')} : </span>
                             <span className="font-bold">75272 2818 RR0001</span>
                         </div>
 
@@ -131,7 +128,7 @@ export default function FooterSection() {
                         </div>
 
                         <div className="text-xs">
-                        <span className="text-[#282724]">{tf('concu_par')} </span>
+                        <span className="text-[#282724]">{tf('concu_par')} : </span>
                         <span className="font-bold">Acadie Intelligent Inc.</span>
                         </div>
                     </div>
