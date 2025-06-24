@@ -95,7 +95,7 @@ export default function PartnersSection() {
                     pour créer un changement positif.
                 </p>
             </div>
-            <div className="flex items-center justify-between w-full md:w-2/3 h-[50px] gap-x-3 ">
+            <div className="flex items-center justify-between w-full md:w-2/3 h-[50px] gap-x-3">
                 <ChevronLeft className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
                 <div className='w-full flex flex-row v-scroll overflow-x-auto'>
                     {partnerLogos.map((logo, index) => (
