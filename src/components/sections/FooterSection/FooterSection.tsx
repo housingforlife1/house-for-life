@@ -88,7 +88,7 @@ export default function FooterSection() {
                 <div className="mt-4 bg-[#fcfcf8] rounded-xl">
                     <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-[#fcfcf8]">
                         <div className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
-                            <p>{tf('habilitation_vie')} {(new Date()).getFullYear()} | {tf('copy_right')}</p>
+                            <p className='text-center'>{tf('habilitation_vie')} {(new Date()).getFullYear()} | {tf('copy_right')}</p>
                         </div>
                         {/* Navigation Menu */}
                         <div className="flex flex-wrap items-center justify-center gap-10 my-4 md:my-0">
