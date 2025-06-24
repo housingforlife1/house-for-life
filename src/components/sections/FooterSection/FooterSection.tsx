@@ -97,7 +97,7 @@ export default function FooterSection() {
                         <div className="flex items-center justify-center gap-10 my-4 md:my-0">
                             { 
                             navItems.map((item, index) => (
-                                <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm text-black ${item.active ? "font-bold" : "font-normal"}`}>
+                                <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm whitespace-nowrap text-black ${item.active ? "font-bold" : "font-normal"}`}>
                                 {item.label}
                                 </Link>
                             ))
