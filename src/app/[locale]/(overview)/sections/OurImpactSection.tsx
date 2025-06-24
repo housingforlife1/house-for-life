@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 import React from 'react'
 
@@ -54,9 +55,11 @@ export default function OurImpactSection() {
                         </p>
                     </div>
 
-                    <Button className="h-[50px] w-full md:w-min mb-4 md:mb-0 px-5 py-3.5 bg-green rounded-[54px] text-white font-paragraph-bold text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                        Voir nos programmes
-                    </Button>
+                    <Link href={`/programs`} className='w-full'>
+                        <Button className="h-[50px] w-full md:w-min mb-4 md:mb-0 px-5 py-3.5 bg-green rounded-[54px] text-white font-paragraph-bold text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                            Voir nos programmes
+                        </Button>
+                    </Link>
                 </div>
 
                 {

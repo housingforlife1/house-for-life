@@ -1,11 +1,12 @@
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
+import { Link } from '@/i18n/routing'
 
 export default function HomeHeaderSection() {
   return (
     <header className="relative pb-10 md:pb-0 md:h-[calc(85vh)] m-2 rounded-2xl bg-[url('/assets/img/hero-home.png')] bg-cover bg-center flex flex-col justify-between">
         <div className='absolute z-[4] inset-0 bg-green opacity-[0.03]' />
-        <div className='max-width'>
+        <div className='max-width z-[10]'>
             <div className="flex flex-col md:w-[550px] items-start gap-11 pt-48 z-10">
                 <div className="flex flex-col items-start gap-10 w-full">
                     <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white flex flex-col gap-4 leading-8">
@@ -22,15 +23,18 @@ export default function HomeHeaderSection() {
                     </p>
                 </div>
                 <div className="flex flex-col w-full md:w-min md:flex-row items-center gap-5 md:gap-2">
-                    <Button className="order-1 w-full h-[50px] px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
-                        Voir nos programmes
-                    </Button>
-
-                    <Button
-                        variant="outline"
-                        className="md:order-1 w-full h-[50px] px-5 py-3.5 rounded-[54px] border border-solid border-[#fbfbf8] bg-transparent font-paragraph-bold text-white">
-                        Faire un don
-                    </Button>
+                    <Link href={`/programs`} className='order-1 w-full cursor-pointer'>
+                        <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
+                            Voir nos programmes
+                        </Button>
+                    </Link>
+                    <Link href={`/donation`} className='md:order-1 w-full cursor-pointer'>
+                        <Button
+                            variant="outline"
+                            className="h-[50px] w-full px-5 py-3.5 rounded-[54px] border border-solid border-[#fbfbf8] bg-transparent font-paragraph-bold text-white cursor-pointer">
+                            Faire un don
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>
