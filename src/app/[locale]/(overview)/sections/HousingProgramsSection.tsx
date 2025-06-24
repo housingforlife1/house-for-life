@@ -41,7 +41,7 @@ export default function HousingProgramsSection() {
                 </span>
             </div>
 
-            <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-10 w-full h-scroll pb-6">
+            <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-10 w-full h-scroll [&::-webkit-scrollbar]:h-0 pb-6">
                 { 
                     housingProgramsData.map((program, index) => (
                         <div

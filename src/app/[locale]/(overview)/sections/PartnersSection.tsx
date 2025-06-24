@@ -85,7 +85,7 @@ export default function PartnersSection() {
         },
     ];
     return (
-        <div className="flex flex-col md:flex-row md:justify-between w-full max-width items-center gap-8 my-32">
+        <div className="flex flex-col md:flex-row md:justify-between w-full max-width items-center gap-8 my-14 md:my-32">
             <div className="flex flex-col items-start gap-2.5">
                 <h2 className="font-heading-2 font-extrabold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] whitespace-nowrap [font-style:var(--heading-2-font-style)]">
                     Ils nous font confiance
