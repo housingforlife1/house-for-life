@@ -22,13 +22,13 @@ export default function HomeHeaderSection() {
                     </p>
                 </div>
                 <div className="flex flex-col w-full md:w-min md:flex-row items-center gap-5 md:gap-2">
-                    <Button className="order-1 md:order-2 w-full h-[50px] px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
+                    <Button className="order-1 w-full h-[50px] px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
                         Voir nos programmes
                     </Button>
 
                     <Button
                         variant="outline"
-                        className="order-2 md:order-1 w-full h-[50px] px-5 py-3.5 rounded-[54px] border border-solid border-[#fbfbf8] bg-transparent font-paragraph-bold text-white">
+                        className="md:order-1 w-full h-[50px] px-5 py-3.5 rounded-[54px] border border-solid border-[#fbfbf8] bg-transparent font-paragraph-bold text-white">
                         Faire un don
                     </Button>
                 </div>
