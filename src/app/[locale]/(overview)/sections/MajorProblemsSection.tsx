@@ -21,8 +21,8 @@ export default function MajorProblemsSection() {
         },
     ];
     return (
-        <div className="flex flex-col w-full max-width items-start gap-6 my-32">
-            <h2 className="font-heading-2 text-4xl font-bold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)] w-1/4">
+        <div className="flex flex-col w-full max-width items-start gap-6 my-14 md:my-32">
+            <h2 className="font-heading-2 text-2xl md:text-4xl font-bold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)] md:w-1/2 lg:w-1/4">
                 Problèmes majeurs à Moncton et dans le Sud-Est
             </h2>
 
