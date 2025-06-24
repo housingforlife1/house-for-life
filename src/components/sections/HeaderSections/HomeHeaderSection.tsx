@@ -5,32 +5,34 @@ export default function HomeHeaderSection() {
   return (
     <header className="relative h-[calc(85vh)] m-2 rounded-2xl bg-[url('/assets/img/hero-home.png')] bg-cover bg-center flex flex-col justify-between">
         <div className='absolute z-[4] inset-0 bg-green opacity-[0.03]' />
-        <div className="flex flex-col w-[550px] items-start gap-11 pt-48 pl-[90px] z-10">
-            <div className="flex flex-col items-start gap-10 w-full">
-                <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white flex flex-col gap-4 leading-8">
-                    <Badge className="inline-flex w-min items-center justify-center gap-2.5 py-3 px-4 rounded-full border border-solid border-[#ffffff33] bg-transparent">
-                        <span className="font-paragraph-2 text-white whitespace-nowrap">
-                            Changer des vies, un logement à la fois
-                        </span>
-                    </Badge>
-                    <span className="font-extrabold text-[#FCFCF8] text-4xl">Un logement pour les femmes et mères monoparentales du Nouveau-Brunswick</span>
+        <div className='max-width'>
+            <div className="flex flex-col w-[550px] items-start gap-11 pt-48 z-10">
+                <div className="flex flex-col items-start gap-10 w-full">
+                    <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white flex flex-col gap-4 leading-8">
+                        <Badge className="inline-flex w-min items-center justify-center gap-2.5 py-3 px-4 rounded-full border border-solid border-[#ffffff33] bg-transparent">
+                            <span className="font-paragraph-2 text-white whitespace-nowrap">
+                                Changer des vies, un logement à la fois
+                            </span>
+                        </Badge>
+                        <span className="font-extrabold text-[#FCFCF8] text-4xl">Un logement pour les femmes et mères monoparentales du Nouveau-Brunswick</span>
+                    </div>
+
+                    <p className="w-[550px] font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-white text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                    Habitation pour la vie construit des logements sécuritaires et abordables pour créer un avenir meilleur pour les femmes et les familles monoparentales en situation de précarité.
+                    </p>
                 </div>
+                <div className="flex items-center gap-2">
+                    <Button className="h-[50px] px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
+                    Voir nos programmes
+                    </Button>
 
-                <p className="w-[550px] font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-white text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                Habitation pour la vie construit des logements sécuritaires et abordables pour créer un avenir meilleur pour les femmes et les familles monoparentales en situation de précarité.
-                </p>
-            </div>
-            <div className="flex items-center gap-2">
-                <Button className="h-[50px] px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
-                Voir nos programmes
-                </Button>
-
-                <Button
-                variant="outline"
-                className="h-[50px] px-5 py-3.5 rounded-[54px] border border-solid border-[#fbfbf8] bg-transparent font-paragraph-bold text-white"
-                >
-                Faire un don
-                </Button>
+                    <Button
+                    variant="outline"
+                    className="h-[50px] px-5 py-3.5 rounded-[54px] border border-solid border-[#fbfbf8] bg-transparent font-paragraph-bold text-white"
+                    >
+                    Faire un don
+                    </Button>
+                </div>
             </div>
         </div>
 
