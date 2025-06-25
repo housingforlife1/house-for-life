@@ -28,10 +28,11 @@ export default function DonationSection() {
     },
     ];
     return (
-        <div className='max-width grid grid-cols-12 gap-10 lg:gap-20 my-14 md:my-32'>
+        <div className='grid grid-cols-12 max-width space-y-10 md:space-y-0 lg:gap-20 my-14 md:my-32'>
+            {/** grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 max-width gap-10 lg:gap-20 my-14 md:my-32*/}
             {/* Donation Form Card */}
-            <Card className="col-span-full lg:col-span-5 h-min rounded-2xl border border-neutral-200">
-                <CardContent className="p-6">
+            <Card className="w-full col-span-full lg:col-span-5 h-min rounded-2xl border border-neutral-200">
+                <CardContent className="w-full p-6">
                     <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)] mb-8">
                         Effectuez le don
                     </h3>
@@ -67,27 +68,27 @@ export default function DonationSection() {
                             />
                         </div>
 
-                    <div className="flex gap-4">
-                        <div className="flex-1 flex flex-col gap-3">
-                            <label className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
-                                Date expiratoire
-                            </label>
-                            <Input
-                                className="h-[50px] bg-[#f0f0ee] rounded-xl"
-                                placeholder="MM/YY"
-                            />
-                        </div>
+                        <div className="flex flex-col md:flex-row gap-4">
+                            <div className="flex-1 flex flex-col gap-3">
+                                <label className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
+                                    Date expiratoire
+                                </label>
+                                <Input
+                                    className="h-[50px] bg-[#f0f0ee] rounded-xl"
+                                    placeholder="MM/YY"
+                                />
+                            </div>
 
-                        <div className="w-[154px] flex flex-col gap-3">
-                            <label className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
-                                CVC
-                            </label>
-                            <Input
-                                className="h-[50px] bg-[#f0f0ee] rounded-xl"
-                                placeholder="CVC"
-                            />
+                            <div className="w-full md:w-[154px] flex flex-col gap-3">
+                                <label className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
+                                    CVC
+                                </label>
+                                <Input
+                                    className="h-[50px] bg-[#f0f0ee] rounded-xl"
+                                    placeholder="CVC"
+                                />
+                            </div>
                         </div>
-                    </div>
                     </div>
 
                     <div className="flex items-center gap-3 mb-6">
@@ -111,8 +112,9 @@ export default function DonationSection() {
                     </Button>
                 </CardContent>
             </Card>
+            
             {/* Alternative Donation Methods */}
-            <div className="flex flex-col col-span-full lg:col-span-5 gap-6">
+            <div className="w-full flex flex-col col-span-full lg:col-span-6 gap-6">
                 <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
                     Ou donnez à votre manière.
                 </h3>
@@ -156,7 +158,7 @@ export default function DonationSection() {
                             Assistante Administrative : Rhada El Khadir, tel : 5068540675
                         </p>
                 </div>
-            </div>
+            </div> 
         </div>
     )
 }
