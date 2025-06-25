@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <div className="w-full max-width my-14 md:my-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 w-full">
-            <div className="lg:col-span-4 flex flex-col w-full items-start gap-20">
+            <div className="lg:col-span-4 flex flex-col w-full items-start gap-10 md:gap-20">
                 <div className="flex flex-col items-start gap-2 w-full">
                     <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
                         Notre engagement commence ici.
