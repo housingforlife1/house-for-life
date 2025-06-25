@@ -34,7 +34,7 @@ export default function AboutSection() {
                     </p>
                 </div>
             </div>
-            <div className='lg:col-span-8 relative h-[580px] lg:h-[680px] overflow-hidden rounded-3xl lg:rounded-[40px]'>
+            <div className='lg:col-span-8 relative min-h-[380px] lg:h-[680px] overflow-hidden rounded-3xl lg:rounded-[40px]'>
                 <Image
                     src="/assets/img/rectangle-651.png"
                     alt="Abut image"
