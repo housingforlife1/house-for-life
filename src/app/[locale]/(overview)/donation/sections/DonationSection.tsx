@@ -28,7 +28,7 @@ export default function DonationSection() {
     },
     ];
     return (
-        <div className='max-width grid grid-cols-1 md:grid-cols-8 gap-20 my-32'>
+        <div className='max-width grid grid-cols-1 md:grid-cols-8 gap-20 my-14 md:my-32'>
             {/* Donation Form Card */}
             <Card className="col-span-full md:col-span-3 rounded-2xl border border-neutral-200">
                 <CardContent className="p-6">
