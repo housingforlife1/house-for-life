@@ -39,7 +39,7 @@ export default function NewsSection() {
                     Voir toute l&apos;actualité
                 </span>
             </div>
-            <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-8 w-full h-scroll [&::-webkit-scrollbar]:h-0 pb-6">
+            <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-8 w-full v-scroll pb-6">
                 {
                     newsArticlesData.map((article, index) => (
                         <div

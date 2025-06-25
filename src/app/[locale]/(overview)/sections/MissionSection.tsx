@@ -55,7 +55,7 @@ export default function MissionSection() {
             <div className='flex flex-col items-start gap-20 md:gap-32 max-width'>
 
                 {/* Mission Statement */}
-                <div className="grid grid-cols-12 w-full gap-8 overflow-y-hidden">
+                <div className="grid grid-cols-12 w-full gap-8">
                     <div className="order-2 md:order-1 col-span-full md:col-span-5 lg:col-span-4 flex flex-col items-start gap-11">
                         <div className="flex flex-col items-start gap-5 w-full">
                             <div className="flex flex-col items-start gap-2 w-full">

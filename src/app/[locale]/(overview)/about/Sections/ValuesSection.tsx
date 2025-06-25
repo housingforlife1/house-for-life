@@ -35,9 +35,9 @@ export default function ValuesSection() {
             Nos valeurs
           </h2>
         </div>
-        <div className="flex flex-wrap md:flex-nowrap items-start gap-8 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
           {values.map((value, index) => (
-            <div key={index} className="flex flex-col items-start gap-4 flex-1">
+            <div key={index} className="w-full flex flex-col items-start gap-4 border-b border-blue-100 md:border-none pb-8 md:pb-0">
                 <div className='relative w-[34px] h-[34px]'>
                     <Image
                       className="object-contain"
