@@ -22,34 +22,36 @@ export default function DonationBenefitsSection() {
     ]
 
     return (
-        <div className="flex flex-col max-width gap-6 my-32">
-            <div className="flex flex-col gap-1 max-w-[450px]">
-            <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                Chaque don construit un avenir.
-            </h2>
-            <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] leading-[var(--paragraph-1-line-height)] tracking-[var(--paragraph-1-letter-spacing)] [font-style:var(--paragraph-1-font-style)]">
-                Grace à votre générosité et votre don, vous permettez de :
-            </p>
+        <div className="flex flex-col max-width gap-6 my-14 md:my-32">
+            <div className="flex flex-col gap-1 md:max-w-[450px]">
+                <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
+                    Chaque don construit un avenir.
+                </h2>
+                <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] leading-[var(--paragraph-1-line-height)] tracking-[var(--paragraph-1-letter-spacing)] [font-style:var(--paragraph-1-font-style)]">
+                    Grace à votre générosité et votre don, vous permettez de :
+                </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-            {donationBenefits.map((benefit, index) => (
-                <div key={index} className="flex flex-col gap-4 flex-1">
-                <div className="flex flex-col gap-6">
-                    <div className="relative w-full h-64 rounded-2xl overflow-hidden">
-                        <Image
-                            className="object-cover"
-                            alt="Benefit illustration"
-                            src={benefit.image}
-                            fill priority
-                        />
-                    </div>
-                    <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                    {benefit.description}
-                    </p>
-                </div>
-                </div>
-            ))}
+            <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-8 w-full v-scroll pb-6">
+                {
+                    donationBenefits.map((benefit, index) => (
+                        <div key={index} className="min-w-[250px] md:min-w-[320px] xl:w-full flex flex-col gap-4 flex-1">
+                            <div className="flex flex-col gap-6">
+                                <div className="relative w-full h-64 rounded-2xl overflow-hidden">
+                                    <Image
+                                        className="object-cover"
+                                        alt="Benefit illustration"
+                                        src={benefit.image}
+                                        fill priority
+                                    />
+                                </div>
+                                <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                                    {benefit.description}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
             </div>
         </div>
     )

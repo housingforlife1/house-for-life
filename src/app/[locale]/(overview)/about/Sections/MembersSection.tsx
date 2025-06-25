@@ -73,11 +73,11 @@ export default function MembersSection() {
         </div>
 
         <div className="flex flex-row flex-nowrap justify-between overflow-x-scroll v-scroll items-start gap-4 w-full">
-          {boardMembers.map((member, index) => (
+          {
+            boardMembers.map((member, index) => (
               <Card
                 key={index}
-                className="border-none shadow-none w-[295px] shrink-0"
-              >
+                className="border-none shadow-none w-[295px] shrink-0">
                 <CardContent className="p-0 flex flex-col items-start gap-4">
                     <div className='relative w-full h-[200px] rounded-xl overflow-hidden'>
                         <Image
@@ -98,7 +98,8 @@ export default function MembersSection() {
                     </div>
                 </CardContent>
               </Card>
-          ))}
+            ))
+          }
         </div>
     </div>
   )

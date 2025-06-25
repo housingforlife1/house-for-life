@@ -1,7 +1,7 @@
 
 export default function FundraisingCampaignSection() {
     return (
-        <div className="flex flex-col max-width gap-[41px] my-32">
+        <div className="flex flex-col max-width gap-7 md:gap-10 my-16 md:my-32">
             <div className="flex flex-col gap-2 w-full">
                 <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)] max-w-[390px]">
                     Nous y mettons du serieux
