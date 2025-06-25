@@ -85,15 +85,15 @@ export default function PartnersSection() {
         },
     ];
     return (
-        <div className="flex flex-col md:flex-row md:justify-between w-full max-width items-center gap-8 my-32">
+        <div className="flex flex-col md:flex-row md:justify-between max-width items-center gap-8 my-14 md:my-32">
             <h2 className="w-full md:w-[390.67px] font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
                 Ils parlent de nous là-bas
             </h2>
             <div className="flex items-center justify-between w-full md:w-2/3 h-[50px] gap-x-3">
-                <ChevronLeft className='w-6 h-6 text-gray cursor-pointer' />
-                <div className='w-full flex flex-col md:flex-row v-scroll overflow-x-auto'>
+                <ChevronLeft className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
+                <div className='w-full flex flex-row v-scroll overflow-x-auto'>
                     {partnerLogos.map((logo, index) => (
-                        <div key={index} className={`relative shrink-0 h-[${logo.width}px] w-[150px]`}>
+                        <div key={index} className={`relative shrink-0 h-[${logo.width}px] w-[100px] md:w-[150px]`}>
                             <Image
                                 className="object-contain"
                                 fill
@@ -103,7 +103,7 @@ export default function PartnersSection() {
                         </div>
                     ))}
                 </div>
-                <ChevronRight className='w-6 h-6 text-gray cursor-pointer' />
+                <ChevronRight className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
             </div>
         </div>
     )

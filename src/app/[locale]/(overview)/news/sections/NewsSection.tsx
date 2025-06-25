@@ -25,7 +25,7 @@ export default function NewsSection() {
     ]
 
     return (
-        <div className="flex flex-col w-full max-width items-start gap-6 my-32">
+        <div className="flex flex-col w-full max-width items-start gap-6 my-24 md:my-32">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
             {newsArticlesData.map((article, index) => (
                 <div
