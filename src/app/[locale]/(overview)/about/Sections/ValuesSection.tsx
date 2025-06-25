@@ -29,7 +29,7 @@ export default function ValuesSection() {
   ]
 
   return (
-    <div className="flex flex-col w-full max-width items-start gap-9 my-32">
+    <div className="flex flex-col w-full max-width items-start gap-9 my-14 md:my-32">
         <div className="w-full max-w-[390.67px]">
           <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
             Nos valeurs
