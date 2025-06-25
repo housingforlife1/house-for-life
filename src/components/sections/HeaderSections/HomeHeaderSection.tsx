@@ -4,7 +4,7 @@ import { Link } from '@/i18n/routing'
 
 export default function HomeHeaderSection() {
   return (
-    <header className="relative pb-10 md:pb-0 md:h-[calc(85vh)] m-2 rounded-2xl bg-[url('/assets/img/hero-home.png')] bg-cover bg-center flex flex-col justify-between">
+    <header className="relative pb-10 md:pb-0 md:min-h-[calc(85vh)] m-2 rounded-2xl bg-[url('/assets/img/hero-home.png')] bg-cover bg-center flex flex-col justify-between">
         <div className='absolute z-[4] inset-0 bg-green opacity-[0.03]' />
         <div className='max-width z-[10]'>
             <div className="flex flex-col md:w-[550px] items-start gap-11 pt-48 z-10">

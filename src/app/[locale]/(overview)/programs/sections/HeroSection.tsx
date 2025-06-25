@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button'
 
 export default function HeroSection() {
   return (
-    <header className="relative md:h-[calc(75vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-img-programs.png')] bg-cover bg-center pb-7 md:pb-0">
+    <header className="relative md:min-h-[calc(75vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-img-programs.png')] bg-cover bg-center pb-7 md:pb-0">
         <div className='absolute z-[4] inset-0 bg-green opacity-10' />
         <div className='max-width'>
             <div className="flex flex-col md:w-2/3 lg:w-1/3 items-start gap-11 pt-48 z-10">

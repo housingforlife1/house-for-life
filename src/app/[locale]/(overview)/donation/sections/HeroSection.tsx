@@ -1,7 +1,7 @@
 
 export default function HeroSection() {
   return (
-    <header className="relative h-[calc(75vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-img-news.png')] bg-cover bg-center">
+    <header className="relative md:min-h-[calc(75vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-img-news.png')] bg-cover bg-center pb-8 md:p-0">
         <div className='absolute z-[4] inset-0 bg-green opacity-10' />
         <div className='max-width'>
             <div className="flex flex-col w-1/3 items-start gap-11 pt-56 pl-[90px] z-10">
