@@ -30,7 +30,7 @@ export const ContactFormSection = ()=> {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 max-width">
       {/* Left side - Contact Form */}
-      <Card className="rounded-2xl bg-white border border-solid border-neutral-200">
+      <Card className="order-2 md:order-1 rounded-2xl bg-white border border-solid border-neutral-200">
         <CardContent className="p-7">
           <div className="flex flex-col items-start gap-3 mb-6">
             <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
@@ -93,7 +93,7 @@ export const ContactFormSection = ()=> {
       </Card>
 
       {/* Right side - Contact Information */}
-      <div className="flex flex-col items-start gap-6 text-white px-0 md:p-7">
+      <div className="order-1 md:order-1 flex flex-col items-start gap-6 text-white px-0 md:p-7">
         <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-white text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
           Coordonnées de contact
         </h3>
