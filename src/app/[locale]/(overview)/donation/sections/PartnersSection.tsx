@@ -120,7 +120,7 @@ export default function PartnersSection() {
                     <div className="flex items-center gap-4">
                     <div className="flex items-center">
                         {[...Array(6)].map((_, index) => (
-                            <div  key={index} className={`relative w-[50px] h-[50px] overflow-hidden rounded-full border-2 border-white ${index > 0 ? "ml-[-18px]" : ""}`}>
+                            <div  key={index} className={`relative w-[35px] h-[35px] md:w-[50px] md:h-[50px] overflow-hidden rounded-full border-2 border-white ${index > 0 ? "ml-[-18px]" : ""}`}>
                                 <Image
                                     fill priority 
                                     className={`object-cover `}
@@ -133,10 +133,10 @@ export default function PartnersSection() {
 
                     <div className="flex flex-col">
                         <p className="font-paragraph-2 text-[#282724] leading-[var(--paragraph-2-line-height)] tracking-[var(--paragraph-2-letter-spacing)] text-[length:var(--paragraph-2-font-size)]">
-                        +24 contributeurs
+                            +24 contributeurs
                         </p>
                         <p className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
-                        Actifs
+                            Actifs
                         </p>
                     </div>
                     </div>
