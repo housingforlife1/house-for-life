@@ -112,51 +112,51 @@ export default function DonationSection() {
                 </CardContent>
             </Card>
             {/* Alternative Donation Methods */}
-                <div className="flex flex-col col-span-full md:col-span-3 gap-6">
-                    <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
-                        Ou donnez à votre manière.
-                    </h3>
+            <div className="flex flex-col col-span-full md:col-span-3 gap-6">
+                <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
+                    Ou donnez à votre manière.
+                </h3>
 
-                    <div className="flex flex-col gap-3">
-                        {donationMethods.map((method, index) => (
-                            <Card key={index} className="bg-[#f6f6ee] rounded-xl border-none shadow-none">
-                                <CardContent className="p-5">
-                                    <div className="flex flex-col gap-3">
-                                        <h4 className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                            {method.title}
-                                        </h4>
-                                        <p className="font-paragraph-2 text-[#504f48] whitespace-pre-line">
-                                            {method.description.split(":")[0]}:{" "}
-                                        <span className="text-[#282724]">
-                                            {method.description.split(":").slice(1).join(":")}
-                                        </span>
-                                        </p>
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        ))}
-                    </div>
-
-                    <p className="font-paragraph-2 text-[#504f48] leading-[var(--paragraph-2-line-height)]">
-                        Tous les dons sont déductibles d&apos;impôts. Un reçu officiel vous
-                        sera envoyé. Numéro d&apos;enregistrement de l&apos;organisme :{" "}
-                        <span className="text-[#282724]">75272 2818 RR0001</span>
-                    </p>
-
-                    <Separator className="bg-gray/20" />
-
-                    <div className="flex flex-col gap-2">
-                            <h4 className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                Pour obtenir plus d&apos;informations sur la façon dont vous
-                                pouvez faire un don contactez :
-                            </h4>
-                            <p className="font-paragraph-2 text-gray leading-[var(--paragraph-2-line-height)]">
-                                Secrétaire -trésorière : Aurea cormier, tel : 5068540675
-                            <br />
-                                Assistante Administrative : Rhada El Khadir, tel : 5068540675
-                            </p>
-                    </div>
+                <div className="flex flex-col gap-3">
+                    {donationMethods.map((method, index) => (
+                        <Card key={index} className="bg-[#f6f6ee] rounded-xl border-none shadow-none">
+                            <CardContent className="p-5">
+                                <div className="flex flex-col gap-3">
+                                    <h4 className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                        {method.title}
+                                    </h4>
+                                    <p className="font-paragraph-2 text-[#504f48] whitespace-pre-line">
+                                        {method.description.split(":")[0]}:{" "}
+                                    <span className="text-[#282724]">
+                                        {method.description.split(":").slice(1).join(":")}
+                                    </span>
+                                    </p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    ))}
                 </div>
+
+                <p className="font-paragraph-2 text-[#504f48] leading-[var(--paragraph-2-line-height)]">
+                    Tous les dons sont déductibles d&apos;impôts. Un reçu officiel vous
+                    sera envoyé. Numéro d&apos;enregistrement de l&apos;organisme :{" "}
+                    <span className="text-[#282724]">75272 2818 RR0001</span>
+                </p>
+
+                <Separator className="bg-gray/20" />
+
+                <div className="flex flex-col gap-2">
+                        <h4 className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                            Pour obtenir plus d&apos;informations sur la façon dont vous
+                            pouvez faire un don contactez :
+                        </h4>
+                        <p className="font-paragraph-2 text-gray leading-[var(--paragraph-2-line-height)]">
+                            Secrétaire -trésorière : Aurea cormier, tel : 5068540675
+                        <br />
+                            Assistante Administrative : Rhada El Khadir, tel : 5068540675
+                        </p>
+                </div>
+            </div>
         </div>
     )
 }
