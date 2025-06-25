@@ -1,20 +1,25 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
-import { Link } from "@/i18n/routing";
+import { Link, usePathname } from "@/i18n/routing";
 import { ChevronDownIcon, HeartIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const NavigationSection = () => {
 
+  const pathname = usePathname()
+  
+
   const t = useTranslations('navigation')
   
   // Navigation menu items data
   const navItems = [
-    { label: `${t('accueil')}`, link: "/", active: false },
-    { label: `${t('nos_programmes')}`, link: `/programs`, active: false },
-    { label: `${t('actualites')}`,link: `/news`, active: false },
-    { label: `${t('contact')}`, link: "/contact", active: false },
-    { label: `${t('a_propos')}`,link: `/about`, active: true },
+    { label: `${t('accueil')}`, link: "/", active: pathname === '/' },
+    { label: `${t('nos_programmes')}`, link: `/programs`, active: pathname.includes('/programs') },
+    { label: `${t('actualites')}`,link: `/news`, active: pathname.includes('/news') },
+    { label: `${t('contact')}`, link: "/contact", active: pathname.includes('/contact') },
+    { label: `${t('a_propos')}`,link: `/about`, active: pathname.includes('/about') },
   ];
 
   return (
