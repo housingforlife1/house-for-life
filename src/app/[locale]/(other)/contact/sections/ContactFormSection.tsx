@@ -93,7 +93,7 @@ export const ContactFormSection = ()=> {
       </Card>
 
       {/* Right side - Contact Information */}
-      <div className="flex flex-col items-start gap-6 text-white p-7">
+      <div className="flex flex-col items-start gap-6 text-white px-0 md:p-7">
         <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-white text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
           Coordonnées de contact
         </h3>
