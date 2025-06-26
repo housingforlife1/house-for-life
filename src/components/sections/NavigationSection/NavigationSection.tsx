@@ -133,7 +133,7 @@ export const NavigationSection = () => {
                       </Link>
                     ))
                   }
-                  <Link href={`/programs`} className='w-full cursor-pointer'>
+                  <Link href={`/donation`} className='w-full cursor-pointer'>
                     <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
                       Faire un don maintenant
                     </Button>
