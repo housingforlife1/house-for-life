@@ -36,7 +36,7 @@ export const NavigationSection = () => {
           </Link>
 
           {/* Navigation Menu */}
-          <div className="hidden md:flex items-center gap-6 border-2 border-red-600 ">
+          <div className="hidden md:flex items-center gap-6">
             { 
               navItems.map((item, index) => (
                 <Link key={index} href={item.link} className={`font-['Manrope',Helvetica] text-sm text-black whitespace-nowrap ${item.active ? "font-bold" : "font-normal"}`}>
