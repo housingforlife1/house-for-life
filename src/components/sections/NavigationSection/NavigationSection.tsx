@@ -113,17 +113,15 @@ export const NavigationSection = () => {
                       </Link>
                     ))
                   }
-                  <div className="pt-10 w-full">
-                    <Link href={`/programs`} className='w-full cursor-pointer'>
-                      <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
-                        Faire un don maintenant
-                      </Button>
-                    </Link>
-                  </div>
+                  <Link href={`/programs`} className='w-full cursor-pointer'>
+                    <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
+                      Faire un don maintenant
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div> 
-            <div className="h-12">
+            <div className="h-12 bg-white">
               <p className="text-center text-sm">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
             </div>  
         </SheetContent>
