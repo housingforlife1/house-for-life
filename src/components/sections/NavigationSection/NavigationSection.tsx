@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/routing";
 import { ChevronDownIcon, HeartIcon, MenuIcon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -92,22 +92,40 @@ export const NavigationSection = () => {
             <div className="h-10 w-10 absolute top-2 right-2 z-10 backdrop-blur-sm rounded-full"></div>
             
             {/* Scrollable content area */}
-            <div className="h-full">
-                <div className="flex justify-center items-center my-3">
-                  <Button
-                    variant="outline"
-                    onClick={() => setOpenModal(false)}
-                    className="h-[50px] px-5 py-3.5 rounded-[54px] bg-white font-paragraph-bold cursor-pointer">
-                    Fermer le menu
-                    <XIcon className="h-5 w-5 ml-2 rotate-90"/>
-                  </Button>
+            <div className="h-[calc(100%-48px)] flex-1">
+              <div className="flex justify-center items-center my-3">
+                <Button
+                  variant="outline"
+                  onClick={() => setOpenModal(false)}
+                  className="h-[50px] px-5 py-3.5 rounded-[54px] bg-white font-paragraph-bold cursor-pointer">
+                  Fermer le menu
+                  <XIcon className="h-5 w-5 ml-2 rotate-90"/>
+                </Button>
+              </div>
+              <div className="h-full flex-1 v-scroll overflow-y-scroll rounded-t-3xl p-7 bg-white">
+                <h1 className="text-2xl font-bold text-black text-center mt-4 mb-10">Menu</h1>
+                {/* Navigation Menu */}
+                <div className="flex flex-col justify-center items-center gap-10">
+                  { 
+                    navItems.map((item, index) => (
+                      <Link onClick={() => setOpenModal(false)} key={index} href={item.link} className={`font-['Manrope',Helvetica] text-black whitespace-nowrap ${item.active ? "font-bold" : "font-normal"}`}>
+                        {item.label}
+                      </Link>
+                    ))
+                  }
+                  <div className="pt-10 w-full">
+                    <Link href={`/programs`} className='w-full cursor-pointer'>
+                      <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
+                        Faire un don maintenant
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
-                <div className="h-full v-scroll overflow-y-scroll rounded-t-3xl p-7 bg-white">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores veritatis neque numquam est, officia praesentium doloribus labore quos dignissimos voluptates magnam vero eveniet tempore sequi porro a quis cumque reprehenderit alias reiciendis similique facere pariatur nemo excepturi! Eligendi maiores ullam numquam laudantium culpa ab necessitatibus. Aut consectetur, quaerat sapiente quod accusamus non cumque ducimus magni sequi. Labore, ducimus. Quam maiores eos et? Cum eaque officia harum autem culpa doloribus odit adipisci vero? Incidunt, labore eum. Dicta possimus consequatur dignissimos vel aliquid, reprehenderit vitae iusto sunt fugit, illo asperiores ab perferendis iste numquam error obcaecati adipisci cumque eius reiciendis sit ratione!
-                  </p>
-                </div>    
+              </div>
             </div> 
+            <div className="h-12">
+              <p className="text-center text-sm">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
+            </div>  
         </SheetContent>
       </Sheet>
     </>
