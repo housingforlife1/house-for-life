@@ -6,8 +6,8 @@ export default function HeaderSection() {
   return (
     <header className="relative md:min-h-[calc(75vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-about.png')] bg-cover bg-center pb-7 md:pb-0">
         <div className='absolute z-[4] inset-0 bg-green opacity-10' />
-        <div className='max-width'>
-            <div className="flex flex-col md:w-[550px] items-start gap-11 pt-48 z-10">
+        <div className='max-width z-10'>
+            <div className="flex flex-col md:w-[550px] items-start gap-11 pt-48">
                 <div className="flex flex-col items-start gap-10 w-full">
                     <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white text-[32px] flex flex-col gap-4 leading-8">
                         <span className="[font-family:'Instrument_Sans',Helvetica] text-[#fbfbf8] text-3xl">
