@@ -106,7 +106,7 @@ export const NavigationSection = () => {
               <div className="h-full flex-1 v-scroll overflow-y-scroll rounded-t-3xl p-7 bg-white">
                 <h1 className="text-2xl font-bold text-black text-center mt-4 mb-10">Menu</h1>
                 {/* Navigation Menu */}
-                <div className="flex flex-col justify-center items-center gap-10">
+                <div className="flex flex-col justify-center items-center gap-8">
                   { 
                     navItems.map((item, index) => (
                       <Link onClick={() => setOpenModal(false)} key={index} href={item.link} className={`font-['Manrope',Helvetica] text-black whitespace-nowrap ${item.active ? "font-bold" : "font-normal"}`}>
@@ -121,8 +121,8 @@ export const NavigationSection = () => {
                   </Link>
                 </div>
               </div>
-              <div className="h-14 w-full bg-white">
-                <p className="text-center text-sm px-2">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
+              <div className="w-full bg-white px-2">
+                <p className="text-center text-sm">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
               </div>
             </div> 
         </SheetContent>
