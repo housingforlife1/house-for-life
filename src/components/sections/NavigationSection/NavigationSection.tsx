@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/routing";
-import { ChevronDownIcon, HeartIcon, MenuIcon, Text, XIcon } from "lucide-react";
+import { ChevronDownIcon, HeartIcon, Text, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
