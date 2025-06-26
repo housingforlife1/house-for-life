@@ -92,7 +92,7 @@ export const NavigationSection = () => {
             <div className="h-10 w-10 absolute top-2 right-2 z-10 backdrop-blur-sm rounded-full"></div>
             
             {/* Scrollable content area */}
-            <div className="h-[calc(100%-60px)] flex-1">
+            <div className="h-[calc(100%-60px)] flex-1 border-2 border-red-500">
               <div className="flex justify-center items-center my-3">
                 <Button
                   variant="outline"
@@ -121,7 +121,7 @@ export const NavigationSection = () => {
                 </div>
               </div>
             </div> 
-            <div className="h-14 bg-white">
+            <div className="h-14 w-full bg-yellow-500 border-2 border-blue-700">
               <p className="text-center text-sm">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
             </div>  
         </SheetContent>
