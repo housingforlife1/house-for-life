@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/routing";
-import { ChevronDownIcon, HeartIcon, MenuIcon, XIcon } from "lucide-react";
+import { ChevronDownIcon, HeartIcon, MenuIcon, Text, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
@@ -77,7 +77,7 @@ export const NavigationSection = () => {
             <Button className="flex md:hidden h-[50px] px-5 py-[15px] bg-[#f8f8e9] rounded-[54px] font-['Instrument_Sans',Helvetica] text-black hover:text-white font-bold text-sm leading-[22.4px]"
               onClick={() => setOpenModal(true)}>
               Menu
-              <MenuIcon className="w-6 h-6 ml-1.5 text-inherit " />
+              <Text className="w-6 h-6 ml-1.5 rotate-180 text-inherit " />
             </Button>
           </div>
         </div>
@@ -90,9 +90,10 @@ export const NavigationSection = () => {
                 <SheetTitle hidden>Menu principal</SheetTitle>
             </SheetHeader>
             <div className="h-10 w-10 absolute top-2 right-2 z-10 backdrop-blur-sm rounded-full"></div>
+
             
             {/* Scrollable content area */}
-            <div className="h-[calc(100%-60px)] flex-1 border-2 border-red-500">
+            <div className="h-full flex flex-col justify-end overflow-hidden flex-1">
               <div className="flex justify-center items-center my-3">
                 <Button
                   variant="outline"
@@ -120,10 +121,10 @@ export const NavigationSection = () => {
                   </Link>
                 </div>
               </div>
+              <div className="h-14 w-full bg-white">
+                <p className="text-center text-sm px-2">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
+              </div>
             </div> 
-            <div className="h-14 w-full bg-yellow-500 border-2 border-blue-700">
-              <p className="text-center text-sm">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
-            </div>  
         </SheetContent>
       </Sheet>
     </>
