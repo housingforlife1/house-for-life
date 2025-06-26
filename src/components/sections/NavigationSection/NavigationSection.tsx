@@ -28,7 +28,7 @@ export const NavigationSection = () => {
 
   return (
     <>
-      <header className="flex justify-center w-full fixed top-[40px] left-0 z-30">
+      <header className="flex justify-center w-full fixed top-7 md:top-10 left-0 z-30">
         <div className="flex items-center justify-between w-full max-width px-3 md:px-5 py-2 md:py-4 bg-white rounded-[54px] border border-solid border-neutral-200">
           {/* Logo */}
           <Link href='/' className="relative w-12 md:w-[77px] h-8 md:h-14 shrink-0 overflow-hidden">
@@ -84,7 +84,7 @@ export const NavigationSection = () => {
       </header>
         {/* Sheet */}
         <Sheet open={openModal} onOpenChange={setOpenModal}>
-          <SheetContent side={'bottom'} aria-describedby={undefined} className="w-screen  h-screen">
+          <SheetContent side={'bottom'} aria-describedby={undefined} className="w-screen  h-[calc(85%)]">
               <SheetHeader className="">
                   <SheetTitle hidden>Menu principal</SheetTitle>
               </SheetHeader>
