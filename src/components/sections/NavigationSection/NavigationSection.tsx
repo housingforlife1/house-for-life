@@ -83,33 +83,29 @@ export const NavigationSection = () => {
         </div>
       </header>
         {/* Sheet */}
-        <Sheet open={openModal} onOpenChange={setOpenModal} >
-          <div className="relative !overflow-hidden">
-              <SheetContent side={'bottom'} aria-describedby={undefined} className="w-20  h-[calc(100%)]">
-                  <SheetHeader className="">
-                      <SheetTitle hidden>Menu principal</SheetTitle>
-                  </SheetHeader>
-                  {/* <div className='absolute top-0 left-0 right-0 z-[1] bg-white'>
-                      Header with action buttons 
-                      <header className="w-full h-20 border-b border-[#d9d9d9] flex items-center justify-between px-12">
-                          <Button variant="outline" className="h-10"
-                            onClick={() => setOpenModal(false)}>
-                              Fermer
-                          </Button>
-                      </header>
-                  </div>*/}
+        <Sheet open={openModal} onOpenChange={setOpenModal}>
+          <SheetContent side={'bottom'} aria-describedby={undefined} className="w-screen  h-screen">
+              <SheetHeader className="">
+                  <SheetTitle hidden>Menu principal</SheetTitle>
+              </SheetHeader>
+              {/* <div className='absolute top-0 left-0 right-0 z-[1] bg-white'>
+                  Header with action buttons 
+                  <header className="w-full h-20 border-b border-[#d9d9d9] flex items-center justify-between px-12">
+                      <Button variant="outline" className="h-10"
+                        onClick={() => setOpenModal(false)}>
+                          Fermer
+                      </Button>
+                  </header>
+              </div>*/}
 
-                  {/* Scrollable content area */}
-                  <div className="h-[calc(100%-80px)] mt-24 px-7 v-scroll overflow-y-scroll">
-                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores veritatis neque numquam est, officia praesentium doloribus labore quos dignissimos voluptates magnam vero eveniet tempore sequi porro a quis cumque reprehenderit alias reiciendis similique facere pariatur nemo excepturi! Eligendi maiores ullam numquam laudantium culpa ab necessitatibus. Aut consectetur, quaerat sapiente quod accusamus non cumque ducimus magni sequi. Labore, ducimus. Quam maiores eos et? Cum eaque officia harum autem culpa doloribus odit adipisci vero? Incidunt, labore eum. Dicta possimus consequatur dignissimos vel aliquid, reprehenderit vitae iusto sunt fugit, illo asperiores ab perferendis iste numquam error obcaecati adipisci cumque eius reiciendis sit ratione!
-                      </p>
-                  </div>
-              </SheetContent>
-          </div>
+              {/* Scrollable content area */}
+              <div className="h-[calc(100%-80px)] mt-24 px-7 v-scroll overflow-y-scroll">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores veritatis neque numquam est, officia praesentium doloribus labore quos dignissimos voluptates magnam vero eveniet tempore sequi porro a quis cumque reprehenderit alias reiciendis similique facere pariatur nemo excepturi! Eligendi maiores ullam numquam laudantium culpa ab necessitatibus. Aut consectetur, quaerat sapiente quod accusamus non cumque ducimus magni sequi. Labore, ducimus. Quam maiores eos et? Cum eaque officia harum autem culpa doloribus odit adipisci vero? Incidunt, labore eum. Dicta possimus consequatur dignissimos vel aliquid, reprehenderit vitae iusto sunt fugit, illo asperiores ab perferendis iste numquam error obcaecati adipisci cumque eius reiciendis sit ratione!
+                  </p>
+              </div>
+          </SheetContent>
         </Sheet>
-
-
     </>
   );
 };
