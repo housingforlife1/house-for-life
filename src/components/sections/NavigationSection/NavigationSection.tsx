@@ -1,16 +1,18 @@
 "use client"
 
 import { Button } from "@/components/ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/routing";
 import { ChevronDownIcon, HeartIcon, Text, XIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 
 export const NavigationSection = () => {
 
   const pathname = usePathname()
+  const localActive = useLocale()
 
   const [openModal, setOpenModal] = useState(false)
   
@@ -25,6 +27,13 @@ export const NavigationSection = () => {
     { label: `${t('contact')}`, link: "/contact", active: pathname.includes('/contact') },
     { label: `${t('a_propos')}`,link: `/about`, active: pathname.includes('/about') },
   ];
+
+  const changeLanguage = (lang: string) => {
+    if (localActive === lang) return
+    // set language to cookies
+    document.cookie = `NEXT_LOCALE=${lang}`
+    window.location.href = window.location.href.replace(`/${localActive}`, `/${lang}`)
+  };
 
   return (
     <>
@@ -49,14 +58,24 @@ export const NavigationSection = () => {
           {/* Right side controls */}
           <div className="flex items-center gap-2">
             {/* Language selector */}
-            <div className="relative w-[50px] h-[50px] bg-white rounded-lg flex items-center justify-center">
-              <div className="flex items-center gap-1">
-                <span className="font-['Manrope',Helvetica] font-normal text-black text-sm">
-                  FR
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center justify-between w-[50px] h-[50px] bg-white rounded-lg px-2">
+                <span className="[font-family:'Manrope',Helvetica] font-normal text-black text-sm">
+                  {localActive === 'fr' ? 'FR': 'EN'}
                 </span>
                 <ChevronDownIcon className="w-3.5 h-3.5" />
-              </div>
-            </div>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-min">
+                <DropdownMenuItem 
+                  onClick={() => changeLanguage("fr")}
+                  className="flex items-center gap-2 cursor-pointer"
+                  >FR</DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => changeLanguage("en")}
+                  className="flex items-center gap-2 cursor-pointer"
+                  >EN</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
             {/* Donation Desktop button */}
             <Link href={`/donation`} className="hidden md:inline-block">
