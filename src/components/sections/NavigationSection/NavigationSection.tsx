@@ -1,9 +1,9 @@
 "use client"
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Link, usePathname } from "@/i18n/routing";
-import { ChevronDownIcon, HeartIcon, MenuIcon } from "lucide-react";
+import { ChevronDownIcon, HeartIcon, MenuIcon, XIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
@@ -82,30 +82,34 @@ export const NavigationSection = () => {
           </div>
         </div>
       </header>
-        {/* Sheet */}
-        <Sheet open={openModal} onOpenChange={setOpenModal}>
-          <SheetContent side={'bottom'} aria-describedby={undefined} className="w-screen  h-[calc(85%)]">
-              <SheetHeader className="">
-                  <SheetTitle hidden>Menu principal</SheetTitle>
-              </SheetHeader>
-              {/* <div className='absolute top-0 left-0 right-0 z-[1] bg-white'>
-                  Header with action buttons 
-                  <header className="w-full h-20 border-b border-[#d9d9d9] flex items-center justify-between px-12">
-                      <Button variant="outline" className="h-10"
-                        onClick={() => setOpenModal(false)}>
-                          Fermer
-                      </Button>
-                  </header>
-              </div>*/}
 
-              {/* Scrollable content area */}
-              <div className="h-[calc(100%-80px)] mt-24 px-7 v-scroll overflow-y-scroll">
+      {/* Sheet */}
+      <Sheet open={openModal} onOpenChange={setOpenModal}>
+        <SheetContent side={'bottom'} aria-describedby={undefined} className="w-screen h-[calc(85%)] bg-transparent p-0">
+            <SheetHeader className="">
+                <SheetTitle hidden>Menu principal</SheetTitle>
+            </SheetHeader>
+            <div className="h-10 w-10 absolute top-2 right-2 z-10 backdrop-blur-sm rounded-full"></div>
+            
+            {/* Scrollable content area */}
+            <div className="h-full">
+                <div className="flex justify-center items-center my-3">
+                  <Button
+                    variant="outline"
+                    onClick={() => setOpenModal(false)}
+                    className="h-[50px] px-5 py-3.5 rounded-[54px] bg-white font-paragraph-bold cursor-pointer">
+                    Fermer le menu
+                    <XIcon className="h-5 w-5 ml-2 rotate-90"/>
+                  </Button>
+                </div>
+                <div className="h-full v-scroll overflow-y-scroll rounded-t-3xl p-7 bg-white">
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores veritatis neque numquam est, officia praesentium doloribus labore quos dignissimos voluptates magnam vero eveniet tempore sequi porro a quis cumque reprehenderit alias reiciendis similique facere pariatur nemo excepturi! Eligendi maiores ullam numquam laudantium culpa ab necessitatibus. Aut consectetur, quaerat sapiente quod accusamus non cumque ducimus magni sequi. Labore, ducimus. Quam maiores eos et? Cum eaque officia harum autem culpa doloribus odit adipisci vero? Incidunt, labore eum. Dicta possimus consequatur dignissimos vel aliquid, reprehenderit vitae iusto sunt fugit, illo asperiores ab perferendis iste numquam error obcaecati adipisci cumque eius reiciendis sit ratione!
                   </p>
-              </div>
-          </SheetContent>
-        </Sheet>
+                </div>    
+            </div> 
+        </SheetContent>
+      </Sheet>
     </>
   );
 };
