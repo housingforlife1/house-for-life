@@ -1,13 +1,12 @@
 import { instrument } from '@/app/fonts/fonts';
+import FooterSection from '@/components/sections/FooterSection/FooterSection';
 import { NavigationSection } from '@/components/sections/NavigationSection/NavigationSection';
 import { Toaster } from "@/components/ui/sonner";
-import { Link, routing } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import FooterSection from '@/components/sections/FooterSection/FooterSection';
-import DonationBtn from '@/components/sections/NavigationSection/DonationBtn';
 
 
 export const metadata: Metadata = {
