@@ -1,10 +1,35 @@
+"use client"
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod"
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { useForm } from "react-hook-form";
+
+
+const formSchema = z.object({
+  email: z.string().email("L'adresse email n'est pas valide"),
+  nom: z.string().min(1, "Le nom est requis"),
+  message: z.string().min(4, "Le message est requis"),
+});
 
 export const ContactFormSection = ()=> {
+
+
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      nom: "",
+      email: "",
+      message: "",
+    },
+  });
+
+
   // Contact information data for the right side
   const contactSections = [
     {
@@ -27,6 +52,11 @@ export const ContactFormSection = ()=> {
     },
   ];
 
+
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    console.log(JSON.stringify(values));
+  }
+
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 max-width">
       {/* Left side - Contact Form */}
@@ -43,51 +73,65 @@ export const ContactFormSection = ()=> {
           </div>
 
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-3">
-              <label
-                htmlFor="email"
-                className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]"
-              >
-                Votre adresse email
-              </label>
-              <Input
-                id="email"
-                placeholder="Votre adresse email"
-                className="h-[50px] bg-[#f0f0ee] rounded-xl font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] [font-style:var(--paragraph-2-font-style)]"
-              />
-            </div>
+            <Form {...form}>
+              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Votre adresse email</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Votre adresse email" {...field}
+                          id="email"
+                          className="h-[50px] bg-[#f0f0ee] rounded-xl font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] [font-style:var(--paragraph-2-font-style)]"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="nom"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Votre nom</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Entrez votre nom" {...field}
+                          id="email"
+                          className="h-[50px] bg-[#f0f0ee] rounded-xl font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] [font-style:var(--paragraph-2-font-style)]"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-            <div className="flex flex-col gap-3">
-              <label
-                htmlFor="name"
-                className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]"
-              >
-                Votre nom
-              </label>
-              <Input
-                id="name"
-                placeholder="Entrez votre nom"
-                className="h-[50px] bg-[#f0f0ee] rounded-xl font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] [font-style:var(--paragraph-2-font-style)]"
-              />
-            </div>
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Message</FormLabel>
+                      <FormControl>
+                        <Textarea
+                          id="message"
+                          placeholder="Entrez votre message..." {...field}
+                          rows={5}
+                          className="bg-[#f0f0ee] rounded-xl font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] [font-style:var(--paragraph-2-font-style)]"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-            <div className="flex flex-col gap-3">
-              <label
-                htmlFor="message"
-                className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]"
-              >
-                Message
-              </label>
-              <Textarea
-                id="message"
-                placeholder="Entrez votre message"
-                className="h-[100px] bg-[#f0f0ee] rounded-xl font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] [font-style:var(--paragraph-2-font-style)]"
-              />
-            </div>
-
-            <Button className="h-[50px] mt-4 bg-green rounded-xl font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-[length:var(--paragraph-bold-font-size)] text-center tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-              Envoyer le message
-            </Button>
+                <Button type="submit" className="h-[50px] w-full mt-4 bg-green rounded-xl font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-[length:var(--paragraph-bold-font-size)] text-center tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                  Envoyer le message
+                </Button>
+              </form>
+            </Form>
           </div>
         </CardContent>
       </Card>
