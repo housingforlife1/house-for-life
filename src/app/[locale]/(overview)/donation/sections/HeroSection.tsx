@@ -18,9 +18,9 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="md:absolute bottom-0 left-0 right-0 translate-y-16 md:translate-y-12 lg:translate-y-8 md:max-width flex justify-end items-end">
-                <div className="h-[380px] md:h-[461px] flex gap-3 md:gap-6 ">
+                <div className="h-[320px] sm:h-[380px] md:h-[461px] flex gap-3 md:gap-6 ">
                     <div className="h-full flex flex-col justify-end">
-                        <div className="h-[260px] sm:h-[280px] md:h-[300px] lg:h-[351px] w-[160px] sm:w-[180px] md:w-[200px] lg:w-[216px] relative overflow-hidden rounded-3xl">
+                        <div className="h-[240px] sm:h-[280px] md:h-[300px] lg:h-[351px] w-[135px] sm:w-[180px] md:w-[200px] lg:w-[216px] relative overflow-hidden rounded-3xl">
                             <Image
                                 alt="Image d'une mère et sa fille"
                                 src={'/assets/img/don-img-1.png'}
@@ -29,7 +29,7 @@ export default function HeroSection() {
                             />
                         </div>
                     </div>
-                    <div className="h-[260px] sm:h-[280px] md:h-[300px] lg:h-[351px] w-[150px] sm:w-[210px] md:w-[250px] lg:w-[285px] relative overflow-hidden rounded-3xl">
+                    <div className="h-[240px] sm:h-[280px] md:h-[300px] lg:h-[351px] w-[160px] sm:w-[210px] md:w-[250px] lg:w-[285px] relative overflow-hidden rounded-3xl">
                         <Image
                             alt="Image d'une mère et sa fille"
                             src={'/assets/img/don-img-2.png'}
