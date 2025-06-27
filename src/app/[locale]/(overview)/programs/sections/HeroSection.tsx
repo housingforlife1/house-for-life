@@ -17,7 +17,7 @@ export default function HeroSection() {
                         Nous offrons bien plus qu&apos;un toit. Nos programmes sont conçus pour aider les femmes et les mères monoparentales à retrouver stabilité et autonomie.
                     </p>
                 </div>
-                <Button className="h-[50px] w-full md:w-min px-5 py-3.5 bg-green rounded-[54px] hover:bg-green/90">
+                <Button className="h-[50px] z-10 w-full md:w-min px-5 py-3.5 bg-green rounded-[54px] hover:bg-green/90 cursor-pointer">
                     <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)]  text-white text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
                         Faire une demande de logement
                     </span>

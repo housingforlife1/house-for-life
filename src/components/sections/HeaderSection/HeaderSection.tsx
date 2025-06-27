@@ -25,7 +25,7 @@ export default function HeaderSection() {
                     </p>
                 </div>
 
-                <Link href={`/donation`} className='w-full cursor-pointer'>
+                <Link href={`/donation`} className='w-full cursor-pointer z-10'>
                     <Button className="h-[50px] w-full md:w-min px-5 py-3.5 bg-green rounded-[54px] hover:bg-green/90">
                         <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)]  text-white text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
                             Soutenir la mission

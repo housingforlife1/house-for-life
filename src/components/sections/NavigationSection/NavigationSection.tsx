@@ -94,7 +94,7 @@ export const NavigationSection = () => {
         </div>
       </header>
 
-      <Link onClick={() => setOpenModal(false)} href={`/donation`} className="fixed  right-4 md:right-8 bottom-20 z-[999] inline-block lg:hidden">
+      <Link onClick={() => setOpenModal(false)} href={`/donation`} className="fixed  right-4 md:right-8 bottom-20 z-20 inline-block lg:hidden">
         <DonationBtn />
       </Link>
 
@@ -104,7 +104,7 @@ export const NavigationSection = () => {
             <SheetHeader className="">
                 <SheetTitle hidden>Menu principal</SheetTitle>
             </SheetHeader>
-            <div className="h-10 w-10 absolute top-2 right-2 z-10 backdrop-blur-sm rounded-full"></div>
+            <div className="h-10 w-10 absolute top-2 right-2 z-30 backdrop-blur-sm rounded-full"></div>
 
             
             {/* Scrollable content area */}
