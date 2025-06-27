@@ -19,7 +19,6 @@ const formSchema = z.object({
 
 export const ContactFormSection = ()=> {
 
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -28,7 +27,6 @@ export const ContactFormSection = ()=> {
       message: "",
     },
   });
-
 
   // Contact information data for the right side
   const contactSections = [
