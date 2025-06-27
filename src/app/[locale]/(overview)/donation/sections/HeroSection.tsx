@@ -29,7 +29,7 @@ export default function HeroSection() {
                             />
                         </div>
                     </div>
-                    <div className="h-[260px] sm:h-[280px] md:h-[300px] lg:h-[351px] w-[190px] sm:w-[210px] md:w-[250px] lg:w-[285px] relative overflow-hidden rounded-3xl">
+                    <div className="h-[260px] sm:h-[280px] md:h-[300px] lg:h-[351px] w-[150px] sm:w-[210px] md:w-[250px] lg:w-[285px] relative overflow-hidden rounded-3xl">
                         <Image
                             alt="Image d'une mère et sa fille"
                             src={'/assets/img/don-img-2.png'}
