@@ -8,6 +8,7 @@ import { ChevronDownIcon, HeartIcon, Text, XIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
+import DonationBtn from "./DonationBtn";
 
 export const NavigationSection = () => {
 
@@ -79,17 +80,7 @@ export const NavigationSection = () => {
 
             {/* Donation Desktop button */}
             <Link href={`/donation`} className="hidden md:inline-block">
-                <Button className="h-[50px] px-5 py-[15px] bg-green rounded-[54px] relative">
-                  <span className="font-['Instrument_Sans',Helvetica] font-bold text-[#fffef5] text-sm leading-[22.4px]">
-                    Faire un don
-                  </span>
-                  <HeartIcon className="w-6 h-6 ml-1.5" />
-
-                  {/* Yellow indicator dot */}
-                  <div className="absolute w-[23px] h-[23px] -top-1.5 left-px bg-white rounded-[50px] flex items-center justify-center">
-                    <div className="w-[11px] h-[11px] bg-yello rounded-[50px]" />
-                  </div>
-                </Button>
+              <DonationBtn />
             </Link>
 
             {/* Donation Mobile button */}
@@ -99,8 +90,13 @@ export const NavigationSection = () => {
               <Text className="w-6 h-6 ml-1.5 rotate-180 text-inherit " />
             </Button>
           </div>
+
         </div>
       </header>
+
+      <Link onClick={() => setOpenModal(false)} href={`/donation`} className="fixed right-8 bottom-20 z-[999] inline-block lg:hidden">
+        <DonationBtn />
+      </Link>
 
       {/* Sheet */}
       <Sheet open={openModal} onOpenChange={setOpenModal}>
