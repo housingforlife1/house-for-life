@@ -94,7 +94,7 @@ export const NavigationSection = () => {
         </div>
       </header>
 
-      <Link onClick={() => setOpenModal(false)} href={`/donation`} className="fixed right-8 bottom-20 z-[999] inline-block lg:hidden">
+      <Link onClick={() => setOpenModal(false)} href={`/donation`} className="fixed  right-4 md:right-8 bottom-20 z-[999] inline-block lg:hidden">
         <DonationBtn />
       </Link>
 
