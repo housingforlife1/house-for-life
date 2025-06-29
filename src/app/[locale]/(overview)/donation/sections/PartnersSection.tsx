@@ -1,9 +1,13 @@
 import { Separator } from '@/components/ui/separator';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react'
 
 export default function PartnersSection() {
+
+    const t = useTranslations("donation")
+
     // Partner logos data
     const partnerLogos = [
         {
@@ -84,11 +88,12 @@ export default function PartnersSection() {
             width: 126,
             height: 50,
         },
-    ];
+    ]
+
     return (
         <div className="flex flex-col md:flex-row md:justify-between w-full max-width items-start gap-8 my-20 md:my-32">
             <h2 className="w-full md:w-[390.67px] font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                ils nous soutiennent déjà,  rejoignez-les !
+                {t("partner_titre")}
             </h2>
             <div className='w-full md:w-2/3 flex flex-col gap-5'>
                 <div className="flex items-center justify-between h-[50px] gap-x-3">
@@ -114,7 +119,7 @@ export default function PartnersSection() {
 
                 <div className="flex flex-col gap-2.5">
                     <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                    Les particuliers
+                    {t("particuliers")}
                     </p>
 
                     <div className="flex items-center gap-4">

@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function HeroSection() {
+    const t = useTranslations("donation")
   return (
     <header className="relative md:min-h-[calc(75vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-img-news.png')] bg-cover bg-center pb-8 md:p-0">
         <div className='absolute z-[4] inset-0 bg-green opacity-10' />
@@ -9,11 +11,11 @@ export default function HeroSection() {
                 <div className="flex flex-col items-start gap-10 w-full">
                     <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white text-[32px] flex flex-col gap-4 leading-8">
                         <h1 className="font-extrabold text-[#FCFCF8] text-4xl">
-                            Un toit pour elles : Faites un don, changez une vie.
+                            {t("hero_titre")}
                         </h1>
                     </div>
                     <p className=" font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-white text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                        Aidez-nous à financer la construction de logements abordables pour des femmes et mères monoparentales en situation précaire.
+                        {t("hero_description")}
                     </p>
                 </div>
             </div>

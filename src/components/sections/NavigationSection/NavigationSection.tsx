@@ -105,8 +105,7 @@ export const NavigationSection = () => {
                 <SheetTitle hidden>Menu principal</SheetTitle>
             </SheetHeader>
             <div className="h-10 w-10 absolute top-2 right-2 z-30 backdrop-blur-sm rounded-full"></div>
-
-            
+             
             {/* Scrollable content area */}
             <div className="h-full flex flex-col justify-end overflow-hidden flex-1">
               <div className="flex justify-center items-center my-3">

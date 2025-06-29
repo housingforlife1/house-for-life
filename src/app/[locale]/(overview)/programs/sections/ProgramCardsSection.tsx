@@ -1,50 +1,49 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export default function ProgramCardsSection() {
+    const t = useTranslations("programs")
     // Program cards data
     const programCards = [
         {
             id: 1,
             image: "/assets/img/logement.png",
-            title: "Un logement stable, un nouveau départ.",
-            description:
-                "Nous offrons des logements sécurisés et écoénergétiques à des femmes et mères en situation précaire. Grâce aux subventions gouvernementales, nos loyers sont 70% inférieurs aux prix du marché.",
+            title:  t("data_titre_1"),
+            description: t("data_description_1"),
             details: [
-                "Localisation : 8, rue Pine, Moncton",
-                "Capacité : 15 logements (8 chambres simples, 7 doubles)",
-                "Critères d'éligibilité : Femmes vivant sous le seuil de pauvreté",
+                t("data_1_details_1"),
+                t("data_1_details_2"),
+                t("data_1_details_3"),
             ],
-            buttonText: "Faire une demande de logement",
+            buttonText: t("data_btn_1"),
         },
         {
             id: 2,
             image: "/assets/img/soutien.png",
-            title: "Une communauté qui vous accompagne.",
-            description:
-                "Nos logements ne sont pas qu'un simple abri. Nous créons un espace de vie solidaire où l'entraide et la reconstruction sont au cœur du parcours des bénéficiaires.",
+            title: t("data_titre_2"),
+            description: t("data_description_2"),
             details: [
-                "Soutien psychologique & mentorat",
-                "Ateliers de cuisine & alimentation saine",
-                "Activités culturelles & loisirs communautaires",
-                "Jardin communautaire & bien-être",
+                t("data_1_details_4"),
+                t("data_1_details_5"),
+                t("data_1_details_6"),
+                t("data_1_details_7"),
             ],
-            buttonText: "Rejoindre un programme d'entraide",
+            buttonText: t("data_btn_2"),
         },
         {
             id: 3,
             image: "/assets/img/environnement.png",
-            title: "Développement personnel & Insertion professionnelle",
-            description:
-                "Nous offrons des formations et un accompagnement personnalisé pour aider nos bénéficiaires à retrouver une stabilité financière et un emploi durable.",
+            title: t("data_titre_3"),
+            description: t("data_description_3"),
             details: [
-                "Formations en gestion financière & recherche d'emploi",
-                "Coaching & accompagnement vers l'emploi",
-                "Accès à des formations partenaires",
+                t("data_1_details_8"),
+                t("data_1_details_9"),
+                t("data_1_details_10"),
             ],
-            buttonText: "En savoir plus",
+            buttonText: t("data_btn_3")
         },
     ];
 
@@ -79,16 +78,17 @@ export default function ProgramCardsSection() {
                 <div className="flex flex-col items-start gap-[34px]">
                     <div className="space-y-2">
                     <h4 className="font-heading-4 font-[number:var(--heading-4-font-weight)] text-black text-[length:var(--heading-4-font-size)] tracking-[var(--heading-4-letter-spacing)] leading-[var(--heading-4-line-height)] [font-style:var(--heading-4-font-style)]">
-                        Détails du programme
+                        {t("details_programs")}
                     </h4>
-                    {program.details.map((detail, index) => (
-                        <p
-                        key={index}
-                        className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] text-justify tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]"
-                        >
-                        {detail}
-                        </p>
-                    ))}
+                    {
+                        program.details.map((detail, index) => (
+                            <p
+                                key={index}
+                                className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] text-justify tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                                {detail}
+                            </p>
+                        ))
+                    }
                     </div>
                 </div>
             </CardContent>

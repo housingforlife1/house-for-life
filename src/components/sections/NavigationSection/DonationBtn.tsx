@@ -1,12 +1,14 @@
 import { Button } from '@/components/ui/button'
 import { HeartIcon } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import React from 'react'
 
 export default function DonationBtn() {
+  const t = useTranslations('navigation')
   return (
     <Button className="h-[50px] px-5 py-[15px] bg-green rounded-[54px] relative">
         <span className="font-['Instrument_Sans',Helvetica] font-bold text-[#fffef5] text-sm leading-[22.4px]">
-            Faire un don
+            {t('faire_un_don')}
         </span>
         <HeartIcon className="w-6 h-6 ml-1.5" />
 

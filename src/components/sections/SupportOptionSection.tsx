@@ -1,35 +1,34 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { ChevronRight } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react'
 
 export default function SupportOptionSection() {
+    const t = useTranslations("about")
     // Support options data
     const supportOptions = [
         {
             icon: "/assets/icons/favourite.png",
             background: "#f8f8e9",
-            title: "Faire un don",
-            description:
-                "Votre contribution financière nous aide à construire et entretenir des logements abordables. Chaque dollar compte.",
-            action: "Donner maintenant",
+            title: t("support_data_titre_1"),
+            description: t("support_data_description_1"),
+            action: t("support_data_action_1"),
         },
         {
             icon: "/assets/icons/agreement-01.png",
             background: "#eff8e9",
-            title: "Partenariats",
-            description:
-                "Les entreprises et organisations peuvent s'associer à notre mission par des dons, du mécénat de compétences ou des partenariats stratégiques.",
-            action: "Devenir partenaire",
+            title: t("support_data_titre_2"),
+            description: t("support_data_description_2"),
+            action: t("support_data_action_2"),
         },
         {
             icon: "/assets/icons/star.png",
             background: "#f8f8e9",
-            title: "Devenir bénévole",
-            description:
-                "Mettez vos compétences et votre temps au service de notre mission. Rejoignez notre équipe de bénévoles dévoués.",
-            action: "Rejoindre l'équipe",
+            title: t("support_data_titre_3"),
+            description: t("support_data_description_3"),
+            action: t("support_data_action_3"),
         },
     ];
     
@@ -38,12 +37,10 @@ export default function SupportOptionSection() {
             <div className="flex flex-col items-start gap-[34px]">
                 <div className="flex flex-col items-start gap-2">
                     <h2 className="w-full max-w-[430px] font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                        Agissez avec nous pour offrir un toit à celles qui en ont besoin.
+                        {t("support_titre")}
                     </h2>
                     <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                        Habitation pour la vie est géré par un conseil
-                        d&apos;administration impliqué qui se réunit chaque mois pour
-                        planifier les actions et suivre les projets.
+                        {t("support_description")}
                     </p>
                 </div>
             </div>

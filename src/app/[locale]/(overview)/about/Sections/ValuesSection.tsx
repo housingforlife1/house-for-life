@@ -1,30 +1,31 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 export default function ValuesSection() {
+  const t = useTranslations("about")
+
 // Organization values data
   const values = [
     {
       icon: "/assets/icons/user-group.png",
-      title: "Solidarité",
-      description:
-        "Parce que personne ne devrait être seul face à la précarité.",
+      title: t("data_titre_1"),
+      description: t("data_description_1"),
     },
     {
       icon: "/assets/icons/agreement-01.png",
-      title: "Inclusion",
-      description: "Créer une communauté où chacune trouve sa place.",
+      title: t("data_titre_2"),
+      description: t("data_description_2"),
     },
     {
       icon: "/assets/icons/crown.png",
-      title: "Respect & dignité",
-      description:
-        "Offrir plus qu'un logement : un environnement bienveillant.",
+      title: t("data_titre_3"),
+      description: t("data_description_3"),
     },
     {
       icon: "/assets/icons/star.png",
-      title: "Transparence",
-      description: "Gérer nos ressources avec intégrité et engagement.",
+      title: t("data_titre_4"),
+      description: t("data_description_4"),
     },
   ]
 
@@ -32,7 +33,7 @@ export default function ValuesSection() {
     <div className="flex flex-col w-full max-width items-start gap-9 my-14 md:my-32">
         <div className="w-full max-w-[390.67px]">
           <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-            Nos valeurs
+            {t("valeur_titre")}
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">

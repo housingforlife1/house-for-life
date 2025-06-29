@@ -1,23 +1,23 @@
+import { useTranslations } from "next-intl"
 import Image from "next/image"
 
 
 export default function DonationBenefitsSection() {
+    const t= useTranslations("donation")
 
     // Data for donation benefits
     const donationBenefits = [
         {
             image: "/assets/img/environnement.png",
-            description: "Construire un immeuble de 15 logements abordables à Moncton.",
+            description: t('data_description_1')
         },
         {
             image: "/assets/img/our-impact.png",
-            description:
-            "Accompagner les bénéficiaires vers une autonomie durable avec un soutien social.",
+            description: t('data_description_2')
         },
         {
             image: "/assets/img/offrir-un-loyer.png",
-            description:
-            "Offrir un loyer 70 % inférieur au marché grâce à des subventions.",
+            description: t('data_description_3')
         },
     ]
 
@@ -25,10 +25,10 @@ export default function DonationBenefitsSection() {
         <div className="flex flex-col max-width gap-6 my-14 md:my-32">
             <div className="flex flex-col gap-1 md:max-w-[450px]">
                 <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                    Chaque don construit un avenir.
+                    {t("benefits_titre")}
                 </h2>
                 <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] leading-[var(--paragraph-1-line-height)] tracking-[var(--paragraph-1-letter-spacing)] [font-style:var(--paragraph-1-font-style)]">
-                    Grace à votre générosité et votre don, vous permettez de :
+                    {t("benefits_titre")}
                 </p>
             </div>
 
