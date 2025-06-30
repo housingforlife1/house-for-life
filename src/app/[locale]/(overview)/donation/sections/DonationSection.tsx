@@ -32,7 +32,7 @@ export default function DonationSection() {
         <>
             <div className='grid grid-cols-12 max-width space-y-10 md:space-y-0 lg:gap-20 my-14 md:my-32'>
                 {/** grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 max-width gap-10 lg:gap-20 my-14 md:my-32*/}
-                {/* Donation Form Card */}
+                {/* Donation Form Card 
                 <Card className="w-full col-span-full lg:col-span-5 h-min rounded-2xl border border-neutral-200">
                     <CardContent className="w-full p-6">
                         <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)] mb-8">
@@ -113,6 +113,15 @@ export default function DonationSection() {
                             Effectuer le don
                         </Button>
                     </CardContent>
+                </Card> */}
+                <Card className="w-full col-span-full lg:col-span-5 h-min rounded-2xl border border-neutral-200">
+                    <div className='relative overflow-x-hidden h-full w-full'>
+                        <iframe 
+                            title='Donation form powered by Zeffy' 
+                            style={{ position: 'absolute', border: 0, top:0,left:0,bottom:0,right:0,width:'100%',height:'100%' }} 
+                            src='https://www.zeffy.com/embed/donation-form/soutenez-notre-mission-57' allowTransparency={true}>
+                        </iframe>
+                    </div>
                 </Card>
                 
                 {/* Alternative Donation Methods */}
