@@ -89,9 +89,7 @@
         "adresse_val": "305 Dominion Avenue, Moncton, NB (administrative office)",
         "data_titre_1": "Applying for housing (beneficiaries)",
         "data_titre_2": "Make a donation or become a partner (donors & companies)",
-        "data_titre_3": "Become a volunteer",
-        "par": "By",
-        "consulter": "Visit"
+        "data_titre_3": "Become a volunteer"
     },
     "news": {
         "hero_titre": "Here you will find links to all the articles, videos, etc. that mention our activities.",
@@ -99,7 +97,9 @@
         "partener_titre": "They're talking about us over there",
         "data_titre_1": "Group building affordable housing for single mothers and the...",
         "data_titre_2": "25,000 donation to Habitation pour la vie from Major Drilling Group International Inc.",
-        "data_titre_3": "Affordable housing for single mothers and elderly women"
+        "data_titre_3": "Affordable housing for single mothers and elderly women",
+        "par": "By",
+        "consulter": "Visit"
     },
     "about": {
         "hero_sous_titre": "A home, an opportunity",
