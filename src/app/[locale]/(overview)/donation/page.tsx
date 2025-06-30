@@ -16,7 +16,7 @@ export default function DonationPage(){
 
             {/* Donation Benefits Section */}
             <DonationBenefitsSection />
-3
+
             {/* Partners section */}
             <PartnersSection />
 

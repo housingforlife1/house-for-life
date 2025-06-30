@@ -28,7 +28,7 @@ export default function DonationBenefitsSection() {
                     {t("benefits_titre")}
                 </h2>
                 <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] leading-[var(--paragraph-1-line-height)] tracking-[var(--paragraph-1-letter-spacing)] [font-style:var(--paragraph-1-font-style)]">
-                    {t("benefits_titre")}
+                    {t("benefits_description")}
                 </p>
             </div>
 
