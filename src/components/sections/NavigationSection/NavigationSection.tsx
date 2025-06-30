@@ -39,7 +39,7 @@ export const NavigationSection = () => {
   return (
     <>
       <header className="flex justify-center w-full fixed top-5 md:top-10 left-0 z-30">
-        <div className="flex items-center justify-between w-full max-width px-3 md:px-5 py-2 md:py-4 bg-white rounded-[54px] backdrop-blur-sm border border-solid border-neutral-200">
+        <div className="flex items-center justify-between w-full max-width px-3 md:px-5 py-2 md:py-4 bg-white rounded-[54px] border border-solid border-neutral-200">
           {/* Logo */}
           <Link href='/' className="relative w-12 md:w-[77px] h-8 md:h-14 shrink-0 overflow-hidden">
             <Image className="object-cover" alt="logo house for life" src="/assets/img/logo-hfl.png" fill priority />
