@@ -114,7 +114,7 @@ export default function DonationSection() {
                         </Button>
                     </CardContent>
                 </Card> */}
-                <Card className="w-full col-span-full lg:col-span-5 h-min rounded-2xl border border-neutral-200">
+                <Card className="w-full min-h-[50vh] col-span-full lg:col-span-5 rounded-2xl border border-neutral-200">
                     <div className='relative overflow-x-hidden h-full w-full'>
                         <iframe 
                             title='Donation form powered by Zeffy' 
