@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react'
 
 export default function PartnersSection() {
-    const t = useTranslations("partner_titre")
+    const t = useTranslations("home")
     // Partner logos data
     const partnerLogos = [
         {
