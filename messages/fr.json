@@ -5,7 +5,10 @@
         "nos_programmes": "Nos programmes",
         "contact": "Contact",
         "actualites": "Actualités",
-        "faire_un_don": "Faire un don"
+        "faire_un_don": "Faire un don",
+        "faire_don_maintenant": "Faire un don maintenant",
+        "pour_faire_un_don": "Pour faire un don",
+        "fermer_menu": "Fermer le menu"
     },
     "home": {
         "hero_btn_1": "Changer des vies, un logement à la fois",

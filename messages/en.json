@@ -5,7 +5,10 @@
         "nos_programmes": "Our programs",
         "contact": "Contact",
         "actualites": "News",
-        "faire_un_don": "Make a donation"
+        "faire_un_don": "Make a donation",
+        "faire_don_maintenant": "Make a donation now",
+        "pour_faire_un_don": "To make a donation",
+        "fermer_menu": "Close menu"
     },
     "home": {
         "hero_btn_1": "Changing lives, one home at a time",

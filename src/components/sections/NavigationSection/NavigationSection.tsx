@@ -130,13 +130,13 @@ export const NavigationSection = () => {
                   }
                   <Link onClick={() => setOpenModal(false)} href={`/donation`} className='w-full cursor-pointer'>
                     <Button className="h-[50px] w-full px-5 py-3.5 bg-green rounded-[54px] font-paragraph-bold text-white">
-                      Faire un don maintenant
+                      {t("faire_don_maintenant")}
                     </Button>
                   </Link>
                 </div>
               </div>
               <div className="w-full bg-white px-2">
-                <p className="text-center text-sm">Pour faire un don : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
+                <p className="text-center text-sm">{t("pour_faire_un_don")} : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
               </div>
             </div> 
         </SheetContent>
