@@ -113,7 +113,7 @@ export const NavigationSection = () => {
                   variant="outline"
                   onClick={() => setOpenModal(false)}
                   className="h-[50px] px-5 py-3.5 rounded-[54px] bg-white font-paragraph-bold cursor-pointer">
-                  Fermer le menu
+                    {t("fermer_menu")}
                   <XIcon className="h-5 w-5 ml-2 rotate-90"/>
                 </Button>
               </div>
@@ -136,7 +136,7 @@ export const NavigationSection = () => {
                 </div>
               </div>
               <div className="w-full bg-white px-2">
-                <p className="text-center text-sm">{t("pour_faire_un_don")} : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
+                <p className="text-center text-xs">{t("pour_faire_un_don")} : <span className="font-bold text-black">donation@hforlife-hpourlavie.ca</span></p>
               </div>
             </div> 
         </SheetContent>
