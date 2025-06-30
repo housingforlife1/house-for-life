@@ -4,7 +4,8 @@ import React from 'react'
 
 export default function NewsSection() {
     
-    const t = useTranslations("home")
+    const th = useTranslations("home")
+    const t = useTranslations("news")
     
     // Data for news articles
     const newsArticlesData = [
@@ -33,11 +34,11 @@ export default function NewsSection() {
             <div className="flex items-center justify-between w-full">
                 <div className="flex flex-col items-start gap-2 md:w-[390px]">
                     <h2 className="font-extrabold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                        {t("derniere_actu")}
+                        {th("derniere_actu")}
                     </h2>
                 </div>
                 <span className="hidden md:block font-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
-                    {t("voir_toute_actu")}
+                    {th("voir_toute_actu")}
                 </span>
             </div>
             <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-8 w-full v-scroll pb-6">
