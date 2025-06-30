@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function NewsSection() {
     
-    const t = useTranslations("news")
+    const t = useTranslations("home")
     
     // Data for news articles
     const newsArticlesData = [
