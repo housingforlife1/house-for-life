@@ -1,43 +1,42 @@
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React from 'react'
 
 export default function HousingProgramsSection() {
+    const t = useTranslations("home")
 
     // Data for housing programs
     const housingProgramsData = [
         {
             image: "/assets/img/logement.png",
-            title: "Logements abordables",
-            description:
-            "Des appartements à loyer modéré adaptés aux besoins des femmes et familles monoparentales.",
+            title: t("program_data_titre_1"),
+            description: t("program_data_description_1")
         },
         {
             image: "/assets/img/soutien.png",
-            title: "Soutien communautaire",
-            description:
-            "Un accompagnement personnalisé pour favoriser l'autonomie et le bien-être à long terme.",
+            title: t("program_data_titre_2"),
+            description: t("program_data_description_2")
         },
         {
             image: "/assets/img/environnement.png",
-            title: "Environnement sécuritaire",
-            description:
-            "Des logements conçus pour offrir sécurité et tranquillité d'esprit.",
+            title: t("program_data_titre_3"),
+            description: t("program_data_description_3")
         },
-    ];
+    ]
+    
     return (
         <div className="flex flex-col w-full max-width items-start gap-6">
             <div className="flex items-center justify-between w-full">
                 <div className="flex flex-col items-start gap-2 md:w-[390px]">
                     <h2 className="font-heading-2 font-extrabold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                        Nos programmes de logement
+                        {t("program_titre")}
                     </h2>
                     <p className="font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                        L&apos;attribution des logements est réservée aux personnes en
-                        situation de grande précarité.
+                        {t("program_description")}
                     </p>
                 </div>
                 <span className="hidden md:inline-block font-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
-                    Explorer tous nos programmes
+                    {t("program_btn")}
                 </span>
             </div>
 

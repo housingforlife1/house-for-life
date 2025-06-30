@@ -7,6 +7,74 @@
         "actualites": "Actualités",
         "faire_un_don": "Faire un don"
     },
+    "home": {
+        "hero_btn_1": "Changer des vies, un logement à la fois",
+        "hero_titre": "Un logement pour les femmes et mères monoparentales du Nouveau-Brunswick",
+        "hero_description": "Habitation pour la vie construit des logements sécuritaires et abordables pour créer un avenir meilleur pour les femmes et les familles monoparentales en situation de précarité.",
+        "hero_btn_2": "Voir nos programmes",
+        "hero_btn_3": "Faire un don",
+        "hero_description_2": "Fondé en 2023 par un groupe de 7 bénévoles",
+        "adresse": "Adresse",
+
+        "problem_titre": "Problèmes majeurs à Moncton et dans le Sud-Est",
+        "problem_data_titre_1": "Femmes seules et pauvreté : une inégalité criante",
+        "problem_data_description_1": "En 2021, 2 675 femmes seules à Moncton vivaient sous le seuil de la pauvreté, révélant des défis économiques importants.",
+        "problem_data_titre_2": "Pauvreté des mères célibataires : un défi urgent",
+        "problem_data_description_2": "En 2021, 1 263 mères célibataires à Moncton vivaient dans la pauvreté, soulignant leur vulnérabilité économique.",
+        "problem_data_titre_3": "Crise du logement : pénurie de logements subventionnés",
+        "problem_data_description_3": "Avec seulement 981 logements subventionnés et une liste d'attente de 2 732 en 2022, la crise du logement dans le Sud-Est est alarmante.", 
+    
+        "impact_titre": "Notre impact",
+        "impact_description": "Depuis notre création en 2023, nous travaillons sans relâche pour offrir des solutions de logement durables et adaptées aux besoins des femmes et familles monoparentales du Nouveau-Brunswick.",
+        "impact_btn": "Voir nos programmes",
+        "impact_data_titre_1": "15 logements abordables en construction",
+        "impact_data_description_1": "Des loyers écoenergétiques accessibles et subventionnés à 70%, bien en dessous du prix du marché.",
+        "impact_data_titre_2": "15+ femmes et familles bientôt logées",
+        "impact_data_description_2": "Depuis notre création en 2023, nous travaillons sans relâche pour offrir des solutions.",
+        "impact_data_titre_3": "1 terrain acquis au 8, rue Pine à Moncton",
+        "impact_data_description_3": "Un endroit situé près de facilités de transport en commun, d'une pharmacie, d'une banque et des services d'aide.",
+        
+        "partner_titre": "Ils nous font confiance",
+        "partner_description": "Un ensemble diversifié d'organisations qui travaillent à nos côtés pour créer un changement positif.",
+
+        "derniere_actu": "Dernières actualités",
+        "voir_toute_actu": "Voir toute l'actualité",
+
+        "program_titre": "Nos programmes de logement",
+        "program_description": "L'attribution des logements est réservée aux personnes en situation de grande précarité.",
+        "program_btn": "Explorer tous nos programmes",
+        "program_data_titre_1": "Logements abordables",
+        "program_data_description_1": "Des appartements à loyer modéré adaptés aux besoins des femmes et familles monoparentales.",
+        "program_data_titre_2": "Soutien communautaire",
+        "program_data_description_2": "Un accompagnement personnalisé pour favoriser l'autonomie et le bien-être à long terme.",
+        "program_data_titre_3": "Environnement sécuritaire",
+        "program_data_description_3": "Des logements conçus pour offrir sécurité et tranquillité d'esprit.",
+
+
+        "mission_titre_1": "Notre mission",
+        "mission_titre_2": "La solidarité commence par un foyer.",
+        "mission_p_1": "Habitation pour la vie s'engage à offrir des logements abordables et un soutien communautaire aux femmes et mères monoparentales en situation de précarité.",
+        "mission_p_2": "Nous croyons que chaque femme et chaque enfant mérite un chez-soi sûr, stable et abordable. Notre approche repose sur les valeurs de solidarité, respect, dignité, inclusion et transparence.",
+        "soutenir_mission": "Soutenir la mission",
+
+        "support_titre": "Nous avons besoin de vous.",
+        "support_p_1": "Notre organisme compte sur les subventions de l'État, celles de la province du Nouveau-Brunswick et celles de la ville de Moncton.",
+        "support_p_2": "Nous comptons aussi sur les dons des individus désireux de soulager des personnes en situation de pauvreté.",
+        "support_p_3": "Vous aimeriez vous joindre à la cause ? Contactez-nous en choisissant l'une des options ci-dessous.",
+
+        "testimonial_titre": "Ils parlent de nous",
+        "quote_1": "Avoir un logement stable et abordable m'a permis de reprendre mes études tout en élevant mes enfants. C'est un nouveau départ pour toute notre famille.",
+        "author_1": "Marie, mère de deux enfants",
+        "quote_2": "Soutenir Housing for Life en tant que bénévole m'a permis de contribuer concrètement à améliorer la vie de femmes et d'enfants de ma communauté. C'est une expérience enrichissante.",
+        "author_2": "Jeanne, bénévole",
+        "quote_3": "Notre entreprise est fière de s'associer à Housing for Life. Leur mission s'aligne parfaitement avec nos valeurs d'inclusion et de responsabilité sociale.",
+        "author_3": "Robert, directeur d'une entreprise partenaire",
+
+        "faq_titre": "Nous avons les réponses",
+        "faq_p_1": "Vous trouverez ici les reponses aux questions courantes.",
+        "faq_p_2": "Contactez-nous",
+        "faq_p_3": "si vous avez une autre intérrogation."
+    },
     "contact":{
         "formTitle": "Besoin d'informations ?",
         "formDescription": "Que vous soyez bénéficiaire, donateur, bénévole ou partenaire, notre équipe est à votre écoute.",

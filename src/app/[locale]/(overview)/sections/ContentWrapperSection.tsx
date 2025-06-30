@@ -1,7 +1,9 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
+import { useTranslations } from "next-intl";
 
 export const ContentWrapperSection = () => {
+  const t = useTranslations("home")
   // FAQ data for mapping
   const faqItems = [
     {
@@ -74,22 +76,22 @@ export const ContentWrapperSection = () => {
     <section className="flex flex-col w-full max-width items-start gap-6 mt-32 mb-10">
       <div className="flex flex-col max-w-[390px] items-start gap-2">
         <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-          Nous avons les réponses
+          {t("faq_titre")}
         </h2>
 
         <p className="font-paragraph-1 text-gray">
           <span className="text-[#504f48] leading-[var(--paragraph-1-line-height)] font-paragraph-1 [font-style:var(--paragraph-1-font-style)] font-[number:var(--paragraph-1-font-weight)] tracking-[var(--paragraph-1-letter-spacing)] text-[length:var(--paragraph-1-font-size)]">
-            Vous trouverez ici les reponses aux questions courantes.{" "}
+            {t("faq_p_1")}{" "}
           </span>
 
           <span className="font-bold text-[#282724] leading-[0.1px] underline">
-            Contactez-nous
+            {t("faq_p_2")}
           </span>
 
           <span className="text-[#504f48] leading-[25.6px]">&nbsp;</span>
 
           <span className="text-[#504f48] leading-[var(--paragraph-1-line-height)] font-paragraph-1 [font-style:var(--paragraph-1-font-style)] font-[number:var(--paragraph-1-font-weight)] tracking-[var(--paragraph-1-letter-spacing)] text-[length:var(--paragraph-1-font-size)]">
-            si vous avez une autre intérrogation.
+            {t("faq_p_3")}
           </span>
         </p>
       </div>

@@ -1,27 +1,28 @@
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 export default function NewsSection() {
+    
+    const t = useTranslations("news")
+    
     // Data for news articles
     const newsArticlesData = [
         {
             image: "/assets/img/news-3.png",
-            title:
-                "Groupe de construction de logements abordables pour les mères célibataires et le...",
+            title: t('data_titre_1'),
             source: "TELEGRAPH JOURNAL",
             link: "https://tj.news/moncton-miramichi/group-building-affordable-housing-for-single-moms-senior-women",
         },
         {
             image: "/assets/img/news-2.png",
-            title:
-                "Don de 25 000$ a Habitation pour la vie par Major Drilling Group International Inc.",
+            title: t('data_titre_2'),
             source: "Major Drilling international",
             link: "https://web.facebook.com/photo/?fbid=122220855830205549&set=g.717736397114724",
         },
         {
             image: "/assets/img/news-1.png",
-            title:
-                "Logements abordables pour les mères célibataires et les femmes âgées",
+            title: t('data_titre_3'),
             source: "Global news",
             link: "https://globalnews.ca/video/10970883/global-news-at-6-new-brunswick-jan-21-5/",
         },
@@ -32,11 +33,11 @@ export default function NewsSection() {
             <div className="flex items-center justify-between w-full">
                 <div className="flex flex-col items-start gap-2 md:w-[390px]">
                     <h2 className="font-extrabold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                        Dernières actualités
+                        {t("derniere_actu")}
                     </h2>
                 </div>
                 <span className="hidden md:block font-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
-                    Voir toute l&apos;actualité
+                    {t("voir_toute_actu")}
                 </span>
             </div>
             <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-8 w-full v-scroll pb-6">
@@ -61,7 +62,7 @@ export default function NewsSection() {
                                 <div className="flex items-center justify-between w-full">
                                     <div className="flex-1 font-normal text-sm leading-[14px]">
                                         <span className="text-[#282724] leading-[22.4px]">
-                                            Par{" "}
+                                        {t('par')}{" "}
                                         </span>
                                         <span className="font-[number:var(--paragraph-2-font-weight)] text-[#282724] leading-[var(--paragraph-2-line-height)] underline font-paragraph-2 [font-style:var(--paragraph-2-font-style)] tracking-[var(--paragraph-2-letter-spacing)] text-[length:var(--paragraph-2-font-size)]">
                                             {article.source}
@@ -73,7 +74,7 @@ export default function NewsSection() {
                                             rel="noopener noreferrer"
                                             target="_blank">
                                             <span className="font-bold leading-[var(--paragraph-2-line-height)] underline font-paragraph-2 [font-style:var(--paragraph-2-font-style)] tracking-[var(--paragraph-2-letter-spacing)] text-[length:var(--paragraph-2-font-size)]">
-                                                Consulter
+                                                {t('consulter')}
                                             </span>
                                         </a>
                                     </div>
