@@ -7,8 +7,8 @@ export default function HomeHeaderSection() {
     const t = useTranslations("home")
   return (
     <header className="relative md:min-h-[calc(90vh)] m-2 rounded-2xl bg-[url('/assets/img/hero-home.png')] bg-cover bg-center flex flex-col justify-between pb-10">
-        <div className='absolute z-[4] inset-0 bg-green opacity-[0.03]' />
-        <div className='max-width z-[10]'>
+        {/*<div className='absolute z-[4] inset-0 bg-green opacity-10' /> */}
+        <div className='max-width'>
             <div className="flex flex-col md:w-[550px] items-start gap-11 pt-48 -ml-2">
                 <div className="flex flex-col items-start gap-10 w-full">
                     <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white flex flex-col gap-4 leading-8">
