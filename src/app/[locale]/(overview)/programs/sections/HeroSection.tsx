@@ -7,9 +7,9 @@ export default function HeroSection() {
     const t = useTranslations("programs")
   return (
     <header className="relative md:min-h-[calc(90vh)] m-2 rounded-2xl bg-transparent bg-[url('/assets/img/hero-img-programs.png')] bg-cover bg-center pb-10">
-        <div className='absolute z-[4] inset-0 bg-green opacity-10' />
-        <div className='max-width z-[5] absolute inset-0'>
-            <div className="flex flex-col md:w-2/3 lg:w-[550px] items-start gap-11 pt-48 z-10 -ml-2">
+        {/*<div className='absolute z-[4] inset-0 bg-green opacity-10' /> */}
+        <div className='max-width pb-10'>
+            <div className="flex flex-col md:w-2/3 lg:w-[550px] items-start gap-11 pt-48 -ml-2">
                 <div className="flex flex-col items-start gap-6 md:gap-10 w-full">
                     <div className="w-full [font-family:'Instrument_Sans',Helvetica] font-normal text-white text-[32px] flex flex-col gap-4 leading-8">
                         <h1 className="font-extrabold text-[#FCFCF8] text-4xl">
