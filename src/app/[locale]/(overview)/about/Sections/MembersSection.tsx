@@ -10,52 +10,53 @@ export default function MembersSection() {
     {
       image: "/assets/img/paulette.png",
       name: "Paulette Ben Ammar",
-      role: "Présidente",
+      role: t("member_presidente"),
     },
     {
       image: "/assets/img/isabelle.png",
       name: "Isabelle Lavoie",
-      role: "Vice-présidente",
+      role: t("member_vice_presidente"),
     },
     {
       image: "/assets/img/aurea.png",
       name: "Auréa Cormier",
-      role: "Secrétaire-trésorière",
+      role: t("member_secretaire"),
     },
     {
       image: "/assets/img/rhada.png",
       name: "Rhada El Khadir",
-      role: "Coordination administrative",
+      role: t("member_coordination_administratif"),
     },
     {
       image: "/assets/img/alphonse.png",
       name: "Alphonse Dionne",
-      role: "Membre du CA",
+      role: t("member_ca"),
     },
     {
       image: "/assets/img/marie.png",
       name: "Marie-Éva Gaudet",
-      role: "Membre du CA",
+      role: t("member_ca"),
     },
     {
       image: "/assets/img/nicolas.png",
       name: "Nicolas Kalgora",
-      role: "Membre du CA",
+      role: t("member_ca"),
     },
     {
       image: "/assets/img/lujan.png",
       name: "Lujan Saintil",
-      role: "Membre du CA",
+      role: t("member_ca"),
     },
     {
       image: "/assets/img/mirelle.png",
       name: "Mirelle Cyr",
-      role: "Membre du CA",
+      role: t("member_ca"),
     },
+    
     {
       image: "/assets/img/eric.png",
       name: "Éric Pelletier",
-      role: "Membre du CA",
+      role: t("member_ca"),
     },
   ]
 

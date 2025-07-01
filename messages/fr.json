@@ -141,7 +141,12 @@
         "support_data_action_3": "Rejoindre l'équipe",
 
         "member_titre": "Un engagement collectif",
-        "member_description": "Habitation pour la vie est géré par un conseil d'administration impliqué qui se réunit chaque mois pour planifier les actions et suivre les projets."
+        "member_description": "Habitation pour la vie est géré par un conseil d'administration impliqué qui se réunit chaque mois pour planifier les actions et suivre les projets.",
+        "member_presidente": "Présidente",
+        "member_vice_presidente": "Vice-présidente",
+        "member_secretaire": "Secrétaire-trésorière",
+        "member_coordination_administratif": "Coordination administrative",
+        "member_ca": "Membre du CA"
     },
     "programs": {
         "hero_titre": "Des logements, un avenir : Découvrez nos programmes de soutien.",

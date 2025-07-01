@@ -5,43 +5,44 @@ import Image from "next/image";
 export default function BoardMembersSection(){
 
     const t = useTranslations("donation")
+    const ta = useTranslations("about")
 
     // Data for board members
     const boardMembers = [
         {
-            name: "Paulette Dionne",
-            role: "Présidente",
             image: "/assets/img/paulette.png",
+            name: "Paulette Dionne",
+            role: ta("member_presidente"),
         },
         {
-            name: "Isabelle Lavoie",
-            role: "Vice-présidente",
             image: "/assets/img/isabelle.png",
+            name: "Isabelle Lavoie",
+            role: ta("member_vice_presidente"),
         },
         {
-            name: "Auréa Cormier",
-            role: "Secrétaire-trésorière",
             image: "/assets/img/aurea.png",
+            name: "Auréa Cormier",
+            role: ta("member_secretaire"),
         },
         {
-            name: "Alphonse Dionne",
-            role: "Coordination administrative",
             image: "/assets/img/alphonse.png",
+            name: "Alphonse Dionne",
+            role: ta("member_coordination_administratif"),
         },
         {
-            name: "Marie-Éva Gaudet",
-            role: "Membre du CA",
             image: "/assets/img/marie.png",
+            name: "Marie-Éva Gaudet",
+            role: ta("member_ca"),
         },
         {
-            name: "Lujan Saintil",
-            role: "Membre du CA",
             image: "/assets/img/lujan.png",
+            name: "Lujan Saintil",
+            role: ta("member_ca"),
         },
         {
-            name: "Nicolas Kalgora",
-            role: "Membre du CA",
             image: "/assets/img/nicolas.png",
+            name: "Nicolas Kalgora",
+            role: ta("member_ca"),
         },
     ];
     return (
