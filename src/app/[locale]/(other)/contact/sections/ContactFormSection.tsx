@@ -42,13 +42,13 @@ export const ContactFormSection = ()=> {
       title: t("data_titre_2"),
       email: "donation@hforlife-hpourlavie.ca",
       tel: "506-854-0675",
-      links: ["En savoir plus sur les dons"],
+      links: [t('link_1_data_1')],
     },
     {
       title: t("data_titre_3"),
       email: "benevolat@hforlife-hpourlavie.ca",
       tel: "506-854-0675",
-      links: ["Voir les opportunités de bénévolat"],
+      links: [t('link_2_data_1')],
     },
   ];
 

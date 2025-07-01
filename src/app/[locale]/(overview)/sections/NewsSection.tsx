@@ -1,3 +1,4 @@
+import { Link } from '@/i18n/routing'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
@@ -37,9 +38,9 @@ export default function NewsSection() {
                         {th("derniere_actu")}
                     </h2>
                 </div>
-                <span className="hidden md:block font-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
+                <Link href={'/news'} className="hidden md:block font-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
                     {th("voir_toute_actu")}
-                </span>
+                </Link>
             </div>
             <div className="flex flex-row overflow-x-scroll lg:overflow-x-hidden xl:grid-cols-3 gap-4 md:gap-8 w-full v-scroll pb-6">
                 {
@@ -57,7 +58,7 @@ export default function NewsSection() {
                                 />
                             </div>
                             <div className="flex flex-col items-start gap-4 w-full">
-                                <p className="font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                                <p className="font-paragraph-1 font-bold text-gray text-lg tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
                                     {article.title}
                                 </p>
                                 <div className="flex items-center justify-between w-full">

@@ -74,7 +74,7 @@ export default function OurImpactSection() {
                                     />
                                 </div>
                                 <div className="flex flex-col items-start gap-2 w-full">
-                                    <h4 className="font-heading-4 text-black text-[length:var(--heading-4-font-size)] tracking-[var(--heading-4-letter-spacing)] leading-[var(--heading-4-line-height)] [font-style:var(--heading-4-font-style)]">
+                                    <h4 className="font-heading-4 font-bold text-black text-lg tracking-[var(--heading-4-letter-spacing)] leading-[var(--heading-4-line-height)] [font-style:var(--heading-4-font-style)]">
                                         {card.title}
                                     </h4>
                                     <p className="font-paragraph-1 text-black text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">

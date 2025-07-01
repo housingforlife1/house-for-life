@@ -98,7 +98,7 @@ export const ContentWrapperSection = () => {
 
       <Separator className="w-full" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         {faqItems.map((item, index) => (
           <Accordion
             key={index}

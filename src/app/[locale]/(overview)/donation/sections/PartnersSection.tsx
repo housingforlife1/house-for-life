@@ -96,6 +96,9 @@ export default function PartnersSection() {
                 {t("partner_titre")}
             </h2>
             <div className='w-full md:w-2/3 flex flex-col gap-5'>
+                <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
+                    {t("particuliers")}
+                </p>
                 <div className="flex items-center justify-between h-[50px] gap-x-3">
                     <ChevronLeft className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
                     <div className='w-full flex flex-row v-scroll overflow-x-auto'>
@@ -115,7 +118,7 @@ export default function PartnersSection() {
                     <ChevronRight className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
                 </div>
 
-                <Separator className="bg-gray/20" />
+                <Separator className="bg-black opacity-15" />
 
                 <div className="flex flex-col gap-2.5">
                     <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">

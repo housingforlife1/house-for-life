@@ -149,15 +149,15 @@ export default function MissionSection() {
                                             </p>
                                         </div>
                                     </CardContent>
-                                    <div className="w-full h-[37px]">
-                                        <div className="w-full h-9 bg-[#fcfcf8] border-t border-neutral-200">
+                                    <div className="w-full h-[37px] mt-3 md:mt-5 bg-[#fcfcf8] border-t border-neutral-200">
+                                        <Link href={'/contact'} className="w-full h-9">
                                             <div className="flex items-center justify-between w-full mt-[17px]">
                                             <span className="font-paragraph-bold text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)] cursor-pointer">
                                                 {option.action}
                                             </span>
                                             <ChevronRight className="w-[18px] h-[18px]" />
                                             </div>
-                                        </div>
+                                        </Link>
                                     </div>
                                 </Card>
                             ))

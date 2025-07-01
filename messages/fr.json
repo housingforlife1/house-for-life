@@ -18,6 +18,7 @@
         "hero_btn_3": "Faire un don",
         "hero_description_2": "Fondé en 2023 par un groupe de 7 bénévoles",
         "adresse": "Adresse",
+        "adresse_val": "305, avenue Dominion, Moncton",
 
         "problem_titre": "Problèmes majeurs à Moncton et dans le Sud-Est",
         "problem_data_titre_1": "Femmes seules et pauvreté : une inégalité criante",
@@ -92,7 +93,9 @@
         "adresse_val": "305, avenue Dominion, Moncton, NB (bureau administratif)",
         "data_titre_1": "Demander un logement (bénéficiaires)",
         "data_titre_2": "Faire un don ou devenir partenaire (donateurs & entreprises)",
-        "data_titre_3": "Devenir bénévole"
+        "data_titre_3": "Devenir bénévole",
+        "link_1_data_1": "En savoir plus sur les dons",
+        "link_2_data_1": "Voir les opportunités de bénévolat"
     },
     "news": {
         "hero_titre": "Vous trouverez ici les liens de tous les articles, vidéos etc qui font mentions de nos activités",
@@ -140,7 +143,7 @@
     "programs": {
         "hero_titre": "Des logements, un avenir : Découvrez nos programmes de soutien.",
         "hero_description": "Nous offrons bien plus qu'un toit. Nos programmes sont conçus pour aider les femmes et les mères monoparentales à retrouver stabilité et autonomie.",
-        "hero_btn": "Faire une demande de logement",
+        "hero_btn": "Nous contacter",
 
         "details_programs": "Détails du programme",
         "partner_titre": "Ils nous font confiance",
@@ -170,6 +173,7 @@
         "hero_titre": "Un toit pour elles : Faites un don, changez une vie.",
         "hero_description": "Aidez-nous à financer la construction de logements abordables pour des femmes et mères monoparentales en situation précaire.",
         "partner_titre": "Ils nous soutiennent déjà,  rejoignez-les !",
+        "entreprises": "Les entreprises",
         "particuliers": "Les particuliers",
         "benefits_titre": "Chaque don construit un avenir.",
         "benefits_description": "Grace à votre générosité et votre don, vous permettez de :",

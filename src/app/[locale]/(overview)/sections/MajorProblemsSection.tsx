@@ -21,8 +21,8 @@ export default function MajorProblemsSection() {
     ];
     return (
         <div className="flex flex-col w-full max-width items-start gap-6 my-14 md:my-32">
-            <h2 className="font-heading-2 text-2xl md:text-4xl font-bold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)] md:w-2/3 lg:w-2/4">
-                {t("problem_titre")}
+            <h2 className="font-heading-2 text-2xl md:text-4xl font-bold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)] md:w-2/3 lg:w-1/3">
+                {t("problem_titre")} 
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
@@ -39,7 +39,7 @@ export default function MajorProblemsSection() {
                         </div>
 
                         <div className="flex flex-col items-start gap-2.5">
-                            <h4 className="w-full font-heading-4 text-black text-[length:var(--heading-4-font-size)] tracking-[var(--heading-4-letter-spacing)] leading-[var(--heading-4-line-height)] [font-style:var(--heading-4-font-style)]">
+                            <h4 className="w-full font-heading-4 font-bold  text-black text-lg tracking-[var(--heading-4-letter-spacing)] leading-[var(--heading-4-line-height)] [font-style:var(--heading-4-font-style)]">
                                 {problem.title}
                             </h4>
                             <p className="w-full font-paragraph-1 text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">

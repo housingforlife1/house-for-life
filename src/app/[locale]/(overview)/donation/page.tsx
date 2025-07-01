@@ -7,7 +7,7 @@ import PartnersSection from "./sections/PartnersSection";
 
 export default function DonationPage(){
     return (
-        <>
+        <div className="bg-[#FCFCF8]">
             {/** Hero section */}
             <HeroSection /> 
 
@@ -25,6 +25,6 @@ export default function DonationPage(){
 
             {/* Board Members Section   */}
             <BoardMembersSection /> 
-        </>
+        </div>
     )
 }

@@ -18,6 +18,7 @@
         "hero_btn_3": "Make a donation",
         "hero_description_2": "Founded in 2023 by a group of 7 volunteers",
         "adresse": "Address",
+        "adresse_val": "305 Dominion Avenue, Moncton",
 
         "problem_titre": "Major problems in Moncton and the Southeast",
         "problem_data_titre_1": "Single women and poverty: a glaring inequality",
@@ -56,7 +57,7 @@
 
         "mission_titre_1": "Our mission",
         "mission_titre_2": "Solidarity begins at home.",
-        "mission_p_1": "Habitation pour la vie is committed to providing affordable housing and community support to women and single mothers in precarious situations.",
+        "mission_p_1": "House for life is committed to providing affordable housing and community support to women and single mothers in precarious situations.",
         "mission_p_2": "We believe that every woman and child deserves a safe, stable and affordable home. Our approach is based on the values of solidarity, respect, dignity, inclusion and transparency.",
         "soutenir_mission": "Supporting the mission",
 
@@ -87,19 +88,21 @@
         "form_send_btn": "Send message",
         "info_titre": "Contact details",
         "info_email": "Email",
-        "telephone": "Tel",
+        "telephone": "Phone",
         "adresse": "Address",
         "adresse_val": "305 Dominion Avenue, Moncton, NB (administrative office)",
         "data_titre_1": "Applying for housing (beneficiaries)",
         "data_titre_2": "Make a donation or become a partner (donors & companies)",
-        "data_titre_3": "Become a volunteer"
+        "data_titre_3": "Become a volunteer",
+        "link_1_data_1": "Learn more about donations",
+        "link_2_data_1": "See volunteer opportunities"
     },
     "news": {
         "hero_titre": "Here you will find links to all the articles, videos, etc. that mention our activities.",
         "hero_description": "Help us finance the construction of affordable housing for women and single mothers in precarious situations.",
         "partener_titre": "They're talking about us over there",
         "data_titre_1": "Group building affordable housing for single mothers and the...",
-        "data_titre_2": "25,000 donation to Habitation pour la vie from Major Drilling Group International Inc.",
+        "data_titre_2": "25,000 donation to House for life from Major Drilling Group International Inc.",
         "data_titre_3": "Affordable housing for single mothers and elderly women",
         "par": "By",
         "consulter": "Visit"
@@ -107,7 +110,7 @@
     "about": {
         "hero_sous_titre": "A home, an opportunity",
         "hero_titre": "Building a better future together",
-        "hero_description": "Habitation pour la vie is a non-profit organization that provides affordable housing and a stable living environment for women in precarious situations.",
+        "hero_description": "House for life is a non-profit organization that provides affordable housing and a stable living environment for women in precarious situations.",
         "hero_soutenir_mission": "Supporting the mission",
         "about_titre_1": "Our commitment starts here.",
         "about_description_1": "Founded in 2023 by a group of seven committed volunteers, Housing for Life was born of a desire to take concrete action against precariousness.",
@@ -125,7 +128,7 @@
         "data_description_4": "Managing our resources with integrity and commitment.",
 
         "support_titre": "Join us in providing a roof over the heads of those in need.",
-        "support_description": "Habitation pour la vie is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects.",
+        "support_description": "House for life is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects.",
         "partner_titre": "Companies & individuals who place their trust in us",
         "support_data_titre_1": "Make a donation",
         "support_data_description_1": "Your financial contribution helps us build and maintain affordable housing. Every dollar counts.",
@@ -140,7 +143,7 @@
     "programs": {
         "hero_titre": "Housing, a future : Discover our support programs.",
         "hero_description": "We offer much more than shelter. Our programs are designed to help women and single mothers regain stability and independence.",
-        "hero_btn": "Applying for housing",
+        "hero_btn": "Contact Us",
 
         "details_programs": "Program details",
         "partner_titre": "They trust us",
@@ -170,6 +173,7 @@
         "hero_titre": "A roof for them: Make a donation, change a life.",
         "hero_description": "Help us finance the construction of affordable housing for women and single mothers in precarious situations.",
         "partner_titre": "They already support us - join them!",
+        "entreprises": "Companies",
         "particuliers": "Individuals",
         "benefits_titre": "Every donation builds a future.",
         "benefits_description": "Thanks to your generosity and your donation, you make it possible to :",
@@ -177,7 +181,7 @@
         "data_description_2": "Accompany beneficiaries towards sustainable autonomy with social support.",
         "data_description_3": "70% below-market rents thanks to subsidies.",
         "fundraising_titre": "We take it seriously",
-        "fundraising_p1": "A fundraising firm has been set up to provide financial support for the Habitation pour la Vie project. The firm has two objectives:",
+        "fundraising_p1": "A fundraising firm has been set up to provide financial support for the House for life project. The firm has two objectives:",
         "fundraising_p2": "The first objective",
         "fundraising_p3": "is to raise $700,000 to build this housing project and access competitively priced materials..",
         "fundraising_p4": "The second objective",
@@ -185,7 +189,7 @@
         "fundraising_p6": "Timeline: Spring 2024 - Spring 2025",
 
         "member_titre": "A collective commitment",
-        "member_description": "Habitation pour la vie is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects."
+        "member_description": "House for life is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects."
     },
     "footer": {
         "habilitation_vie": "Housing for life",

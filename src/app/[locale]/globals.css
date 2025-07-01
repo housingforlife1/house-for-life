@@ -149,7 +149,7 @@
   }
 
   .max-width {
-    @apply !w-[93%] md:!w-[82%] mx-auto;
+    @apply !w-[93%] md:!w-[79%] mx-auto;
   }
 
   .max-margin {
