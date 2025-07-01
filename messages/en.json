@@ -142,7 +142,12 @@
 
 
         "member_titre": "A collective commitment",
-        "member_description": "Habitation pour la vie is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects."
+        "member_description": "House for life is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects.",
+        "member_presidente": "President",
+        "member_vice_presidente": "Vice President",
+        "member_secretaire": "Secretary-Treasurer",
+        "member_coordination_administratif": "Administrative coordination",
+        "member_ca": "Board member"
     },
     "programs": {
         "hero_titre": "Housing, a future : Discover our support programs.",
