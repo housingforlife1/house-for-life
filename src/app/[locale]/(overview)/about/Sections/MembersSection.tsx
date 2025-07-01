@@ -1,8 +1,10 @@
 import { Card, CardContent } from '@/components/ui/card'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 
 export default function MembersSection() {
+  const t = useTranslations("about")
     // Board members data
   const boardMembers = [
     {
@@ -62,12 +64,10 @@ export default function MembersSection() {
         <div className="w-full md:w-1/2 lg:max-w-[450px]">
           <div className="flex flex-col items-start gap-2 w-full">
               <h2 className="font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
-                Un engagement collectif
+                {t("member_titre")} 
               </h2>
               <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                Habitation pour la vie est géré par un conseil
-                d&apos;administration impliqué qui se réunit chaque mois pour
-                planifier les actions et suivre les projets.
+                {t("member_description")}
               </p>
           </div>
         </div>

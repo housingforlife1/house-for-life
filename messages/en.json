@@ -138,7 +138,11 @@
         "support_data_action_2": "Become a partner",
         "support_data_titre_3": "Become a volunteer",
         "support_data_description_3": "Put your skills and time to work for our mission. Join our team of dedicated volunteers.",
-        "support_data_action_3": "Join our team"
+        "support_data_action_3": "Join our team",
+
+
+        "member_titre": "A collective commitment",
+        "member_description": "Habitation pour la vie is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects."
     },
     "programs": {
         "hero_titre": "Housing, a future : Discover our support programs.",

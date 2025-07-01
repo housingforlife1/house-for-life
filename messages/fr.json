@@ -138,7 +138,10 @@
         "support_data_action_2": "Devenir partenaire",
         "support_data_titre_3": "Devenir bénévole",
         "support_data_description_3": "Mettez vos compétences et votre temps au service de notre mission. Rejoignez notre équipe de bénévoles dévoués.",
-        "support_data_action_3": "Rejoindre l'équipe"
+        "support_data_action_3": "Rejoindre l'équipe",
+
+        "member_titre": "Un engagement collectif",
+        "member_description": "Habitation pour la vie est géré par un conseil d'administration impliqué qui se réunit chaque mois pour planifier les actions et suivre les projets."
     },
     "programs": {
         "hero_titre": "Des logements, un avenir : Découvrez nos programmes de soutien.",
