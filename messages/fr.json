@@ -200,7 +200,22 @@
         "actifs": "Actifs",
 
         "member_titre": "Un engagement collectif",
-        "member_description": "Habitation pour la vie est géré par un conseil d'administration impliqué qui se réunit chaque mois pour planifier les actions et suivre les projets."
+        "member_description": "Habitation pour la vie est géré par un conseil d'administration impliqué qui se réunit chaque mois pour planifier les actions et suivre les projets.",
+
+        "methods_titre": "Ou donnez à votre manière.",
+        "methods_paragraph_1": "Tous les dons sont déductibles d'impôts. Un reçu officiel vous sera envoyé. Numéro d'enregistrement de l'organisme ",
+        "methods_paragraph_2": "Pour obtenir plus d'informations sur la façon dont vous pouvez faire un don contactez :",
+        "methods_paragraph_3": "Secrétaire -trésorière : Aurea cormier, tel : 5068540675",
+        "methods_paragraph_4": "Assistante Administrative : Rhada El Khadir, tel : 5068540675",
+
+        "methods_data_titre_1": "Transfert Electronique, Interac",
+        "methods_data_description_1": "Dépôt direct : donation@hforlife-hpourlavie.ca",
+        "methods_data_titre_2": "Chèque à l'ordre de \"Habitation pour la Vie, Inc.\"",
+        "methods_data_description_2": "Envoyer le chèque à cet adresse : \n305, avenue Dominion, Moncton, NB",
+        "methods_data_titre_3": "Virement bancaire",
+        "methods_data_description_3": "Nom du compte : Habitation pour la Vie, Inc.\nNuméro IBAN : 75272 2818 RR0001",
+        "methods_data_titre_4": "Dons en nature (matériaux, services professionnels)",
+        "methods_data_description_4": "Contactez-nous directement via cet adresse pour faire votre don : donation@hforlife-hpourlavie.ca"
     },
 
     "footer": {

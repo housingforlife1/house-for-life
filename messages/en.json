@@ -201,7 +201,22 @@
         "actifs": "Active",
 
         "member_titre": "A collective commitment",
-        "member_description": "House for life is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects."
+        "member_description": "House for life is managed by a committed Board of Directors who meet monthly to plan actions and monitor projects.",
+
+        "methods_titre": "Or give in your own way.",
+        "methods_paragraph_1": "All donations are tax-deductible. An official receipt will be sent to you. Organization registration number",
+        "methods_paragraph_2": "For more information on how you can make a donation, please contact :",
+        "methods_paragraph_3": "Secretary-treasurer: Aurea Cormier, tel: 5068540675",
+        "methods_paragraph_4": "Administrative Assistant: Rhada El Khadir, tel: 5068540675",
+
+        "methods_data_titre_1": "Electronic Transfer, Interac",
+        "methods_data_description_1": "Direct deposit: donation@hforlife-hpourlavie.ca",
+        "methods_data_titre_2": "Cheque payable to \"Habitation pour la Vie, Inc.\"",
+        "methods_data_description_2": "Send cheque to this address: \n305 Dominion Avenue, Moncton, NB",
+        "methods_data_titre_3": "Bank transfer",
+        "methods_data_description_3": "Account name : Habitation pour la Vie, Inc.\nIBAN number: 75272 2818 RR0001",
+        "methods_data_titre_4": "In-kind donations (materials, professional services)",
+        "methods_data_description_4": "Contact us directly at donation@hforlife-hpourlavie.ca to make your donation."
     },
     "footer": {
         "habilitation_vie": "Housing for life",

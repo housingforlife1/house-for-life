@@ -3,29 +3,28 @@ import { Card, CardContent } from '@/components/ui/card'
 // import { Checkbox } from '@/components/ui/checkbox'
 // import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
+import { useTranslations } from 'next-intl'
 
 export default function DonationSection() {
+    const t = useTranslations("donation")
     // Data for donation methods
     const donationMethods = [
-    {
-      title: "Transfert Electronique, Interac",
-      description: "Depot direct : donation@hforlife-hpourlavie.ca",
-    },
-    {
-      title: 'Chèque à l\'ordre de "Habitation pour la Vie, Inc."',
-      description:
-        "Envoyer le chèque à cet adresse : \n305, avenue Dominion, Moncton, NB",
-    },
-    {
-      title: "Virement bancaire",
-      description:
-        "Nom du compte : Habitation pour la Vie, Inc.\nNuméro IBAN : 75272 2818 RR0001",
-    },
-    {
-      title: "Dons en nature (matériaux, services professionnels)",
-      description:
-        "Contactez-nous directement via cet adresse pour faire votre don : donation@hforlife-hpourlavie.ca",
-    },
+        {
+            title: t("methods_data_titre_1"),
+            description: t("methods_data_description_1"),
+        },
+        {
+            title: t("methods_data_titre_2"),
+            description: t("methods_data_description_2"),
+        },
+        {
+            title: t("methods_data_titre_3"),
+            description: t("methods_data_description_3"),
+        },
+        {
+            title: t("methods_data_titre_4"),
+            description: t("methods_data_description_4"),
+        },
     ]
 
     return (
@@ -127,7 +126,7 @@ export default function DonationSection() {
                 {/* Alternative Donation Methods */}
                 <div className="w-full flex flex-col col-span-full lg:col-span-6 gap-6">
                     <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
-                        Ou donnez à votre manière.
+                        {t("methods_titre")}
                     </h3>
 
                     <div className="flex flex-col gap-3">
@@ -151,8 +150,7 @@ export default function DonationSection() {
                     </div>
 
                     <p className="font-paragraph-2 text-[#504f48] leading-[var(--paragraph-2-line-height)]">
-                        Tous les dons sont déductibles d&apos;impôts. Un reçu officiel vous
-                        sera envoyé. Numéro d&apos;enregistrement de l&apos;organisme :{" "}
+                        {t("methods_paragraph_1")} :{" "}
                         <span className="text-[#282724]">75272 2818 RR0001</span>
                     </p>
 
@@ -160,13 +158,12 @@ export default function DonationSection() {
 
                     <div className="flex flex-col gap-2">
                             <h4 className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                Pour obtenir plus d&apos;informations sur la façon dont vous
-                                pouvez faire un don contactez :
+                                {t("methods_paragraph_2")}
                             </h4>
                             <p className="font-paragraph-2 text-gray leading-[var(--paragraph-2-line-height)]">
-                                Secrétaire -trésorière : Aurea cormier, tel : 5068540675
+                                {t("methods_paragraph_3")}
                             <br />
-                                Assistante Administrative : Rhada El Khadir, tel : 5068540675
+                                {t('methods_paragraph_4')}
                             </p>
                     </div>
                 </div> 
