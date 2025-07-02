@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { Loader } from "@/components/ui/loader";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import * as z from "zod";
 
 
@@ -21,6 +23,8 @@ const formSchema = z.object({
 export const ContactFormSection = ()=> {
   const t = useTranslations("contact")
 
+  const [loading, setLoading] = useState(false)
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -28,7 +32,7 @@ export const ContactFormSection = ()=> {
       email: "",
       message: "",
     },
-  });
+  })
 
   // Contact information data for the right side
   const contactSections = [
@@ -50,13 +54,45 @@ export const ContactFormSection = ()=> {
       tel: "506-854-0675",
       links: [t('link_2_data_1')],
     },
-  ];
-
+  ]
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log(JSON.stringify(values));
-  }
+    if (loading) return; // Prevent multiple submissions
+    setLoading(true);
+    // Here you can handle the form submission, e.g., send the data to an API
+    try {
+      const response: any = await fetch("https://housefl.wds-project.com/api/formulaire_contacts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(values),
+      })
 
+      if (response.status === 200 || response?.infos?.id) {
+        // Handle successful submission, e.g., show a success message
+        toast.success("Message envoyé avec succès !")
+        
+        // Reset the form after submission
+        form.reset();
+      }
+      else {
+        // Handle error in response
+        toast.error(
+          <div className='p-3 bg-red-500 text-white rounded-md'>
+            Une erreur est survenue. Veuillez réessayer plus tard.
+          </div>
+        )
+      }
+    } catch (error: any) {
+      toast.error(
+        <div className='p-3 bg-red-500 text-white rounded-md'>
+          Une erreur est survenue. Erreur:  {JSON.stringify(error.message)}
+        </div>
+      )
+    }
+    finally {
+      setLoading(false);
+    }
+  }
 
   return (
     <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 max-width">
@@ -128,6 +164,7 @@ export const ContactFormSection = ()=> {
                 />
 
                 <Button type="submit" className="h-[50px] w-full mt-4 bg-green rounded-xl font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-[length:var(--paragraph-bold-font-size)] text-center tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                  { loading && <Loader className="text-white w-5 h-5 mr-2" /> }
                   {t("form_send_btn")}
                 </Button>
               </form>
@@ -173,5 +210,5 @@ export const ContactFormSection = ()=> {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
