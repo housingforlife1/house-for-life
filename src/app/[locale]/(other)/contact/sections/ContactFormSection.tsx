@@ -61,13 +61,13 @@ export const ContactFormSection = ()=> {
     setLoading(true);
     // Here you can handle the form submission, e.g., send the data to an API
     try {
-      const response: any = await fetch("https://housefl.wds-project.com/api/formulaire_contacts", {
+      const response = await fetch("https://housefl.wds-project.com/api/formulaire_contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(values),
       })
 
-      if (response.status === 200 || response?.infos?.id) {
+      if (response.status === 200) {
         // Handle successful submission, e.g., show a success message
         toast.success("Message envoyé avec succès !")
         

@@ -141,10 +141,10 @@ export default function PartnersSection() {
 
                     <div className="flex flex-col">
                         <p className="font-paragraph-2 text-[#282724] leading-[var(--paragraph-2-line-height)] tracking-[var(--paragraph-2-letter-spacing)] text-[length:var(--paragraph-2-font-size)]">
-                            +24 contributeurs
+                            +24 {t("contributeurs")}
                         </p>
                         <p className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
-                            Actifs
+                            {t("actifs")}
                         </p>
                     </div>
                     </div>
