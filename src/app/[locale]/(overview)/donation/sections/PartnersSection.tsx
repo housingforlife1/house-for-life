@@ -26,8 +26,8 @@ export default function PartnersSection() {
         }
     };
 
-     // Partner logos data
-     const partnerLogos = [
+    // Partner logos data
+    const partnerLogos = [
         {
             src: "/assets/img/partner-2.png",
             alt: "Partner logo",
@@ -114,7 +114,7 @@ export default function PartnersSection() {
             </h2>
             <div className='w-full md:w-2/3 flex flex-col gap-5'>
                 <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                    {t("particuliers")}
+                    {t("entreprises")}
                 </p>
                 <div className="flex items-center justify-between h-[50px] gap-x-3">
                     <ChevronLeft 
@@ -148,7 +148,7 @@ export default function PartnersSection() {
 
                 <div className="flex flex-col gap-2.5">
                     <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                    {t("particuliers")}
+                        {t("particuliers")}
                     </p>
 
                     <div className="flex items-center gap-4">
