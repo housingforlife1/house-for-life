@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { Link } from '@/i18n/routing';
 import { ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -75,12 +76,12 @@ export default function SupportOptionSection() {
                         </div>
                         <div className="w-full">
                             <Separator className="mb-4" />
-                            <div className="flex items-center justify-between w-full">
+                            <Link href={'/contact'} className="flex items-center justify-between w-full">
                                 <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
                                     {option.action}
                                 </span>
                                 <ChevronRight className='w-6 h-6 text-gray' />
-                            </div>
+                            </Link>
                         </div>
                     </CardContent>
                 </Card>

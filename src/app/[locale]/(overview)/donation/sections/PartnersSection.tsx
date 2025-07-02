@@ -2,14 +2,30 @@ import { Separator } from '@/components/ui/separator';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import React from 'react'
+import React, { useRef } from 'react'
 
 export default function PartnersSection() {
+    const t = useTranslations("donation");
 
-    const t = useTranslations("donation")
+    // Référence pour le conteneur des logos
+    const logoContainerRef = useRef<HTMLDivElement>(null);
 
-    // Partner logos data
-    const partnerLogos = [
+    // Fonction pour scroller vers la gauche
+    const scrollLeft = () => {
+        if (logoContainerRef.current) {
+            logoContainerRef.current.scrollBy({ left: -150, behavior: 'smooth' });
+        }
+    };
+
+    // Fonction pour scroller vers la droite
+    const scrollRight = () => {
+        if (logoContainerRef.current) {
+            logoContainerRef.current.scrollBy({ left: 150, behavior: 'smooth' });
+        }
+    };
+
+     // Partner logos data
+     const partnerLogos = [
         {
             src: "/assets/img/partner-2.png",
             alt: "Partner logo",
@@ -100,8 +116,14 @@ export default function PartnersSection() {
                     {t("particuliers")}
                 </p>
                 <div className="flex items-center justify-between h-[50px] gap-x-3">
-                    <ChevronLeft className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
-                    <div className='w-full flex flex-row v-scroll overflow-x-auto'>
+                    <ChevronLeft 
+                        className='hidden md:block w-6 h-6 text-gray cursor-pointer' 
+                        onClick={scrollLeft} 
+                    />
+                    <div 
+                        ref={logoContainerRef} 
+                        className='w-full flex flex-row v-scroll overflow-x-auto'
+                    >
                         {
                             partnerLogos.map((logo, index) => (
                                 <div key={index} className={`relative shrink-0 h-[${logo.width}px] w-[100px] md:w-[150px]`}>
@@ -115,7 +137,10 @@ export default function PartnersSection() {
                             ))
                         }
                     </div>
-                    <ChevronRight className='hidden md:block w-6 h-6 text-gray cursor-pointer' />
+                    <ChevronRight 
+                        className='hidden md:block w-6 h-6 text-gray cursor-pointer' 
+                        onClick={scrollRight} 
+                    />
                 </div>
 
                 <Separator className="bg-black opacity-15" />
@@ -151,5 +176,5 @@ export default function PartnersSection() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
