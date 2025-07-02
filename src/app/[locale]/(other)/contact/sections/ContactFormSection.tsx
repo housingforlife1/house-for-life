@@ -82,10 +82,10 @@ export const ContactFormSection = ()=> {
           </div>
         )
       }
-    } catch (error: any) {
+    } catch (error) {
       toast.error(
         <div className='p-3 bg-red-500 text-white rounded-md'>
-          Une erreur est survenue. Erreur:  {JSON.stringify(error.message)}
+          Une erreur est survenue. Erreur:  {JSON.stringify(error)}
         </div>
       )
     }
