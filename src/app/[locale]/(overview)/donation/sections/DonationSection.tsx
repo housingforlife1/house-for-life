@@ -154,7 +154,7 @@ export default function DonationSection() {
                         <span className="text-[#282724]">75272 2818 RR0001</span>
                     </p>
 
-                    <Separator className="border border-dashed border-gray" />
+                    <Separator className="border-[0.5px] md:border border-dashed border-gray" />
 
                     <div className="flex flex-col gap-2">
                             <h4 className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
