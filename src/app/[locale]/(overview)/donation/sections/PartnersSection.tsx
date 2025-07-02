@@ -1,3 +1,5 @@
+"use client"
+
 import { Separator } from '@/components/ui/separator';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
