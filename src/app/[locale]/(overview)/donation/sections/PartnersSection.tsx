@@ -107,7 +107,6 @@ export default function PartnersSection() {
             height: 50,
         },
     ]
-
     return (
         <div className="flex flex-col md:flex-row md:justify-between w-full max-width items-start gap-8 my-20 md:my-32">
             <h2 className="w-full md:w-[390.67px] font-heading-2 font-[number:var(--heading-2-font-weight)] text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
