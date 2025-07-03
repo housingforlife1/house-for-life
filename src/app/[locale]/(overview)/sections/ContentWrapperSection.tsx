@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 export const ContentWrapperSection = () => {
@@ -84,9 +85,9 @@ export const ContentWrapperSection = () => {
             {t("faq_p_1")}{" "}
           </span>
 
-          <span className="font-bold text-[#282724] leading-[0.1px] underline">
+          <Link href={'/contact'} className="font-bold text-[#282724] leading-[0.1px] underline">
             {t("faq_p_2")}
-          </span>
+          </Link>
 
           <span className="text-[#504f48] leading-[25.6px]">&nbsp;</span>
 

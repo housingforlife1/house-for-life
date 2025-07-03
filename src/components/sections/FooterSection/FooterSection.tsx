@@ -48,14 +48,15 @@ export default function FooterSection() {
                                         </span>
                                     </Button>
                                 </Link>
-                                <Button
-                                    variant="outline"
-                                    className="h-[50px] px-5 py-3.5 bg-[#f8f8e9] rounded-[54px] border-[#282724]"
-                                >
-                                    <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                        {tf('devenir_partenaire')}
-                                    </span>
-                                </Button>
+                                <Link href={`/contact`}>
+                                    <Button
+                                        variant="outline"
+                                        className="h-[50px] px-5 py-3.5 bg-[#f8f8e9] rounded-[54px] border-[#282724]">
+                                        <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                            {tf('devenir_partenaire')}
+                                        </span>
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </CardContent>
@@ -75,13 +76,15 @@ export default function FooterSection() {
                                     {tf('card_2_description')}
                                 </p>
                             </div>
-                            <Button
-                                variant="outline"
-                                className="h-[50px] w-full md:w-min px-5 py-3.5 bg-[#eff8e9] rounded-[54px] border-[#282724]">
-                                <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                                    {tf('devenir_benevole')}
-                                </span>
-                            </Button>
+                            <Link href={`/contact`}>
+                                <Button
+                                    variant="outline"
+                                    className="h-[50px] w-full md:w-min px-5 py-3.5 bg-[#eff8e9] rounded-[54px] border-[#282724]">
+                                    <span className="font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-black text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                                        {tf('devenir_benevole')}
+                                    </span>
+                                </Button>
+                            </Link>
                         </div>
                     </CardContent>
                 </Card>
