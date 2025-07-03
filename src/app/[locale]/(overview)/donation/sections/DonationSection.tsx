@@ -1,7 +1,4 @@
-// import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-// import { Checkbox } from '@/components/ui/checkbox'
-// import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
 import { useLocale, useTranslations } from 'next-intl'
 
