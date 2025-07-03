@@ -107,7 +107,7 @@ export default function FooterSection() {
                         }
                     </div>
                     <div className="flex items-center justify-end">
-                        <a href="https://www.facebook.com" target='_blank' className="w-9 h-9 flex items-center justify-center cursor-pointer">
+                        <a href="https://www.facebook.com/profile.php?id=61556166477512" target='_blank' className="w-9 h-9 flex items-center justify-center cursor-pointer">
                             <FacebookIcon className='w-6 h-6'/>
                         </a>
                     </div>
