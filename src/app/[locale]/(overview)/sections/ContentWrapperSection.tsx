@@ -8,67 +8,63 @@ export const ContentWrapperSection = () => {
   // FAQ data for mapping
   const faqItems = [
     {
-      question: "Qu'est-ce que Habitation pour la vie ?",
-      answer:
-        "Habitation pour la vie est une organisation dédiée à la construction de logements abordables et au soutien des femmes et mères en difficulté, leur offrant un environnement stable pour reconstruire leur vie.",
+      question: t("faq_question_1"),
+      answer: t("faq_answer_1"),
       defaultOpen: true,
     },
     {
-      question: "Qui peut bénéficier de nos programmes de logement ?",
-      answer:
-        "Nos programmes s'adressent principalement aux femmes et mères monoparentales en situation de précarité ou sans-abri mères en difficulté. Chaque candidature est évaluée selon des critères spécifiques pour assurer une aide adaptée.",
+      question: t("faq_question_2"),
+      answer: t("faq_answer_2"),
       defaultOpen: false,
     },
     {
-      question: "Comment s'effectue l'attribution des logements ?",
-      answer: "Les logements ne sont pas attribués sur demande directe ; ils sont affectés par un comité désigné de l'organisation Habitation pour la Vie.",
+      question: t("faq_question_3"),
+      answer: t("faq_answer_3"),
       defaultOpen: false,
     },
     {
-      question: "Quels sont les critères d'éligibilité pour un logement ?",
-      answer: "Les critères d'éligibilité incluent le fait d'être une femme monoparentale en situation de précarité.",
+      question: t("faq_question_4"),
+      answer: t("faq_answer_4"),
       defaultOpen: false,
     },
     {
-      question:
-        "Quels documents sont nécessaires pour constituer une demande ?",
-      answer: "Le comité d'attribution fournira des informations détaillées sur les documents requis.",
+      question: t("faq_question_5"),
+      answer: t("faq_answer_5"),
       defaultOpen: false,
     },
     {
-      question: "Quel est le délai d'attente pour obtenir un logement ?",
-      answer: "Les informations concernant les délais d'attente ne sont pas encore disponibles.",
+      question: t("faq_question_6"),
+      answer: t("faq_answer_6"),
       defaultOpen: false,
     },
     {
-      question: "Comment puis-je soutenir Habitation pour la vie ?",
-      answer: "Vous pouvez soutenir l'organisation en devenant un donateur ponctuel ou régulier. Plus d'informations sont disponibles sur notre page de donation : https://house-for-life.vercel.app/fr/donation",
+      question: t("faq_question_7"),
+      answer: t("faq_answer_7"),
       defaultOpen: false,
     },
     {
-      question: "Les dons sont-ils déductibles des impôts ?",
-      answer: "Oui, un reçu fiscal est fourni après chaque don pour permettre la déduction fiscale.",
+      question: t("faq_question_8"),
+      answer: t("faq_answer_8"),
       defaultOpen: false,
     },
     {
-      question: "Comment puis-je devenir bénévole ?",
-      answer: "Pour devenir bénévole, veuillez laisser un message sur notre page Facebook : https://www.facebook.com/profile.php?id=61556166477512",
+      question: t("faq_question_9"),
+      answer: t("faq_answer_9"),
       defaultOpen: false,
     },
     {
-      question: "Où sont situés vos logements ?",
-      answer: "Le premier logement est situé au centre-ville de Moncton.",
+      question: t("faq_question_10"),
+      answer: t("faq_answer_10"),
       defaultOpen: false,
     },
     {
-      question:
-        "Proposez-vous des services d'accompagnement pour les bénéficiaires ?",
-      answer: "Un programme d'accompagnement sera mis en place pour les habitants de nos logements.",
+      question: t("faq_question_11"),
+      answer: t("faq_answer_11"),
       defaultOpen: false,
     },
     {
-      question: "Comment puis-je contacter Habitation pour la vie ?",
-      answer: "Vous pouvez nous contacter via notre page de contact : https://house-for-life.vercel.app/fr/contact",
+      question: t("faq_question_12"),
+      answer: t("faq_answer_12"),
       defaultOpen: false,
     },
   ];
