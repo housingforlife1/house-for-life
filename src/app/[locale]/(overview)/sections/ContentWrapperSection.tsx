@@ -15,7 +15,7 @@ export const ContentWrapperSection = () => {
     {
       question: t("faq_question_2"),
       answer: t("faq_answer_2"),
-      defaultOpen: false,
+      defaultOpen: true,
     },
     {
       question: t("faq_question_3"),
