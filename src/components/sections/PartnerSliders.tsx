@@ -106,7 +106,7 @@ export default function PartnerSliders(){
     return (
         <div className="flex items-center justify-between h-[50px] gap-x-3">
             <ChevronLeft 
-                className='hidden md:block w-6 h-6 text-gray cursor-pointer' 
+                className='w-6 h-6 text-gray cursor-pointer' 
                 onClick={scrollLeft} 
             />
             <div 
@@ -126,7 +126,7 @@ export default function PartnerSliders(){
                 }
             </div>
             <ChevronRight 
-                className='hidden md:block w-6 h-6 text-gray cursor-pointer' 
+                className='w-6 h-6 text-gray cursor-pointer' 
                 onClick={scrollRight} 
             />
         </div>

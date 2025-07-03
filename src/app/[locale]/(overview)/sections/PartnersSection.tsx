@@ -5,8 +5,8 @@ export default function PartnersSection() {
     const t = useTranslations("home")
 
     return (
-        <div className="flex flex-col md:flex-row md:justify-between max-width items-center gap-8 my-14 md:my-32">
-            <div className="flex flex-col items-start gap-2.5 ">
+        <div className="flex flex-col md:flex-row md:justify-between max-width overflow-hidden md:items-center gap-8 my-14 md:my-32">
+            <div className="flex flex-col items-start gap-2.5 md:w-min">
                 <h2 className="font-heading-2 font-extrabold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] whitespace-nowrap [font-style:var(--heading-2-font-style)]">
                     {t("partner_titre")}
                 </h2>
@@ -14,7 +14,7 @@ export default function PartnersSection() {
                     {t("partner_description")}
                 </p>
             </div>
-            <div className='w-full md:w-2/3 '>
+            <div className="min-w-[280px]">
                 <PartnerSliders />
             </div>
         </div>

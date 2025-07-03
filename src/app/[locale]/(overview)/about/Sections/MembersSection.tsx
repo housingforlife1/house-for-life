@@ -81,11 +81,11 @@ export default function MembersSection() {
             boardMembers.map((member, index) => (
               <Card
                 key={index}
-                className="border-none shadow-none w-[295px] shrink-0"
+                className="border-none shadow-none shrink-0"
                 // className="border-none shadow-none w-[295px] shrink-0"
                 >
                 <CardContent className="p-0 flex flex-col items-start gap-4">
-                    <div className='relative w-full h-[200px] rounded-xl overflow-hidden'>
+                    <div className='relative w-full h-[320px] md:h-[200px] rounded-xl overflow-hidden'>
                         <Image
                             className="w-full h-[200px] object-cover "
                             alt={member.name}
