@@ -48,7 +48,7 @@ export default function NewsSection() {
                         <div
                             key={index}
                             className="min-w-[250px] md:min-w-[320px] xl:w-full flex flex-col items-start gap-6">
-                            <div className='relative h-80 w-full overflow-hidden rounded-2xl'>
+                            <div className='relative h-60 md:h-80 w-full overflow-hidden rounded-2xl'>
                                 <Image
                                     className="object-cover"
                                     alt={article.title}
