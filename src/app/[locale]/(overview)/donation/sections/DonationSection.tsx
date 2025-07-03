@@ -3,10 +3,11 @@ import { Card, CardContent } from '@/components/ui/card'
 // import { Checkbox } from '@/components/ui/checkbox'
 // import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 
 export default function DonationSection() {
     const t = useTranslations("donation")
+    const localActive = useLocale()
     // Data for donation methods
     const donationMethods = [
         {
@@ -118,7 +119,7 @@ export default function DonationSection() {
                         <iframe 
                             title='Donation form powered by Zeffy' 
                             style={{ position: 'absolute', border: 0, top:0,left:0,bottom:0,right:0,width:'100%', height:'100%' }} 
-                            src='https://www.zeffy.com/embed/donation-form/soutenez-notre-mission-57' allowTransparency={true}>
+                            src={`https://www.zeffy.com/${localActive}-CA/embed/donation-form/soutenez-notre-mission-57`} allowTransparency={true}>
                         </iframe>
                     </div>
                 </Card>
