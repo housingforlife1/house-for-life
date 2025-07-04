@@ -149,7 +149,10 @@
   }
 
   .max-width {
-    @apply !w-[93%] md:!w-[79%] mx-auto;
+    @apply !w-[94%] md:!w-[80%] mx-auto;
+  }
+  .padding-left {
+    @apply !pl-[6%] md:!pl-[20%];
   }
 
   .max-margin {

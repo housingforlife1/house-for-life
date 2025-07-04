@@ -25,13 +25,13 @@ export default function FooterSection() {
 
     return (
         <footer className="flex flex-col pt-10 md:pt-20">
-            <div className="max-width grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* Left footer card */}
                 <Card
-                    className="w-full lg:h-[280px] border-none shadow-none lg:rounded-3xl"
+                    className="w-full lg:h-[340px] border-none shadow-none lg:rounded-3xl"
                     style={{ backgroundColor: "#f8f8e9" }}>
                     <CardContent className="p-0 h-full">
-                        <div className="flex flex-col items-start justify-between gap-11 p-6 md:p-10 h-full">
+                        <div className="flex flex-col items-start justify-between gap-11 p-10 md:p-20 padding-left h-full">
                             <div className="flex flex-col items-start gap-2 w-full">
                                 <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
                                     {tf('faire_don_maintenant')}
@@ -64,10 +64,10 @@ export default function FooterSection() {
 
                 {/* Right footer card */}
                 <Card
-                    className="w-full lg:h-[280px] border-none shadow-none lg:rounded-3xl"
+                    className="w-full lg:h-[340px] border-none shadow-none lg:rounded-3xl"
                     style={{ backgroundColor: "#eff8e9" }}>
                     <CardContent className="p-0 h-full">
-                        <div className="flex flex-col items-start justify-between gap-11 p-6 md:p-10 h-full">
+                        <div className="flex flex-col items-start justify-between gap-11 p-10 md:p-20 h-full">
                             <div className="flex flex-col items-start gap-2 w-full ">
                                 <h3 className="font-heading-3 font-[number:var(--heading-3-font-weight)] text-black text-[length:var(--heading-3-font-size)] tracking-[var(--heading-3-letter-spacing)] leading-[var(--heading-3-line-height)] [font-style:var(--heading-3-font-style)]">
                                     {tf('card_2_titre')}
@@ -92,7 +92,7 @@ export default function FooterSection() {
 
             {/* Footer navigation */}
             <div className="mt-4 max-width">
-                <div className="flex flex-col md:flex-row items-center justify-between p-8">
+                <div className="flex flex-col md:flex-row items-center justify-between py-8">
                     <div className="font-paragraph-2 font-[number:var(--paragraph-2-font-weight)] text-black text-[length:var(--paragraph-2-font-size)] tracking-[var(--paragraph-2-letter-spacing)] leading-[var(--paragraph-2-line-height)] [font-style:var(--paragraph-2-font-style)]">
                         <p className='text-center'>{tf('habilitation_vie')} {(new Date()).getFullYear()} | {tf('copy_right')}</p>
                     </div>
@@ -116,7 +116,7 @@ export default function FooterSection() {
 
             {/* Footer info bar */}
             <div className="h-[50px] border-t border-neutral-200">
-                <div className="max-width flex flex-wrap md:flex-row items-center justify-between p-5 bg-[#fcfcf8] gap-4 md:gap-0">
+                <div className="max-width flex flex-wrap md:flex-row items-center justify-between pyc-5 bg-[#fcfcf8] gap-4 md:gap-0">
                     <div className="text-xs">
                         <span className="text-[#282724]">{tf('no_enregistrement')} : </span>
                         <span className="font-bold">75272 2818 RR0001</span>
