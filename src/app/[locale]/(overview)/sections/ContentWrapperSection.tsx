@@ -1,71 +1,96 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export const ContentWrapperSection = () => {
   const t = useTranslations("home")
+  const localActive = useLocale()
   // FAQ data for mapping
   const faqItems = [
     {
       question: t("faq_question_1"),
       answer: t("faq_answer_1"),
       defaultOpen: true,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_2"),
       answer: t("faq_answer_2"),
       defaultOpen: true,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_3"),
       answer: t("faq_answer_3"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_4"),
       answer: t("faq_answer_4"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_5"),
       answer: t("faq_answer_5"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_6"),
       answer: t("faq_answer_6"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_7"),
       answer: t("faq_answer_7"),
       defaultOpen: false,
+      link: `https://house-for-life.vercel.app/${localActive}/donation`,
+      linkLabel: "House for Life"
     },
     {
       question: t("faq_question_8"),
       answer: t("faq_answer_8"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_9"),
       answer: t("faq_answer_9"),
       defaultOpen: false,
+      link: "https://www.facebook.com/profile.php?id=61556166477512",
+      linkLabel: "Housing For Life - Habilitation pour la vie"
     },
     {
       question: t("faq_question_10"),
       answer: t("faq_answer_10"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_11"),
       answer: t("faq_answer_11"),
       defaultOpen: false,
+      link: "",
+      linkLabel: ""
     },
     {
       question: t("faq_question_12"),
       answer: t("faq_answer_12"),
       defaultOpen: false,
+      link: `https://house-for-life.vercel.app/${localActive}/contact`,
+      linkLabel: "House For Life"
     },
   ];
 
@@ -124,7 +149,10 @@ export const ContentWrapperSection = () => {
                 { 
                   item.answer && (
                   <p className="font-paragraph-1 font-[number:var(--paragraph-1-font-weight)] text-gray text-[length:var(--paragraph-1-font-size)] tracking-[var(--paragraph-1-letter-spacing)] leading-[var(--paragraph-1-line-height)] [font-style:var(--paragraph-1-font-style)]">
-                    {item.answer}
+                    {item.answer} 
+                    {
+                      (item.link) && <a href={item.link} className="underline text-blue-500" >{item.linkLabel}</a>
+                    }
                   </p>
                 )}
               </AccordionContent>

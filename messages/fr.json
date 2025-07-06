@@ -92,17 +92,17 @@
         "faq_question_6": "Quel est le délai d'attente pour obtenir un logement ?",
         "faq_answer_6": "Les informations concernant les délais d'attente ne sont pas encore disponibles.",
         "faq_question_7": "Comment puis-je soutenir Habitation pour la vie ?",
-        "faq_answer_7":"Vous pouvez soutenir l'organisation en devenant un donateur ponctuel ou régulier. Plus d'informations sont disponibles sur notre page de donation : https://house-for-life.vercel.app/fr/donation",
+        "faq_answer_7":"Vous pouvez soutenir l'organisation en devenant un donateur ponctuel ou régulier. Plus d'informations sont disponibles sur notre page de donation : ",
         "faq_question_8": "Les dons sont-ils déductibles des impôts ?",
         "faq_answer_8": "Oui, un reçu fiscal est fourni après chaque don pour permettre la déduction fiscale.",
         "faq_question_9": "Comment puis-je devenir bénévole ?",
-        "faq_answer_9": "Pour devenir bénévole, veuillez laisser un message sur notre page Facebook : https://www.facebook.com/profile.php?id=61556166477512",
+        "faq_answer_9": "Pour devenir bénévole, veuillez laisser un message sur notre page Facebook : ",
         "faq_question_10": "Où sont situés vos logements ?",
         "faq_answer_10": "Le premier logement est situé au centre-ville de Moncton.",
         "faq_question_11": "Proposez-vous des services d'accompagnement pour les bénéficiaires ?",
         "faq_answer_11": "Un programme d'accompagnement sera mis en place pour les habitants de nos logements.",
         "faq_question_12": "Comment puis-je contacter Habitation pour la vie ?",
-        "faq_answer_12": "Vous pouvez nous contacter via notre page de contact : https://house-for-life.vercel.app/fr/contact"
+        "faq_answer_12": "Vous pouvez nous contacter via notre page de contact : "
     },
     "contact":{
         "formTitle": "Besoin d'informations ?",

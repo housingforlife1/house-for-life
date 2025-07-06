@@ -116,7 +116,7 @@ export default function FooterSection() {
 
             {/* Footer info bar */}
             <div className="h-[50px] border-t border-neutral-200">
-                <div className="max-width flex flex-wrap md:flex-row items-center justify-between pyc-5 bg-[#fcfcf8] gap-4 md:gap-0">
+                <div className="max-width flex flex-wrap md:flex-row items-center justify-between py-5 bg-[#fcfcf8] gap-4 md:gap-0">
                     <div className="text-xs">
                         <span className="text-[#282724]">{tf('no_enregistrement')} : </span>
                         <span className="font-bold">75272 2818 RR0001</span>
