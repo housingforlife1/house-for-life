@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -19,6 +20,7 @@ export default function ProgramCardsSection() {
                 t("data_1_details_3"),
             ],
             buttonText: t("data_btn_1"),
+            link: "/contact",
         },
         {
             id: 2,
@@ -32,6 +34,7 @@ export default function ProgramCardsSection() {
                 t("data_1_details_7"),
             ],
             buttonText: t("data_btn_2"),
+            link: "/contact",
         },
         {
             id: 3,
@@ -43,7 +46,8 @@ export default function ProgramCardsSection() {
                 t("data_1_details_9"),
                 t("data_1_details_10"),
             ],
-            buttonText: t("data_btn_3")
+            buttonText: t("data_btn_3"),
+            link: "",
         },
     ];
 
@@ -93,9 +97,11 @@ export default function ProgramCardsSection() {
                 </div>
             </CardContent>
             <CardFooter className="p-0 mt-6">
-              <Button className="w-full h-[50px] bg-green rounded-[54px] font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
-                {program.buttonText}
-              </Button>
+                <Link className="w-full inline-block" href={program.link}>
+                    <Button className="w-full h-[50px] bg-green rounded-[54px] font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                        {program.buttonText}
+                    </Button>
+                </Link>
             </CardFooter>
           </Card>
         ))}
