@@ -20,7 +20,7 @@
         "adresse": "Adresse",
         "adresse_val": "305, avenue Dominion, Moncton",
 
-        "problem_titre": "Problèmes majeurs à Moncton et dans le Sud-Est",
+        "problem_titre": "Enjeux majeurs à Moncton et dans le Sud-Est",
         "problem_data_titre_1": "Femmes seules et pauvreté : une inégalité criante",
         "problem_data_description_1": "En 2021, 2 675 femmes seules à Moncton vivaient sous le seuil de la pauvreté, révélant des défis économiques importants.",
         "problem_data_titre_2": "Pauvreté des mères célibataires : un défi urgent",
@@ -167,7 +167,7 @@
 
         "member_titre": "Un engagement collectif",
         "member_description": "Habitation pour la vie est géré par un conseil d'administration impliqué qui se réunit chaque mois pour planifier les actions et suivre les projets.",
-        "member_presidente": "Présidente",
+        "member_president": "Président",
         "member_vice_presidente": "Vice-présidente",
         "member_secretaire": "Secrétaire-trésorière",
         "member_coordination_administratif": "Coordination administrative",

@@ -10,10 +10,10 @@ export default function MembersSection() {
     {
       image: "/assets/img/paulette.png",
       name: "Paulette Ben Ammar",
-      role: t("member_presidente"),
+      role: t("member_vice_presidente"),
     },
     {
-      image: "/assets/img/isabelle.png",
+      image: "/assets/img/isabelle.jpeg",
       name: "Isabelle Lavoie",
       role: t("member_vice_presidente"),
     },
@@ -30,7 +30,7 @@ export default function MembersSection() {
     {
       image: "/assets/img/alphonse.png",
       name: "Alphonse Dionne",
-      role: t("member_ca"),
+      role: t("member_president"),
     },
     {
       image: "/assets/img/marie.png",
@@ -48,8 +48,8 @@ export default function MembersSection() {
       role: t("member_ca"),
     },
     {
-      image: "/assets/img/mirelle.png",
-      name: "Mirelle Cyr",
+      image: "/assets/img/mireille.png",
+      name: "Mireille Cyr",
       role: t("member_ca"),
     },
     

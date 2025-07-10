@@ -12,10 +12,10 @@ export default function BoardMembersSection(){
         {
             image: "/assets/img/paulette.png",
             name: "Paulette Dionne",
-            role: ta("member_presidente"),
+            role: ta("member_vice_presidente"),
         },
         {
-            image: "/assets/img/isabelle.png",
+            image: "/assets/img/isabelle.jpeg",
             name: "Isabelle Lavoie",
             role: ta("member_vice_presidente"),
         },
@@ -27,7 +27,8 @@ export default function BoardMembersSection(){
         {
             image: "/assets/img/alphonse.png",
             name: "Alphonse Dionne",
-            role: ta("member_coordination_administratif"),
+            role: ta("member_president"),
+            //role: ta("member_coordination_administratif"),
         },
         {
             image: "/assets/img/marie.png",
