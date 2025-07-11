@@ -28,7 +28,8 @@ export default function MembersSection() {
       role: t("member_secretaire"),
     },
     {
-      image: "/assets/img/rhada.png",
+      // image: "/assets/img/rhada.png",
+      image: "/assets/img/mireille.jpeg",
       name: "Rhada El Khadir",
       role: t("member_coordination_administratif"),
     },
