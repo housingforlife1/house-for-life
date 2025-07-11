@@ -47,7 +47,7 @@ export default function ProgramCardsSection() {
                 t("data_1_details_10"),
             ],
             buttonText: t("data_btn_3"),
-            link: "",
+            link: "/contact",
         },
     ];
 
