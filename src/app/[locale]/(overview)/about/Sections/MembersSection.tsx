@@ -8,6 +8,11 @@ export default function MembersSection() {
     // Board members data
   const boardMembers = [
     {
+      image: "/assets/img/alphonse.png",
+      name: "Alphonse Dionne",
+      role: t("member_president"),
+    },
+    {
       image: "/assets/img/paulette.png",
       name: "Paulette Ben Ammar",
       role: t("member_vice_presidente"),
@@ -26,11 +31,6 @@ export default function MembersSection() {
       image: "/assets/img/rhada.png",
       name: "Rhada El Khadir",
       role: t("member_coordination_administratif"),
-    },
-    {
-      image: "/assets/img/alphonse.png",
-      name: "Alphonse Dionne",
-      role: t("member_president"),
     },
     {
       image: "/assets/img/marie.png",
