@@ -48,7 +48,7 @@ export default function MembersSection() {
       role: t("member_ca"),
     },
     {
-      image: "/assets/img/mireille.png",
+      image: "/assets/img/mireille.jpeg",
       name: "Mireille Cyr",
       role: t("member_ca"),
     },
