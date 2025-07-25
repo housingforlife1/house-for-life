@@ -19,7 +19,7 @@ export default function ProgramCardsSection() {
                 t("data_1_details_2"),
                 t("data_1_details_3"),
             ],
-            buttonText: t("data_btn_1"),
+            buttonText: t("data_btn_3"),
             link: "/contact",
         },
         {

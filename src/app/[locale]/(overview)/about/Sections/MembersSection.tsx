@@ -28,9 +28,8 @@ export default function MembersSection() {
       role: t("member_secretaire"),
     },
     {
-      // image: "/assets/img/rhada.png",
-      image: "/assets/img/mireille.jpeg",
-      name: "Rhada El Khadir",
+      image: "/assets/img/rhada.png",
+      name: "Rhada El Khabir",
       role: t("member_coordination_administratif"),
     },
     {
@@ -48,11 +47,11 @@ export default function MembersSection() {
       name: "Lujan Saintil",
       role: t("member_ca"),
     },
-    {
-      image: "/assets/img/mireille.jpeg",
-      name: "Mireille Cyr",
-      role: t("member_ca"),
-    },
+    // {
+    //   image: "/assets/img/mireille.jpeg",
+    //   name: "Mireille Cyr",
+    //   role: t("member_ca"),
+    // },
     
     {
       image: "/assets/img/eric.png",

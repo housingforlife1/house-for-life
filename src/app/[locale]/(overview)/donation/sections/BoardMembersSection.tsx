@@ -13,7 +13,6 @@ export default function BoardMembersSection(){
             image: "/assets/img/alphonse.png",
             name: "Alphonse Dionne",
             role: ta("member_president"),
-            //role: ta("member_coordination_administratif"),
         },
         {
             image: "/assets/img/paulette.png",
