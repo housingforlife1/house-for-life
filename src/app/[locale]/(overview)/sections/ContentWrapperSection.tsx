@@ -55,7 +55,7 @@ export const ContentWrapperSection = () => {
       answer: t("faq_answer_7"),
       defaultOpen: false,
       link: `https://house-for-life.vercel.app/${localActive}/donation`,
-      linkLabel: "House for Life"
+      linkLabel: localActive === 'fr' ? "Faire un don" : "Make a donation"
     },
     {
       question: t("faq_question_8"),
@@ -90,7 +90,7 @@ export const ContentWrapperSection = () => {
       answer: t("faq_answer_12"),
       defaultOpen: false,
       link: `https://house-for-life.vercel.app/${localActive}/contact`,
-      linkLabel: "House For Life"
+      linkLabel: localActive === 'fr' ? 'Nous contacter': "Contact us"
     },
   ];
 

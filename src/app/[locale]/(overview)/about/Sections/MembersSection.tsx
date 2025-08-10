@@ -23,6 +23,17 @@ export default function MembersSection() {
       role: t("member_vice_presidente"),
     },
     {
+      image: "/assets/img/aldea.jpeg",
+      name: "Aldéa Landry",
+      role: t("member_co_president"),
+    },
+    
+    {
+      image: "/assets/img/jeremy.jpeg",
+      name: "Jeremy Nelson",
+      role: t("member_co_president"),
+    },
+    {
       image: "/assets/img/aurea.png",
       name: "Auréa Cormier",
       role: t("member_secretaire"),
@@ -45,17 +56,6 @@ export default function MembersSection() {
     {
       image: "/assets/img/lujan.png",
       name: "Lujan Saintil",
-      role: t("member_ca"),
-    },
-    // {
-    //   image: "/assets/img/mireille.jpeg",
-    //   name: "Mireille Cyr",
-    //   role: t("member_ca"),
-    // },
-    
-    {
-      image: "/assets/img/eric.png",
-      name: "Éric Pelletier",
       role: t("member_ca"),
     },
   ]

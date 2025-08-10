@@ -165,7 +165,7 @@ export default function MissionSection() {
                     </div>
                 </div>
 
-                {/* Testimonials Section */}
+                {/* Testimonials Section 
                 <div className="flex flex-col items-start gap-4 w-full">
                     <h2 className="font-extrabold text-black text-[length:var(--heading-2-font-size)] tracking-[var(--heading-2-letter-spacing)] leading-[var(--heading-2-line-height)] [font-style:var(--heading-2-font-style)]">
                         {t("testimonial_titre")}
@@ -191,6 +191,7 @@ export default function MissionSection() {
                         }
                     </div>
                 </div>
+                */}
             </div>
         </div>
     )

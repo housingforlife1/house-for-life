@@ -31,7 +31,6 @@ export default function ProgramCardsSection() {
                 t("data_1_details_4"),
                 t("data_1_details_5"),
                 t("data_1_details_6"),
-                t("data_1_details_7"),
             ],
             buttonText: t("data_btn_2"),
             link: "/contact",
@@ -42,9 +41,9 @@ export default function ProgramCardsSection() {
             title: t("data_titre_3"),
             description: t("data_description_3"),
             details: [
+                t("data_1_details_7"),
                 t("data_1_details_8"),
                 t("data_1_details_9"),
-                t("data_1_details_10"),
             ],
             buttonText: t("data_btn_3"),
             link: "/contact",
