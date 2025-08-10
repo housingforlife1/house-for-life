@@ -36,6 +36,7 @@ export default function MissionSection() {
     ];
 
     // Data for testimonials
+    {/* 
     const testimonialsData = [
         {
             quote: t("quote_1"),
@@ -50,6 +51,7 @@ export default function MissionSection() {
             author: t("author_3"),
         },
     ];
+    */}
 
     return (
         <div className="py-24 md:py-32 bg-[#f8f8e9] w-full my-16 md:my-32">
