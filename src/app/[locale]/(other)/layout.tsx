@@ -1,4 +1,3 @@
-import { instrument } from '@/app/fonts/fonts';
 import { NavigationSection } from '@/components/sections/NavigationSection/NavigationSection';
 import { Toaster } from "@/components/ui/sonner";
 import { routing } from "@/i18n/routing";
@@ -30,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${instrument.className} antialiased select-none overflow-x-hidden`}>
+        className={`instrument.className antialiased select-none overflow-x-hidden`}>
           <NextIntlClientProvider>
             <main>
               {/* Header */}
