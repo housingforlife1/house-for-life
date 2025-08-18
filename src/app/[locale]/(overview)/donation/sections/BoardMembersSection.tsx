@@ -20,14 +20,14 @@ export default function BoardMembersSection(){
             role: ta("member_vice_presidente"),
         },
         {
-            image: "/assets/img/isabelle.jpeg",
-            name: "Isabelle Lavoie",
-            role: ta("member_vice_presidente"),
-        },
-        {
             image: "/assets/img/aurea.png",
             name: "Auréa Cormier",
             role: ta("member_secretaire"),
+        },
+        {
+            image: "/assets/img/isabelle.jpeg",
+            name: "Isabelle Lavoie",
+            role: ta("member_ca"),
         },
         {
             image: "/assets/img/marie.png",
@@ -42,6 +42,16 @@ export default function BoardMembersSection(){
         {
             image: "/assets/img/nicolas.png",
             name: "Nicolas Kalgora",
+            role: ta("member_ca"),
+        },
+        {
+            image: "/assets/img/hajar.jpeg",
+            name: "Hajar Terrab",
+            role: ta("member_ca"),
+        },
+        {
+            image: "/assets/img/reginald.jpeg",
+            name: "Réginald Aucoin",
             role: ta("member_ca"),
         },
     ];

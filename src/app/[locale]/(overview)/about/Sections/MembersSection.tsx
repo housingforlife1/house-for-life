@@ -18,11 +18,6 @@ export default function MembersSection() {
       role: t("member_vice_presidente"),
     },
     {
-      image: "/assets/img/isabelle.jpeg",
-      name: "Isabelle Lavoie",
-      role: t("member_vice_presidente"),
-    },
-    {
       image: "/assets/img/aldea.jpeg",
       name: "Aldéa Landry",
       role: t("member_co_president"),
@@ -44,6 +39,11 @@ export default function MembersSection() {
       role: t("member_coordination_administratif"),
     },
     {
+      image: "/assets/img/isabelle.jpeg",
+      name: "Isabelle Lavoie",
+      role: t("member_ca"),
+    },
+    {
       image: "/assets/img/marie.png",
       name: "Marie-Éva Gaudet",
       role: t("member_ca"),
@@ -56,6 +56,16 @@ export default function MembersSection() {
     {
       image: "/assets/img/lujan.png",
       name: "Lujan Saintil",
+      role: t("member_ca"),
+    },
+    {
+      image: "/assets/img/hajar.jpeg",
+      name: "Hajar Terrab",
+      role: t("member_ca"),
+    },
+    {
+      image: "/assets/img/reginald.jpeg",
+      name: "Réginald Aucoin",
       role: t("member_ca"),
     },
   ]
