@@ -61,7 +61,7 @@ export const ContactFormSection = ()=> {
     setLoading(true);
     // Here you can handle the form submission, e.g., send the data to an API
     try {
-      const response = await fetch("https://housefl.wds-project.com/api/formulaire_contacts", {
+      const response = await fetch("http://backend.hforlife-hpourlavie.ca/api/formulaire_contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify(values),
