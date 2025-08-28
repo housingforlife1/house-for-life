@@ -135,9 +135,9 @@ export default function FooterSection() {
 
                     <div className="text-xs">
                         <span className="text-[#282724]">{tf('concu_par')} : </span>
-                        <a href="https://www.acadieintelligent.ca" target="_blank" rel="noopener noreferrer" className='mt-2'>
+                        <a href="https://www.acadieintelligent.ca" target="_blank" rel="noopener noreferrer" className='leading-8 sm:leading-normal '>
                             <span className="font-bold">Acadie Intelligent Inc.</span>
-                            <span className="font-bold px-4 py-1 rounded-full border border-gray ml-3">Nous joindre</span>
+                            <span className="font-bold px-4 py-1 rounded-full border border-gray ml-3 whitespace-nowrap">Nous joindre</span>
                         </a>
                     </div>
                 </div>
