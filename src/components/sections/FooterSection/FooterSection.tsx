@@ -116,7 +116,7 @@ export default function FooterSection() {
 
             {/* Footer info bar */}
             <div className="h-[50px] border-t border-neutral-200">
-                <div className="max-width flex flex-wrap md:flex-row items-center justify-between py-5 bg-[#fcfcf8] gap-4 md:gap-0">
+                <div className="max-width flex flex-wrap md:flex-row items-center justify-between py-5 bg-[#fcfcf8] gap-4 lg:gap-0">
                     <div className="text-xs">
                         <span className="text-[#282724]">{tf('no_enregistrement')} : </span>
                         <span className="font-bold">75272 2818 RR0001</span>
@@ -134,8 +134,11 @@ export default function FooterSection() {
                     </div>
 
                     <div className="text-xs">
-                    <span className="text-[#282724]">{tf('concu_par')} : </span>
-                    <span className="font-bold">Acadie Intelligent Inc.</span>
+                        <span className="text-[#282724]">{tf('concu_par')} : </span>
+                        <a href="https://www.acadieintelligent.ca" target="_blank" rel="noopener noreferrer" className='mt-2'>
+                            <span className="font-bold">Acadie Intelligent Inc.</span>
+                            <span className="font-bold px-4 py-1 rounded-full border border-gray ml-3">Nous joindre</span>
+                        </a>
                     </div>
                 </div>
             </div>
