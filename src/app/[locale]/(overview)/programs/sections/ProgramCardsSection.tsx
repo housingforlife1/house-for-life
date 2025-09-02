@@ -97,7 +97,7 @@ export default function ProgramCardsSection() {
             </CardContent>
             <CardFooter className="p-0 mt-6">
                 <Link className="w-full inline-block" href={program.link}>
-                    <Button className="w-full h-[50px] bg-green rounded-[54px] font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
+                    <Button className="w-full h-[50px] bg-green rounded-full font-paragraph-bold font-[number:var(--paragraph-bold-font-weight)] text-white text-xs md:text-[length:var(--paragraph-bold-font-size)] tracking-[var(--paragraph-bold-letter-spacing)] leading-[var(--paragraph-bold-line-height)] [font-style:var(--paragraph-bold-font-style)]">
                         {program.buttonText}
                     </Button>
                 </Link>
