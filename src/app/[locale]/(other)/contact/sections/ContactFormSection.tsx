@@ -8,6 +8,7 @@ import { Loader } from "@/components/ui/loader";
 import { Textarea } from "@/components/ui/textarea";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -38,21 +39,24 @@ export const ContactFormSection = ()=> {
   const contactSections = [
     {
       title: t("data_titre_1"),
-      email: "logement@hforlife-hpourlavie.ca",
+      email: "aureamcormier@hforlife-hpourlavie.ca",
       tel: "506-854-0675",
-      links: [],
+      link: "",
+      url: ""
     },
     {
       title: t("data_titre_2"),
       email: "donation@hforlife-hpourlavie.ca",
       tel: "506-854-0675",
-      links: [t('link_1_data_1')],
+      link: t('link_1_data_1'),
+      url: "https://www.facebook.com/profile.php?id=61556166477512"
     },
     {
       title: t("data_titre_3"),
       email: "benevolat@hforlife-hpourlavie.ca",
       tel: "506-854-0675",
-      links: [t('link_2_data_1')],
+      link: t('link_2_data_1'),
+      url: "https://www.facebook.com/profile.php?id=61556166477512"
     },
   ]
 
@@ -189,12 +193,12 @@ export const ContactFormSection = ()=> {
                 {t("info_email")} : {section.email}
                 <br />
                 {t("telephone")} : {section.tel}
-                {section.links.map((link, linkIndex) => (
-                  <React.Fragment key={linkIndex}>
+                {section.link && (
+                  <Link href={section.url} target="_blank" rel="noopener noreferrer" className="break-all">
                     <br />
-                    {link}
-                  </React.Fragment>
-                ))}
+                    {section.link}
+                  </Link>
+                ) }
               </p>
             </div>
           ))}
