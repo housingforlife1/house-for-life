@@ -32,7 +32,6 @@ export default function Home() {
 
       {/* Content Wrapper section*/}
       <ContentWrapperSection />
-      
     </>
   );
 }
